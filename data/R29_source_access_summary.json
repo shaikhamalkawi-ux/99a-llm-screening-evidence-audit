@@ -1,0 +1,22 @@
+{
+  "version": "R29",
+  "date": "2026-11-08",
+  "original_candidate_total": 60,
+  "historical_R20_full_source": 49,
+  "new_publisher_reports_R28": 3,
+  "new_publisher_reports_R29": 1,
+  "currently_verified_full_reports": 53,
+  "current_provisional_empirical": 49,
+  "current_provisional_contextual": 4,
+  "unresolved_final_journal_fulltext_ids": [
+    "LIT-003"
+  ],
+  "unresolved_final_journal_fulltext_count": 1,
+  "linked_report_id": "LIT-076",
+  "scientific_supplement_verified": true,
+  "disclosure_file_verified_as_not_results_supplement": true,
+  "interpretive_core_underlying_investigations_unchanged": 21,
+  "frozen_R20_source_note_timing_crosswalk_unchanged": 49,
+  "final_included_study_count": "NOT_DETERMINED",
+  "note": "Source-access admission only; do not use as systematic-review prevalence denominator"
+}

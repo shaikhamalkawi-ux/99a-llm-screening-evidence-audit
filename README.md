@@ -1,8 +1,14 @@
 # Project 99a — LLM screening: evidence and human-effort claim audit
 
-**Public reproducibility material for a source-traceable critical review (development state: R28, 8 November 2026).**
+**Public reproducibility material for a source-traceable critical review (development state: R29, 8 November 2026).**
 
 The accompanying manuscript studies what a reported *workload saving* actually measures in LLM-assisted screening. This repository contains **bibliographic metadata, original-source links, interpretation rules, and executable consistency checks**. It does not provide third-party article PDFs or replicate the experiments in the original papers.
+
+## R29 final-source and scientific-supplement gate (8 November 2026)
+
+The final Janoudi *Value in Health* article and its scientific supplement have been checked. `mmc1.docx` is the actual methods supplement (four appendices); `mmc2.pdf` is a 16-page disclosure packet rather than extra study results. **Current source access: 53/60** inherited candidate records checked at full-report level. **One** final journal article remains unavailable in the local evidence package: Li (LIT-003). The separately assembled 21-work interpretive core, the frozen R20 49-source timing-note crosswalk, and the R28 three-article ledger remain unchanged.
+
+The new audit confirms reported model validation on 3,796 citations from eight prior reviews, but the 145/221 confidence-guided human-review counts are *simulated* under perfect error correction. These are not measured human person-hours or net labor savings. See `docs/R29_janoudi_final_and_supplement.md` and `data/R29_janoudi_final_publisher_and_supplement.csv`.
 
 ## New final-report update — R28 (8 November 2026)
 
@@ -49,6 +55,7 @@ Three final publisher PDF reports for Zhang, Insuk and Cao are now source-checke
 python scripts/validate_release.py # validates all published SHA-256 manifest entries
 python scripts/validate_resource_crosswalk.py
 python scripts/validate_source_view_numeric_trace.py
+python scripts/validate_r29_overlay.py
 python -m unittest discover -s tests -v
 ```
 

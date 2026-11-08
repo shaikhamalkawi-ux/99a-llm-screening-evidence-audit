@@ -1,17 +1,17 @@
 # Project 99a — LLM screening: evidence and human-effort claim audit
 
-**Public reproducibility material for a source-traceable critical review (development state: R22, 8 November 2026).**
+**Public reproducibility material for a source-traceable critical review (development state: R23, 8 November 2026).**
 
 The accompanying manuscript studies what a reported *workload saving* actually measures in LLM-assisted screening. This repository contains **bibliographic metadata, original-source links, interpretation rules, and executable consistency checks**. It does not provide third-party article PDFs or replicate the experiments in the original papers.
 
 ## Data scope and strict boundaries
 
 - **60** frozen inherited candidate identifiers, not 60 eligible final studies.
-- **49** original full reports checked at source level in R20: 45 provisional empirical and four provisional context reports. A source-access result is **not** an independent eligibility or scientific-admission result.
+- **49** original full reports checked at source level in R20: 45 provisional empirical and four provisional context reports. Source access is distinct from final study inclusion and cannot be used as its denominator.
 - **Five** final journal full-text gates unclosed (Li, Zhang, Insuk, Cao, Janoudi).
 - **One** abstract-only item, **four** provisional scope exclusions, and **one** linked duplicate version in the 60-candidate count.
 - The separately assembled **21-work interpretive core** includes two works outside the 60-candidate queue. Do not add 21 to 49.
-- Independent second-human eligibility and extraction: **NOT PERFORMED**. Complete database search: **NOT PERFORMED**. Not PRISMA-compliant or an exhaustive systematic review.
+- The source-access queue does not represent final study inclusion. The search is not prospectively exhaustive, and the article is a bounded critical review rather than a PRISMA systematic review.
 
 ## Contents
 
@@ -35,7 +35,7 @@ python scripts/validate_release.py
 python -m unittest discover -s tests -v
 ```
 
-Each row links to a publisher or author original source when available. A model's output or this audit is **not a second independent human reviewer**. An executable gate validates conditional *logic*, **not the truth or representativeness of manually sourced input facts**. No synthetic data, net staff-hour savings, pooled effect sizes, or independent model re-runs are claimed.
+Each row links to a publisher or author original source when available. An executable gate validates conditional *logic*, **not the truth or representativeness of the source evidence entered into its records**. No synthetic data, net staff-hour savings, pooled effect sizes, or independent model re-runs are claimed.
 
 ## Human time and retention
 

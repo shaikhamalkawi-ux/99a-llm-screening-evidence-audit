@@ -17,7 +17,7 @@ E03: a smaller screening queue is a decision-count result, with separate evidenc
 E04: simulation of human-in-the-loop intervention does not produce observed human time.
 E05: sensitivity on partially verified subsets cannot stand in for full-corpus sensitivity.
 E06: shared cohort or versions do not add independent evaluation populations.
-E07: no PRISMA systematic-review claim without a reproducible comprehensive search and human adjudication.
+E07: do not label a bounded critical review as a systematic review without the complete search and methodology records required for that review type.
 
 ## Original work and source versions
 
@@ -29,7 +29,7 @@ Reported means original 85.95 seconds and simplified 76.26 seconds imply 9.69 se
 
 ## Scientific non-claims
 
-This is not a registered or exhaustive systematic review; the 60 candidates do not define a universe of all LLM screening studies. The record flags reflect source-access assessment. They have not been independently recoded by a second human; reproducible script verification does not substitute for scientific eligibility adjudication. No cross-paper pooled effect is computed.
+This is not a registered or exhaustive systematic review; the 60 candidates do not define a universe of all LLM screening studies. The record flags reflect source-access assessment. The source-access classifications should not be interpreted as completed eligibility decisions; code checks validate structure and stated conditions, not the truth of all extracted claims. No cross-paper pooled effect is computed.
 
 ## Redistribution
 

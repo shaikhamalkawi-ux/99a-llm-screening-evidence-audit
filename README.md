@@ -1,6 +1,6 @@
 # Project 99a — LLM screening: evidence and human-effort claim audit
 
-**Public reproducibility material for a source-traceable critical review (development state: R23, 8 November 2026).**
+**Public reproducibility material for a source-traceable critical review (development state: R24, 8 November 2026).**
 
 The accompanying manuscript studies what a reported *workload saving* actually measures in LLM-assisted screening. This repository contains **bibliographic metadata, original-source links, interpretation rules, and executable consistency checks**. It does not provide third-party article PDFs or replicate the experiments in the original papers.
 
@@ -11,6 +11,7 @@ The accompanying manuscript studies what a reported *workload saving* actually m
 - **Five** final journal full-text gates unclosed (Li, Zhang, Insuk, Cao, Janoudi).
 - **One** abstract-only item, **four** provisional scope exclusions, and **one** linked duplicate version in the 60-candidate count.
 - The separately assembled **21-work interpretive core** includes two works outside the 60-candidate queue. Do not add 21 to 49.
+- An **R24 source-note crosswalk of 49 accessible reports** records exactly one observed assisted-vs-unassisted human task comparison (LIT-020) and one different human abstract-representation comparison (LIT-048); the other reported timing categories are explicitly distinct. This is a frozen-note coding, **not a finding of non-reporting throughout the literature**.
 - The source-access queue does not represent final study inclusion. The search is not prospectively exhaustive, and the article is a bounded critical review rather than a PRISMA systematic review.
 
 ## Contents
@@ -19,23 +20,31 @@ The accompanying manuscript studies what a reported *workload saving* actually m
 | --- | --- |
 | `data/candidate_source_gates_60.csv` | Source-access and claim-boundary metadata, one row per frozen candidate |
 | `data/selected_source_traceable_contrasts_9.csv` | Selected within-study contrasts; not independent pooling data |
+| `data/source_claim_timing_crosswalk_49.csv` | Author-coded R20 timing-contrast classes for 49 accessible source notes, without modifying source rows |
 | `data/claim_certificate_rules_7.csv` | Seven conservative interpretation gates, prose specification |
 | `data/linked_publication_lineages_3.csv` | Preprint–journal and proceedings–journal dependence checks |
 | `data/final_journal_fulltext_holds_5.csv` | Explicit remaining full journal report gates |
 | `data/related_reviews_and_guidance_3.csv` | Closest reviews/prior methodological guidance |
 | `scripts/claim_gates.py` | Executable rule engine **conditional on user-supplied evidence flags** |
 | `scripts/validate_release.py` | Standard-library structural, count, provenance and embargo checks |
+| `scripts/validate_resource_crosswalk.py` | Cross-check all 49 timing-note labels against the frozen 60-candidate access gate |
 | `tests/test_claim_gates.py` | Unit tests and negative controls for rule engine |
+| `tests/test_resource_crosswalk.py` | Six checks for R24 frozen source-note crosswalk |
 | `docs/methodology.md` | Estimands, reproducibility boundaries, source rights |
 
 ## Reproduce verification (Python 3.9+; standard library only)
 
 ```bash
 python scripts/validate_release.py
+python scripts/validate_resource_crosswalk.py
 python -m unittest discover -s tests -v
 ```
 
 Each row links to a publisher or author original source when available. An executable gate validates conditional *logic*, **not the truth or representativeness of the source evidence entered into its records**. No synthetic data, net staff-hour savings, pooled effect sizes, or independent model re-runs are claimed.
+
+## Prior-art boundary
+
+Lai et al. (2026) already proposed **verification-adjusted workload reduction (VAWR)** conditional on verification policy and timing assumptions: https://doi.org/10.1017/rsm.2026.10114. Project 99a does not claim that idea as new, does not calibrate VAWR, and reports no universal labor-saving percentage. Its distinct contribution is a report-linked record of *which claims are warranted by which source-specific measurements*, with explicit versions, reference standards and timing-contrast categories.
 
 ## Human time and retention
 

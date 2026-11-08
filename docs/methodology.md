@@ -34,3 +34,9 @@ This is not a registered or exhaustive systematic review; the 60 candidates do n
 ## Redistribution
 
 No publisher article PDF, subscription copy, downloaded licensed text, personal information beyond published citation metadata, or unpublished private correspondence may be uploaded to the public repo without author/rightsholder authorization and applicable license. Use DOI links in place of article copies. This package makes no assertion about the license status of any individual source. The author must choose the final code/data license before making a formal archival release.
+
+## R24 frozen source-note timing crosswalk
+
+`data/source_claim_timing_crosswalk_49.csv` codes the 49 full-source access notes inherited from R20, and is validated by `scripts/validate_resource_crosswalk.py`. Exactly one note directly describes observed assisted vs unassisted human task minutes (LIT-020); a second is a different abstract-representation experiment (LIT-048). One note concerns human-only timing; three compare human time to machine runtime; two compare elapsed calendar span to runtime; and 41 did not document a matched assisted-human contrast in the *R20 source note*. Those 41 do not prove non-reporting in every full-text article or supplement. The two studies TrialMind and LEADS are outside the frozen 60 register and are not included in these 49 tags. None of the 49 is promoted to final included-study status.
+
+The verification-aware workload metric (VAWR) had already been put forward by Lai et al. (2026), DOI `10.1017/rsm.2026.10114`. Our accounting inequality only gives a bound from measured human resource components and does not constitute a competing, newly estimated policy-dependent effectiveness metric.

@@ -1,0 +1,28 @@
+{
+  "version": "R30",
+  "checked_on": "2026-11-08",
+  "frozen_candidate_identifiers": 60,
+  "R20_full_reports": 49,
+  "R28_new_final_reports": 3,
+  "R29_new_final_reports": 1,
+  "R30_new_final_reports": 1,
+  "current_source_checked_full_reports": 54,
+  "source_role_counts": {
+    "EMPIRICAL_PROVISIONAL": 50,
+    "CONTEXT_PROVISIONAL": 4,
+    "FULL_TEXT_HOLD": 0,
+    "SCOPE_EXCLUDE_PROVISIONAL": 4,
+    "CONTEXT_ABSTRACT_LIMITED": 1,
+    "LINKED_DUPLICATE_VERSION": 1
+  },
+  "current_final_journal_fulltext_holds": [],
+  "all_five_historical_final_report_holds_access_closed": true,
+  "frozen_R20_register_not_overwritten": true,
+  "frozen_R20_49_note_timing_crosswalk_not_overwritten": true,
+  "R29_source_identity_unchanged": true,
+  "distinct_underlying_works_in_preexisting_interpretive_core_unchanged": 21,
+  "final_included_studies": "NOT_DETERMINED",
+  "not_exhaustive_review": true,
+  "source_original_sharing": "RESTRICTED_USER_DRIVE; NO_PUBLISHER_PDF_PUBLIC_REPOST",
+  "caveat": "All five historical publisher-version access holds closed. Not all 60 records are full original studies; 4 scope exclusions, 1 abstract-only, and 1 linked duplicate remain. No complete eligibility flow is inferred."
+}

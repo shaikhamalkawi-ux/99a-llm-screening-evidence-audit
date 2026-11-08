@@ -18,5 +18,6 @@ jobs:
         run: python scripts/validate_r28_overlay.py
       - name: Verify R29 publisher/supplement access overlay
         run: python scripts/validate_r29_overlay.py
+          python scripts/validate_r30_overlay.py
       - name: Unit tests for conditional claim gates and finite-universe recall bounds and R24 crosswalk
         run: python -m unittest discover -s tests -v

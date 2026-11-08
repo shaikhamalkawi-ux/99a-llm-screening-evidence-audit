@@ -1,20 +1,26 @@
 # Project 99a — LLM screening: evidence and human-effort claim audit
 
-**Public reproducibility material for a source-traceable critical review (development state: R29, 8 November 2026).**
+**Public reproducibility material for a source-traceable critical review (development state: R30, 8 November 2026).**
 
 The accompanying manuscript studies what a reported *workload saving* actually measures in LLM-assisted screening. This repository contains **bibliographic metadata, original-source links, interpretation rules, and executable consistency checks**. It does not provide third-party article PDFs or replicate the experiments in the original papers.
 
-## R29 final-source and scientific-supplement gate (8 November 2026)
+## R30 final publisher-text gate — Li (8 November 2026)
+
+Li et al. (2026), DOI `10.1016/j.ijmedinf.2025.106205`, has now been verified from its **11-page final publisher PDF**. All five historic publisher-version full-text retrieval gates have been closed in separate, additive passes (R28: three; R29: Janoudi plus methods supplement; R30: Li). **Current access-verified original full reports: 54/60** (50 provisional empirical, four provisional contextual), with **zero remaining final-journal-fulltext holds**. Other candidate statuses remain: four provisional scope exclusions, one abstract-only, one linked duplicate. The pre-existing **21-investigation interpretive core** remains separate and unchanged. Neither 54/60 nor 21 defines a full systematic-review inclusion denominator.
+
+The Li corpus contains 6,331 title/abstract records (113 relevant, 6,218 irrelevant). Its reported 94–98% *workload-reduction* measures are **not observed net human personnel-time**, and one best individual setting reports recall 0.77, so high filtering/reduction and incomplete relevant-record retention coexist. See `docs/R30_li_source_audit.md`, `data/R30_li_final_publisher_article_1.csv`, and `scripts/validate_r30_overlay.py`. Only original citation metadata and authored audit notes are public; **no third-party PDFs are redistributed**.
+
+## Historical R29 final-source and scientific-supplement gate (8 November 2026)
 
 The final Janoudi *Value in Health* article and its scientific supplement have been checked. `mmc1.docx` is the actual methods supplement (four appendices); `mmc2.pdf` is a 16-page disclosure packet rather than extra study results. **Current source access: 53/60** inherited candidate records checked at full-report level. **One** final journal article remains unavailable in the local evidence package: Li (LIT-003). The separately assembled 21-work interpretive core, the frozen R20 49-source timing-note crosswalk, and the R28 three-article ledger remain unchanged.
 
 The new audit confirms reported model validation on 3,796 citations from eight prior reviews, but the 145/221 confidence-guided human-review counts are *simulated* under perfect error correction. These are not measured human person-hours or net labor savings. See `docs/R29_janoudi_final_and_supplement.md` and `data/R29_janoudi_final_publisher_and_supplement.csv`.
 
-## New final-report update — R28 (8 November 2026)
+## Historical R28 final-report update (8 November 2026)
 
 Three final publisher PDF reports for Zhang, Insuk and Cao are now source-checked. The **current** source-access count is **52/60**, with only Li and Janoudi remaining on a final-report retrieval hold. The previous R20 **49/60** status is deliberately preserved below as the frozen historical register, and the 21-investigation interpretive core remains distinct. See `docs/R28_new_fulltext_source_audit.md` and the accompanying 3-record public metadata overlay. No third-party PDF is redistributed.
 
-## Frozen R20 data scope and strict boundaries
+## Frozen historical R20 data scope and strict boundaries
 
 - **60** frozen inherited candidate identifiers, not 60 eligible final studies.
 - **49** original full reports checked at source level in R20: 45 provisional empirical and four provisional context reports. Source access is distinct from final study inclusion and cannot be used as its denominator.
@@ -28,6 +34,11 @@ Three final publisher PDF reports for Zhang, Insuk and Cao are now source-checke
 
 | Path | Purpose |
 | --- | --- |
+| `data/R30_li_final_publisher_article_1.csv` | New Li publisher-version source certificate with claim boundaries |
+| `data/R30_access_update_summary.json` | Current source-access status: 54 checked; zero final-journal-text holds |
+| `docs/R30_li_source_audit.md` | Source-specific interpretation, page locators and rights |
+| `scripts/validate_r30_overlay.py` | Cross-check five historical full-text holds and additive closure |
+| `tests/test_r30_overlay.py` | Six new overlay consistency checks |
 | `data/candidate_source_gates_60.csv` | Source-access and claim-boundary metadata, one row per frozen candidate |
 | `data/selected_source_traceable_contrasts_9.csv` | Selected within-study contrasts; not independent pooling data |
 | `data/source_view_numeric_trace_2.csv` | Two source-view numeric certificates: LEADS preprint/journal and Huotala printed/narrative values |
@@ -56,6 +67,7 @@ python scripts/validate_release.py # validates all published SHA-256 manifest en
 python scripts/validate_resource_crosswalk.py
 python scripts/validate_source_view_numeric_trace.py
 python scripts/validate_r29_overlay.py
+python scripts/validate_r30_overlay.py
 python -m unittest discover -s tests -v
 ```
 

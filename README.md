@@ -1,10 +1,14 @@
 # Project 99a — LLM screening: evidence and human-effort claim audit
 
-**Public reproducibility material for a source-traceable critical review (development state: R27, 8 November 2026).**
+**Public reproducibility material for a source-traceable critical review (development state: R28, 8 November 2026).**
 
 The accompanying manuscript studies what a reported *workload saving* actually measures in LLM-assisted screening. This repository contains **bibliographic metadata, original-source links, interpretation rules, and executable consistency checks**. It does not provide third-party article PDFs or replicate the experiments in the original papers.
 
-## Data scope and strict boundaries
+## New final-report update — R28 (8 November 2026)
+
+Three final publisher PDF reports for Zhang, Insuk and Cao are now source-checked. The **current** source-access count is **52/60**, with only Li and Janoudi remaining on a final-report retrieval hold. The previous R20 **49/60** status is deliberately preserved below as the frozen historical register, and the 21-investigation interpretive core remains distinct. See `docs/R28_new_fulltext_source_audit.md` and the accompanying 3-record public metadata overlay. No third-party PDF is redistributed.
+
+## Frozen R20 data scope and strict boundaries
 
 - **60** frozen inherited candidate identifiers, not 60 eligible final studies.
 - **49** original full reports checked at source level in R20: 45 provisional empirical and four provisional context reports. Source access is distinct from final study inclusion and cannot be used as its denominator.

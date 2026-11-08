@@ -1,0 +1,25 @@
+{
+  "version": "R28",
+  "date": "2026-11-08",
+  "candidate_total": 60,
+  "R20_full_text_checked": 49,
+  "new_final_article_PDFs": 3,
+  "R28_fulltext_checked": 52,
+  "R28_final_journal_holds": [
+    "LIT-003",
+    "LIT-076"
+  ],
+  "R28_final_journal_holds_count": 2,
+  "R28_ebook_supplements": 1,
+  "provisional_roles": {
+    "EMPIRICAL_PROVISIONAL": 48,
+    "FULL_TEXT_HOLD": 2,
+    "CONTEXT_PROVISIONAL": 4,
+    "SCOPE_EXCLUDE_PROVISIONAL": 4,
+    "CONTEXT_ABSTRACT_LIMITED": 1,
+    "LINKED_DUPLICATE_VERSION": 1
+  },
+  "interpretive_core_distinct_works_unchanged": 21,
+  "R20_source_note_crosswalk_unchanged": 49,
+  "not_a_final_inclusion_count": true
+}

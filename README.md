@@ -1,6 +1,6 @@
 # Project 99a — LLM screening: evidence and human-effort claim audit
 
-**Public reproducibility material for a source-traceable critical review (development state: R25, 8 November 2026).**
+**Public reproducibility material for a source-traceable critical review (development state: R27, 8 November 2026).**
 
 The accompanying manuscript studies what a reported *workload saving* actually measures in LLM-assisted screening. This repository contains **bibliographic metadata, original-source links, interpretation rules, and executable consistency checks**. It does not provide third-party article PDFs or replicate the experiments in the original papers.
 
@@ -20,6 +20,10 @@ The accompanying manuscript studies what a reported *workload saving* actually m
 | --- | --- |
 | `data/candidate_source_gates_60.csv` | Source-access and claim-boundary metadata, one row per frozen candidate |
 | `data/selected_source_traceable_contrasts_9.csv` | Selected within-study contrasts; not independent pooling data |
+| `data/source_view_numeric_trace_2.csv` | Two source-view numeric certificates: LEADS preprint/journal and Huotala printed/narrative values |
+| `scripts/validate_source_view_numeric_trace.py` | Decimal-only consistency checks, not re-estimation |
+| `docs/source_view_numeric_trace.md` | Original source URLs and restrictions for each numerical claim |
+| `tests/test_source_view_numeric_trace.py` | Six conditional source-view check tests |
 | `data/source_claim_timing_crosswalk_49.csv` | Author-coded R20 timing-contrast classes for 49 accessible source notes, without modifying source rows |
 | `data/claim_certificate_rules_7.csv` | Seven conservative interpretation gates, prose specification |
 | `data/linked_publication_lineages_3.csv` | Preprint–journal and proceedings–journal dependence checks |
@@ -40,6 +44,7 @@ The accompanying manuscript studies what a reported *workload saving* actually m
 ```bash
 python scripts/validate_release.py # validates all published SHA-256 manifest entries
 python scripts/validate_resource_crosswalk.py
+python scripts/validate_source_view_numeric_trace.py
 python -m unittest discover -s tests -v
 ```
 
@@ -68,3 +73,6 @@ Bibliographic entries, DOI links and own audit scripts may be displayed publicly
 * Full links for 60 candidates are in `data/candidate_source_gates_60.csv`.
 
 **Status:** audit/development release only; not manuscript-submission approval.
+
+## R27 report-version integrity
+The January 2025 LEADS arXiv preprint and September 2025 journal paper report different time/recall summaries. The journal paper also prints means whose simple ratio yields 22.6%, not its reported 20.8%; this does **not** prove a journal-paper error because aggregation conventions may differ. See `docs/source_view_numeric_trace.md`. No extra independent study is counted and no new observed outcome is estimated.

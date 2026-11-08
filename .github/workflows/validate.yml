@@ -12,5 +12,7 @@ jobs:
         run: python scripts/validate_release.py
       - name: Verify R24 source-note crosswalk
         run: python scripts/validate_resource_crosswalk.py
+      - name: Source-view numeric certificates
+        run: python scripts/validate_source_view_numeric_trace.py
       - name: Unit tests for conditional claim gates and finite-universe recall bounds and R24 crosswalk
         run: python -m unittest discover -s tests -v

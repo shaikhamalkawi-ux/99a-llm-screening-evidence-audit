@@ -1,6 +1,6 @@
 # Project 99a — LLM screening: evidence and human-effort claim audit
 
-**Public reproducibility material for a source-traceable critical review (development state: R24, 8 November 2026).**
+**Public reproducibility material for a source-traceable critical review (development state: R25, 8 November 2026).**
 
 The accompanying manuscript studies what a reported *workload saving* actually measures in LLM-assisted screening. This repository contains **bibliographic metadata, original-source links, interpretation rules, and executable consistency checks**. It does not provide third-party article PDFs or replicate the experiments in the original papers.
 
@@ -28,6 +28,9 @@ The accompanying manuscript studies what a reported *workload saving* actually m
 | `scripts/claim_gates.py` | Executable rule engine **conditional on user-supplied evidence flags** |
 | `scripts/validate_release.py` | Standard-library structural, count, provenance and embargo checks |
 | `scripts/validate_resource_crosswalk.py` | Cross-check all 49 timing-note labels against the frozen 60-candidate access gate |
+| `scripts/retention_bounds.py` | Exact rational conditional lower/upper recall bounds under unverified exclusions |
+| `tests/test_retention_bounds.py` | Eight software-only checks for the elementary retention bound |
+| `docs/retention_bounds.md` | Finite-universe assumptions, sharpness proof and non-applicability boundaries |
 | `tests/test_claim_gates.py` | Unit tests and negative controls for rule engine |
 | `tests/test_resource_crosswalk.py` | Six checks for R24 frozen source-note crosswalk |
 | `docs/methodology.md` | Estimands, reproducibility boundaries, source rights |
@@ -35,7 +38,7 @@ The accompanying manuscript studies what a reported *workload saving* actually m
 ## Reproduce verification (Python 3.9+; standard library only)
 
 ```bash
-python scripts/validate_release.py
+python scripts/validate_release.py # validates all published SHA-256 manifest entries
 python scripts/validate_resource_crosswalk.py
 python -m unittest discover -s tests -v
 ```
@@ -50,7 +53,7 @@ Lai et al. (2026) already proposed **verification-adjusted workload reduction (V
 
 Given observed, matched baseline human time `M`, observed assisted human time `A0`, and unmeasured but nonnegative human verification, adjudication, recovery and maintenance time `U`, `net_human_saving = M - A0 - U <= M - A0`. If `U` is unbounded from above, net savings do not have a finite lower bound. If `M` or `A0` is not observed on comparable work, an *empirical* bound is not identified.
 
-A recall number on a verified subset is not automatically an end-to-end complete-corpus sensitivity estimate. Related manuscripts using the same review IDs cannot be treated as independent benchmark populations.
+A recall number on a verified subset is not automatically an end-to-end complete-corpus sensitivity estimate. Related manuscripts using the same review IDs cannot be treated as independent benchmark populations. Under the stated finite-universe assumptions, let `k` be confirmed eligible records retained, `f` verified eligible exclusions, and `u` excluded records with unknown eligibility. Then full-reference recall lies in `[k/(k+f+u), k/(k+f)]`, provided `k+f>0`. This is a *conditional logical bound*, not an observed or newly estimated effect. When counts or the verification reference are not comparable, it must not be calculated; see `docs/retention_bounds.md`.
 
 ## Source rights and release status
 

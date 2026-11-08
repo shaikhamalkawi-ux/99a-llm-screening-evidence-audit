@@ -19,6 +19,10 @@ E05: sensitivity on partially verified subsets cannot stand in for full-corpus s
 E06: shared cohort or versions do not add independent evaluation populations.
 E07: do not label a bounded critical review as a systematic review without the complete search and methodology records required for that review type.
 
+## Finite-universe retention bound (R25)
+
+For one fixed candidate universe and screening stage, when eligibility is settled for every retained candidate and every excluded candidate except `u`, let `k` be verified eligible retained and `f` verified eligible incorrectly excluded. Unknown excluded positives `z` satisfy `0 <= z <= u`, so `k/(k+f+u) <= k/(k+f+z) <= k/(k+f)` if `k+f>0`. This is an elementary conditional sharp interval, **not** a confidence interval or a reported effect from any of the reviewed papers. It cannot be applied when matched adjudication counts and a closed candidate universe are absent. The source-specific record still controls claim admission. See `docs/retention_bounds.md`.
+
 ## Original work and source versions
 
 Cao preprint and 2025 journal article: same research line, different published numbers. Janoudi preprint and 2025 article: same eight Canada Drug Agency reviews and 3796 citations, but 145/221 simulated checks described in final journal abstract. Zhang short proceedings and journal article share three cohort sizes (865, 959, 73); exact publication relationship not fully verified. Earlier reports are not substitutes for the five missing final full texts.

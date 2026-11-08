@@ -4,11 +4,35 @@ from pathlib import Path
 import collections,csv,hashlib,json,re,sys
 ROOT=Path(__file__).resolve().parents[1]
 
+def verify_sha256_manifest():
+    manifest=ROOT/'SHA256SUMS.txt'
+    assert manifest.is_file(), 'SHA256 manifest missing'
+    expected={}
+    for line in manifest.read_text(encoding='utf-8').splitlines():
+        if not line.strip(): continue
+        assert '  ' in line, 'malformed manifest row'
+        digest,rel=line.split('  ',1)
+        rel_path=Path(rel)
+        assert len(digest)==64 and all(c in '0123456789abcdef' for c in digest)
+        assert not rel_path.is_absolute() and '..' not in rel_path.parts and rel not in expected
+        expected[rel]=digest
+    actual=set()
+    for p in ROOT.rglob('*'):
+        if not p.is_file() or '.git' in p.parts or '__pycache__' in p.parts or p.suffix=='.pyc':continue
+        rel=p.relative_to(ROOT).as_posix()
+        if rel!='SHA256SUMS.txt':actual.add(rel)
+    assert set(expected)==actual, {'missing':sorted(set(expected)-actual),'unlisted':sorted(actual-set(expected))}
+    for rel,digest in expected.items():
+        actual_hash=hashlib.sha256((ROOT/rel).read_bytes()).hexdigest()
+        assert digest==actual_hash, rel
+    return len(expected)
+
 def read(name):
     with (ROOT/'data'/name).open(encoding='utf-8',newline='') as f:
         return list(csv.DictReader(f))
 
 def main():
+    manifest_count=verify_sha256_manifest()
     rows=read('candidate_source_gates_60.csv')
     assert len(rows)==60
     assert len({r['candidate_id'] for r in rows})==60
@@ -34,6 +58,6 @@ def main():
             assert 'drive.google.com' not in t and '/mnt/data' not in t and 'shaikhamalkawi@gmail' not in t, p
     print(json.dumps({'ok':True,'candidate_ids':len(rows),'role_counts':dict(sorted(counts.items())),
                        'final_fulltext_holds':len(holds),'independent_human_verification':'NOT_PERFORMED',
-                       'systematic_search':'NOT_COMPLETE'},indent=2))
+                       'systematic_search':'NOT_COMPLETE','manifest_files_checked':manifest_count},indent=2))
 
 if __name__=='__main__':main()

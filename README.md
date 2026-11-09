@@ -1,8 +1,12 @@
 # Project 99a — LLM screening: evidence and human-effort claim audit
 
-**Public reproducibility material for a source-traceable critical review (development state: R30, 8 November 2026).**
+**Public reproducibility material for a source-traceable critical review (development state: R31, 9 November 2026).**
 
 The accompanying manuscript studies what a reported *workload saving* actually measures in LLM-assisted screening. This repository contains **bibliographic metadata, original-source links, interpretation rules, and executable consistency checks**. It does not provide third-party article PDFs or replicate the experiments in the original papers.
+
+## R31 publisher-denominator source check (9 November 2026)
+
+A bounded *source-only arithmetic reconstruction* checks the Insuk et al. (2025) report (`10.1007/s10916-025-02246-4`) using the publisher PDF's printed title/abstract screening counts. The Results text, Table 1 and figure use **1,648**, whereas the Table 3 heading prints **1,684**. Conditional on the same 1,648-record population and experienced-researcher reference, exact integer confusion matrices reconstruct accuracy, recall, precision and NPV to reporting precision, but the three displayed Table 3 false-positive-rate values are not recovered using the standard `FP/(FP+TN)` definition. This is **not** an author error verdict or rerun of models; the authors' alternative denominators/data stages are unknown. Reproduction: `docs/insuk_2025_denominator_arithmetic_check.md`, `data/insuk_2025_reported_title_screening.csv`, `scripts/check_insuk_2025.py`. All inherited scientific numeric values, study counts and access classifications are unchanged. The public workflow has also been repaired to run the R29 and R30 checks separately.
 
 ## R30 final publisher-text gate — Li (8 November 2026)
 

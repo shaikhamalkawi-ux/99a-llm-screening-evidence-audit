@@ -1,4 +1,4 @@
-name: Metadata audit checks
+name: Public evidence-claim validation
 on: [push, pull_request]
 jobs:
   verify:
@@ -8,16 +8,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Check source-gate metadata and counts
+      - name: Check published file hashes and frozen register
         run: python scripts/validate_release.py
-      - name: Verify R24 source-note crosswalk
-        run: python scripts/validate_resource_crosswalk.py
-      - name: Source-view numeric certificates
-        run: python scripts/validate_source_view_numeric_trace.py
-      - name: Verify R28 source-access overlay
-        run: python scripts/validate_r28_overlay.py
-      - name: Verify R29 publisher/supplement access overlay
-        run: python scripts/validate_r29_overlay.py
+      - name: Validate stage-specific source overlays
+        run: |
+          python scripts/validate_resource_crosswalk.py
+          python scripts/validate_source_view_numeric_trace.py
+          python scripts/validate_r28_overlay.py
+          python scripts/validate_r29_overlay.py
           python scripts/validate_r30_overlay.py
-      - name: Unit tests for conditional claim gates and finite-universe recall bounds and R24 crosswalk
+          python scripts/check_insuk_2025.py
+      - name: Run conditional logic and publisher-source consistency tests
         run: python -m unittest discover -s tests -v

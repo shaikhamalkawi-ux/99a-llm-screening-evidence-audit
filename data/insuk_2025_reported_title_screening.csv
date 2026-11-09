@@ -1,0 +1,4 @@
+screener,screened_n_body_table1,table3_heading_n,reference_excluded_n,screener_excluded_n,reported_accuracy,reported_recall,reported_precision,reported_npv,reported_fpr
+Junior reviewers,1648,1684,1615,1572,0.9593,0.6364,0.2763,0.9924,0.0378
+ChatGPT,1648,1684,1615,1485,0.9138,0.8182,0.1656,0.9959,0.0884
+Claude,1648,1684,1615,1536,0.9448,0.8182,0.2411,0.9961,0.0574

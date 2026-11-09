@@ -56,8 +56,17 @@ def main():
         if p.suffix.lower() in {'.csv','.py','.md','.yml','.txt','.cff'}:
             t=p.read_text(encoding='utf-8')
             assert 'drive.google.com' not in t and '/mnt/data' not in t and 'shaikhamalkawi@gmail' not in t, p
-    print(json.dumps({'ok':True,'candidate_ids':len(rows),'role_counts':dict(sorted(counts.items())),
-                       'final_fulltext_holds':len(holds),'independent_human_verification':'NOT_PERFORMED',
-                       'systematic_search':'NOT_COMPLETE','manifest_files_checked':manifest_count},indent=2))
+    # R20 is a frozen historical source snapshot; the additive R28-R30 overlays
+    # are the present access state. Check them separately, never rewrite history.
+    from validate_r30_overlay import audit as current_access_audit
+    current=current_access_audit()
+    print(json.dumps({'ok':True, 'manifest_files_checked':manifest_count,
+                       'historical_R20_source_state':{'candidate_ids':len(rows),
+                         'role_counts':dict(sorted(counts.items())),
+                         'historical_publisher_fulltext_holds':len(holds)},
+                       'current_access_overlay':{'full_reports_checked':current['full_reports_access_checked'],
+                         'final_publisher_fulltext_holds':current['final_publisher_holds'],
+                         'frozen_candidate_ids':current['candidate_ids']},
+                       'review_type':'SOURCE_TRACEABLE_CRITICAL_REVIEW'},indent=2))
 
 if __name__=='__main__':main()

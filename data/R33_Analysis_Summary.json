@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-10",
+  "source_gate_historical_60": 60,
+  "source_checked_reports_at_last_lock": 54,
+  "initial_R20_source_notes": 49,
+  "R28_R30_final_publisher_additions": 5,
+  "historical_final_publisher_access_holds_remaining": 0,
+  "source_role_counts": {
+    "EMPIRICAL_PROVISIONAL": 50,
+    "CONTEXT_PROVISIONAL": 4
+  },
+  "R20_note_categories": {
+    "NO_ASSISTED_HUMAN_CONTRAST_DOCUMENTED_IN_R20_SOURCE_NOTE": 41,
+    "OBSERVED_HUMAN_ONLY_WORKFLOWS": 1,
+    "OBSERVED_HUMAN_VS_MACHINE_RUNTIME": 3,
+    "OBSERVED_ASSISTED_VS_UNASSISTED_TASK": 1,
+    "CALENDAR_ELAPSED_VS_MACHINE_RUNTIME": 2,
+    "OBSERVED_ABSTRACT_REPRESENTATION_TASK": 1
+  },
+  "added_publisher_sources": {
+    "RECORD_FILTERING_WORKLOAD": 1,
+    "MACHINE_RUNTIME_NOT_HUMAN_LABOR": 1,
+    "CLASSIFICATION_REFERENCE_NOT_NET_TIME": 1,
+    "ASSUMPTION_MODELED_HUMAN_LABOR": 1,
+    "SIMULATED_HUMAN_ROUTING": 1
+  },
+  "source_note_evidence_channel_all54": {
+    "NO_ASSISTED_HUMAN_CONTRAST_DOCUMENTED_IN_R20_SOURCE_NOTE": 41,
+    "RECORD_FILTERING_WORKLOAD": 1,
+    "OBSERVED_HUMAN_ONLY_WORKFLOWS": 1,
+    "OBSERVED_HUMAN_VS_MACHINE_RUNTIME": 3,
+    "OBSERVED_ASSISTED_VS_UNASSISTED_TASK": 1,
+    "MACHINE_RUNTIME_NOT_HUMAN_LABOR": 1,
+    "CLASSIFICATION_REFERENCE_NOT_NET_TIME": 1,
+    "CALENDAR_ELAPSED_VS_MACHINE_RUNTIME": 2,
+    "OBSERVED_ABSTRACT_REPRESENTATION_TASK": 1,
+    "ASSUMPTION_MODELED_HUMAN_LABOR": 1,
+    "SIMULATED_HUMAN_ROUTING": 1
+  },
+  "fresh_literature_discovery_records": 11,
+  "fresh_discovery_evidence_levels": {
+    "FULL_PUBLISHER_HTML_INDEXED": 5,
+    "PUBLISHER_ABSTRACT_AND_METHODS": 1,
+    "PUBLISHER_ABSTRACT_AND_METADATA": 2,
+    "PUBMED_ABSTRACT_ONLY": 3
+  },
+  "fresh_discovery_roles": {
+    "SYNTHESIS": 3,
+    "ORIGINAL_LLM_SCREENING": 5,
+    "ORIGINAL_MULTI_TASK": 1,
+    "CONTEXT_NON_LLM": 1,
+    "CONTEXT_GENERAL_EVALUATION": 1
+  },
+  "full_report_reextraction_for_fresh_discoveries": "NOT_EXECUTED",
+  "independent_final_study_eligibility": "NOT_EXECUTED",
+  "complete_enumerated_database_search": "NOT_AVAILABLE",
+  "source_access_count_is_not_eligible_count": true,
+  "search_tool_result_counts": "NOT_EXPOSED",
+  "systematic_review_claim": "NOT_ADMISSIBLE",
+  "cross_study_pooled_labor_saving": "NOT_ESTIMATED"
+}

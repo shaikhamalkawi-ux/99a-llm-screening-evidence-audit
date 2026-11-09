@@ -1,8 +1,16 @@
 # Project 99a — LLM screening: evidence and human-effort claim audit
 
-**Public reproducibility material for a source-traceable critical review (development state: R32, 9 November 2026).**
+**Public reproducibility material for a source-traceable critical review (development state: R33, 10 November 2026).**
 
 The accompanying manuscript studies what a reported *workload saving* actually measures in LLM-assisted screening. This repository contains **bibliographic metadata, original-source links, interpretation rules, and executable consistency checks**. It does not provide third-party article PDFs or replicate the experiments in the original papers.
+
+## R33 expanded documentary review and November 2026 discovery (10 November 2026)
+
+- The review now **maps every source-checked report in the frozen project register**: 54 documentary source-note rows (50 provisionally empirical, four contextual). The historical 49 R20 source-note timing categories remain unchanged; five publisher reports have new individual source-audit annotations.
+- The prior 21-investigation close-reading core remains selected illustrative cases. It overlaps with the 54 and is not a separate sample or an exhaustive inclusion denominator.
+- A dated targeted web search located **11 additional publisher/PubMed indexed works** not already in the 60-ID register; these are discovery records with explicit evidence-level gates, **not finally eligible full-text studies**. The web interface did not yield an exhaustive bibliographic export or a valid PRISMA flow. New syntheses (including Barragán et al. 2026, 174 broad AI papers) are explicitly prior art on workload definitions; claims of first discovering metric heterogeneity are withdrawn.
+- `data/R33_All54_SourceNote_EvidenceAtlas.csv` is the full DOI/source-linked atlas; `data/R33_Additional_2026_Discovery_Register.csv` records the new sources; `data/R33_Reproducible_Web_Search_Log.csv` gives query strings and dates; `data/R33_Closest_Synthesis_Contrast.csv` compares prior research; `scripts/validate_r33_atlas.py` and `tests/test_r33_atlas.py` check source IDs and categorical invariants.
+- This is an **expanded source-traceable critical evidence map**, not an exhaustive registered systematic review, a 65-study admission flow, or evidence of a pooled net person-time saving. Publisher PDFs and private disclosures remain out of the public repo.
 
 ## R32 closest-prior-work collision and selected-core coverage (9 November 2026)
 

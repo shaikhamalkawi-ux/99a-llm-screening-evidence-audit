@@ -1,8 +1,14 @@
 # Project 99a — LLM screening: evidence and human-effort claim audit
 
-**Public reproducibility material for a source-traceable critical review (development state: R31, 9 November 2026).**
+**Public reproducibility material for a source-traceable critical review (development state: R32, 9 November 2026).**
 
 The accompanying manuscript studies what a reported *workload saving* actually measures in LLM-assisted screening. This repository contains **bibliographic metadata, original-source links, interpretation rules, and executable consistency checks**. It does not provide third-party article PDFs or replicate the experiments in the original papers.
+
+## R32 closest-prior-work collision and selected-core coverage (9 November 2026)
+
+A new **post hoc** descriptive mapping gives every one of the existing 21 interpretive investigations a stable primary illustrative category: 3 observed assisted-human task timings, 1 human-only timing, 2 modeled staff-time comparisons, 5 routing/decision workload cases, 4 machine/elapsed-time cases, and 6 reference/classification/disagreement cases. The selected core contains 19 inherited source IDs plus the two targeted TrialMind/LEADS cases outside the 60-register. The six category counts partition *selected illustrations only*; they do not represent final eligibility, evidence-map saturation or literature prevalence. See `data/R32_purposive_core_coverage_21.csv`, `docs/R32_core_selection_and_prior_art.md`, and `scripts/validate_r32_core_coverage.py`.
+
+**New substantive prior-art collision:** Nunnery (2026), DOI `10.1017/rsm.2026.10116`, already develops the workflow-induced target-quantity interpretation in much greater conceptual depth. Baser (2026), DOI `10.36469/001c.171942`, has an adjacent source-provenance/AI-component reporting framework. Project 99a does not claim novelty of evaluation-target nonalignment or source traceability as general concepts. Its demonstrated result is the **inspected claim-level audit with printed source checks**, including the conditional Insuk arithmetic reconstruction, which can constrain what a reviewer may safely compare. Six nearest comparators and exact DOI links are in `data/R32_prior_art_boundary_6.csv`. No new empirical analysis or net human-hours benefit has been invented.
 
 ## R31 publisher-denominator source check (9 November 2026)
 

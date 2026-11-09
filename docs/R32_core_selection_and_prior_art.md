@@ -1,0 +1,22 @@
+# R32: source-grounded selected-core coverage and closest-prior-work collision
+
+**Date:** 9 November 2026. This is a *retrospective source-note audit*, not a prospective screening protocol, a formal eligibility flow, or a new study-population sample.
+
+## Exact evidence layers
+
+- The R31 manuscript's Appendix A enumerated **21 underlying investigations**. Those 21 are now mapped **post hoc** into six mutually exclusive *primary illustrative* strata in `data/R32_purposive_core_coverage_21.csv`, based on the source notes and the contribution each case principally illustrates. A single work can report multiple different outcomes; primary labels are therefore editorial convenience, **not exclusive experimental types or a complete empirical classification**.
+- **19** of the 21 core IDs occur in the inherited **60-candidate source-access register**; TrialMind (`TM-25`) and LEADS (`LD-25`) were targeted additions outside it. The 54 full source reports inspected in the source-access register do not constitute 54 finally included studies, and the number 21 is not a representative or exhaustive screening denominator.
+- Six primary illustrative strata are **observed assisted human task timing (3)**, **unassisted human-only timing (1)**, **assumption-modeled staff time (2)**, **routing/decision counts (5)**, **machine runtime or elapsed span (4)**, and **classification/reference/disagreement evidence (6)**. Summing to 21 proves that the *created labels* partition the selected cases, not that they represent literature frequencies. Three core works remain source-identified preprints.
+- The selected core arose from accumulated project sources and targeted examples, **not** a documented, exhaustive database search or prespecified balancing scheme. The core is appropriate only to demonstrate heterogeneous *interpretation conditions* within the deliberately bounded critical-review scope. No source-coverage saturation, full review screening, systematic eligibility decision, labor benefit, or pooled effect is inferred.
+
+## Prior-art collision and precise limitation
+
+Nunnery (2026), DOI `10.1017/rsm.2026.10116`, already establishes that screening estimates can target workflow-induced quantities and may be noncomparable across representation, inference, governance, evaluation, and reference decision sets. Lai et al. (2026), DOI `10.1017/rsm.2026.10114`, already propose the verification-adjusted workload metric. Madeyski et al. (2026), DOI `10.1016/j.infsof.2026.108204`, give cost-sensitive, lost-evidence-aware screening evaluation recommendations. Laignelot (2026), DOI `10.1016/j.jclinepi.2026.112221`, and Fleurence (2026), DOI `10.1016/j.jval.2026.06.012`, provide much broader systematic/rapid literature syntheses. Baser (2026), DOI `10.36469/001c.171942`, already establishes source-provenance-based reporting ideas in adjacent health economics/HTA. See `data/R32_prior_art_boundary_6.csv`.
+
+**What remains demonstrable here:** exact DOI-/version-linked source audit and bounded arithmetic reconstructions (e.g. Insuk's conditional printed 1648 vs 1684 screen and FPR calculation, Li's unmeasured net human time despite high record filtering, Janoudi's simulated not executed human correction). This is an applied case-audit contribution, **not a newly discovered abstract evaluation-target theory, a validated reporting instrument or new effectiveness estimate**.
+
+## Source-printed Insuk numerical decision example
+
+The source's Results and Table 1 show 1648 total records, 1615 reference-negative and 33 reference-positive. The ChatGPT column excludes 1485; 163 are thus predicted positive. Table 3 recall 0.8182 matches 27/33, yielding TP 27, FN 6, FP 136, TN 1479 under **one common reference/candidate set**. Hence conventional FPR 136/1615=0.0842 while Table 3 prints 0.0884; its heading says 1684. We do not overwrite the paper's results or claim verified author error. The user-facing effect is to **withhold an unqualified comparison or pooling of the unreconciled source FPR**, pending clarification of reference/population differences. The independent code in `scripts/check_insuk_2025.py` already checks all three source screeners.
+
+R32 code verifies coverage-record structural integrity and source provenance conditions, not the truth of authored selection labels or any original model replication. No protected publisher article PDF is included in the public release.

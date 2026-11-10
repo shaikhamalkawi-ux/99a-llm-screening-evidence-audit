@@ -1,0 +1,49 @@
+name: R38 acquire PICOS direct public CSV from published page
+on:
+  push:
+    branches: [r38-source-admission-picos]
+  workflow_dispatch:
+jobs:
+  get:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Download exactly the public page file URL and public ZIP URL
+        run: |
+          mkdir -p picos_public
+          curl -LsS --max-time 80 --retry 1 -w "DIRECT_HTTP %{http_code} BYTES %{size_download} URL %{url_effective}\n" "https://data.mendeley.com/public-files/datasets/4bgt2p5hrd/files/1f5967da-ef1a-4d77-9fec-fbe44dfe000d/file_downloaded" -o picos_public/Screening_articles_and_decisions.csv || true
+          curl -LsS --max-time 80 --retry 1 -w "ZIP_HTTP %{http_code} BYTES %{size_download} URL %{url_effective}\n" "https://data.mendeley.com/public-api/zip/4bgt2p5hrd/download/1" -o picos_public/dataset_public.zip || true
+      - name: Validate CSV or ZIP and original metadata without assuming results
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import csv,zipfile,hashlib,json
+          root=Path('picos_public');a={'source':'10.17632/4bgt2p5hrd.1','source_ui':'https://data.mendeley.com/datasets/4bgt2p5hrd/1','status':'HOLD'}
+          for p in root.iterdir():
+              data=p.read_bytes()
+              print('FILE',p.name,'bytes',len(data),'prefix',data[:100])
+              if len(data)>1000 and zipfile.is_zipfile(p):
+                  with zipfile.ZipFile(p) as z:
+                      print('ZIP CONTENTS',[(x.filename,x.file_size) for x in z.infolist()[:12]],'BAD',z.testzip())
+                      for i in z.infolist():
+                          if i.filename.lower().endswith('.csv') and i.file_size>1000:
+                              q=root/'Screening_articles_and_decisions.csv'
+                              q.write_bytes(z.read(i))
+              elif len(data)<10000 and (data.startswith(b'<!') or data.startswith(b'<html')):
+                  print('REJECT HTML RESPONSE',p.name)
+          f=root/'Screening_articles_and_decisions.csv'
+          if f.exists():
+              data=f.read_bytes()
+              if len(data)>1000 and b',' in data[:1000] and not data.startswith(b'<'):
+                  head=data[:12000].decode('utf-8-sig',errors='replace').splitlines()[0]
+                  print('REAL CSV',len(data),'HEAD',head[:1500])
+                  a.update(status='ACQUIRED_UNVERIFIED_COLUMNS',csv_sha256=hashlib.sha256(data).hexdigest(),csv_bytes=len(data),header=head[:500])
+          (root/'R38_PICOS_DirectDownloadAudit.json').write_text(json.dumps(a,indent=2)+'\n')
+          PY
+      - name: Preserve original source privately as research artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: r38-picos-direct-public-file
+          path: picos_public/
+          retention-days: 30

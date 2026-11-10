@@ -1,0 +1,127 @@
+{
+  "version": "R37",
+  "audit_kind": "EXACT_DISPLAY_COMPATIBILITY_NOT_NEW_EMPIRICAL_RESULTS",
+  "source_baseline_unchanged": true,
+  "rounding_assumption": "Ordinary nearest specified decimal place, ties upward for nonnegative quantities; exact rational intervals [d-halfstep,d+halfstep), truncated at 0 and 1 where appropriate",
+  "janoudi_source_doi": "10.1016/j.jval.2025.09.008",
+  "janoudi_policy_display_constraints": [
+    {
+      "flagged_predicted_includes": 145,
+      "correctable_false_includes_C": 102,
+      "true_includes_at_risk_T": 43,
+      "displayed_precision_percent": "81.4",
+      "display_interval_fraction": [
+        "1627/2000",
+        "1629/2000"
+      ],
+      "compatible_integer_count_states": 1,
+      "only_compatible_state": {
+        "x": 102,
+        "y": 0
+      },
+      "perfect_precision_percent_exact": "81.375358",
+      "highest_other_precision_percent_exact": "81.321839",
+      "highest_other_fraction": "283/348",
+      "one_wrong_tp_precision_percent": "81.321839",
+      "one_unrepaired_fp_precision_percent": "81.142857",
+      "conditional_on_fixed_source_and_rounding": true
+    },
+    {
+      "flagged_predicted_includes": 221,
+      "correctable_false_includes_C": 135,
+      "true_includes_at_risk_T": 86,
+      "displayed_precision_percent": "89.9",
+      "display_interval_fraction": [
+        "1797/2000",
+        "1799/2000"
+      ],
+      "compatible_integer_count_states": 1,
+      "only_compatible_state": {
+        "x": 135,
+        "y": 0
+      },
+      "perfect_precision_percent_exact": "89.873418",
+      "highest_other_precision_percent_exact": "89.841270",
+      "highest_other_fraction": "283/315",
+      "one_wrong_tp_precision_percent": "89.841270",
+      "one_unrepaired_fp_precision_percent": "89.589905",
+      "conditional_on_fixed_source_and_rounding": true
+    }
+  ],
+  "li_source_doi": "10.1016/j.ijmedinf.2025.106205",
+  "li_display_constraints": {
+    "displayed_metrics": {
+      "displayed_precision_two_decimal": "0.34",
+      "displayed_recall_two_decimal": "0.77",
+      "displayed_npv_two_decimal": "1.00"
+    },
+    "same_cohort_rounded_candidates_not_observations": 7,
+    "conditional_matrices": [
+      {
+        "tp": 87,
+        "fn": 26,
+        "fp": 166,
+        "tn": 6052
+      },
+      {
+        "tp": 87,
+        "fn": 26,
+        "fp": 167,
+        "tn": 6051
+      },
+      {
+        "tp": 87,
+        "fn": 26,
+        "fp": 168,
+        "tn": 6050
+      },
+      {
+        "tp": 87,
+        "fn": 26,
+        "fp": 169,
+        "tn": 6049
+      },
+      {
+        "tp": 87,
+        "fn": 26,
+        "fp": 170,
+        "tn": 6048
+      },
+      {
+        "tp": 87,
+        "fn": 26,
+        "fp": 171,
+        "tn": 6047
+      },
+      {
+        "tp": 87,
+        "fn": 26,
+        "fp": 172,
+        "tn": 6046
+      }
+    ],
+    "possible_false_negatives": [
+      26
+    ],
+    "possible_false_positives": [
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172
+    ],
+    "npv_exact_fraction_range": [
+      "3023/3036",
+      "3026/3039"
+    ],
+    "conditional_on_same_reference_and_rounding": true
+  },
+  "interpretation": "The same act of rounding can isolate an ideal correction point or mask false negatives depending on the source counts and metric; no human behavior is estimated.",
+  "claim_limits": [
+    "For Janoudi only within fixed reference, fixed Include-only flagged sets and the binary override grid; for Li only under one shared unweighted 6331-record reference universe. Compatibility is not observation or proof that the source used these rounding assumptions.",
+    "Not a new general identification theorem or validation of a screening instrument.",
+    "A different reference universe, rounding algorithm or review policy can change the results."
+  ]
+}

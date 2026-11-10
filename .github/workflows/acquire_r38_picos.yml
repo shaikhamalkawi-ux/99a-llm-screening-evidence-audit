@@ -1,0 +1,36 @@
+name: R38 independent public PICOS data admission
+on:
+  push:
+    branches:
+      - r38-source-admission-picos
+  workflow_dispatch:
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Acquire source and reconstruct reviewer decisions
+        continue-on-error: true
+        env:
+          R38_OUTPUT: r38_evidence
+        run: python research_probes/r38_picos/acquire_and_audit_picos.py
+      - name: Publish source admission evidence (metadata and derived summaries only)
+        uses: actions/upload-artifact@v4
+        with:
+          name: r38-picos-independent-audit
+          path: r38_evidence/
+          retention-days: 30
+      - name: Display explicit admission status
+        run: |
+          python - <<'PY'
+          import json,sys
+          x=json.load(open('r38_evidence/R38_PICOS_SourceAdmission.json'))
+          print('SOURCE ADMISSION:',x['status'])
+          if x['status']!='ADMITTED_SOURCE_REANALYSIS':
+              sys.exit('NO empirical claims admitted; public CSV missing or unsuitable')
+          PY

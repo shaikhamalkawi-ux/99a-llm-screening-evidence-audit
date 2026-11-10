@@ -1,0 +1,7 @@
+# R36 source-lock and output claim ledger
+
+Inherited R35 material remains frozen. The R36 package is a new branch/source copy; it must never overwrite the pinned R35 Git commit `59e494036ae22936bae40e47fa0945cfd874f379`. Inputs `data/R34_FiveSource_ConstraintInputs.json`, all previous source tables, and R35 numerical outputs remain byte-for-byte unchanged. New additions are `scripts/check_r36_joint_certificates.py`, its unit tests, exact certificate JSON and CSV, two context-only DOI records, and this self-contained revision description. There are no new participant data, screening reruns or new empirical findings.
+
+Material manuscript changes: (1) correct 16,364 policy-tagged versus 11,832 distinct-matrix statement; (2) add necessary/sufficient joint P/R integer constraints; (3) add exact nested policy-expansion reversal criterion under shared decisions; (4) provide two admitted examples and joint 80/85/98 threshold feasibility counts; (5) add two closest relevant recent prior-art citations to delimit originality; (6) separate long appendices into an independently compiled supplement while preserving an integrated 40-page reading copy; (7) retain explicit pending author/editor gates.
+
+The decision rules are *elementary algebra*. The contribution is executing them on a version-identified published case and documenting inference boundaries. R36 should not be marketed as a new general method, validated safety guarantee, net-labor result, empirical human correction study, systematic review, or accepted journal Article.

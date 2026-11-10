@@ -1,0 +1,4 @@
+source,printed_metric,constraints,compatible_count_states,risk_or_hidden_error,interpretation
+Janoudi (2025),81.4% precision,145 flagged Include decisions,1,0 new false negatives in sole compatible state,unique optimistic corner under explicit assumptions
+Janoudi (2025),89.9% precision,221 flagged Include decisions,1,0 new false negatives in sole compatible state,unique optimistic corner under explicit assumptions
+Li (2026),precision 0.34; recall 0.77; NPV 1.00,"6331 common records, 113 positives",7,26 false negatives in each feasible matrix,conditionally non-unique matrices despite NPV rounding to 1.00

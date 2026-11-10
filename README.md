@@ -1,3 +1,11 @@
+# R37 exact printed-metric compatibility comparison (10 November 2026)
+
+R37 adds an **exact inverse rounding audit across Janoudi (2025) and Li (2026)**, without changing previous source values. Under fixed 145/221-flagged Include-only policy grids, Janoudi's published simulated precisions **81.4%** and **89.9%** (rounded to one decimal) each permit exactly one aggregate outcome: perfect correction and no new wrongful true-Include rejection. Under a **conditional common 6,331-record** Li reference and two-decimal rounding, the printed precision 0.34, recall 0.77, NPV 1.00 allow **seven** integer matrices with **26 false negatives each**. These are source-limited arithmetic compatibilities, **not observed human errors, probabilities or model reruns**. See `docs/R37_SourceDisplay_Compatibility_Audit.md`, `scripts/check_r37_display_precision.py`, `data/R37_SourceDisplay_Inputs.json`, `data/R37_DisplayCompatibility_Results.json`, and `tests/test_r37_display_precision.py`. The source-locked R36 results and all earlier versions remain intact.
+
+This remains an **Article-track candidate, not a submission-approved paper**. See `docs/R37_FirstReader_Editorial_Decision.md`.
+
+---
+
 # R36 source-linked joint-target certificate (10 November 2026)
 
 R36 is a **new, source-bounded scientific revision** following the immutable R35 commit. It corrects the distinction between 16,364 policy-labeled states and 11,832 unique matrices; adds exact necessary/sufficient joint precision--recall target certificates and a nested-policy comparison, with additional 2026 novelty comparators. Fixed R34/35 source data are unchanged. R36 counts are **mathematical possibilities, not reviewer outcomes or probabilities**. New proof/code/results: `docs/R36_Exact_Joint_Target_Certificates.md`, `scripts/check_r36_joint_certificates.py`, `tests/test_r36_joint_certificates.py`, `data/R36_JointThreshold_Certificates.json`, `data/R36_JointTarget_Counts.csv`. Scientifically bounded prior art: `docs/R36_Closest_Prior_Art_and_Editorial_Boundary.md`.

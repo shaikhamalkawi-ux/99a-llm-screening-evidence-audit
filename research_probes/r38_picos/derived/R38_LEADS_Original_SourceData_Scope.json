@@ -1,0 +1,59 @@
+{
+  "source_article": "10.1038/s41467-025-62058-5",
+  "source_url": "https://www.nature.com/articles/s41467-025-62058-5",
+  "source_zip_sha256": "104fad1ea40e656405ba2ff30598de08a07ec3ac79bf7b9f5cdb4a4a728dee96",
+  "source_xlsx_sha256": "52e659bd88aa3c4ab7a9e37fd81ff47eab37115a5ade7c3c0f77a057c030be90",
+  "source_data_license": "CC BY 4.0 subject to exceptions noted in original article; maintain third-party data rights",
+  "available_sheets": [
+    "Fig. 1b",
+    "Fig. 1c",
+    "Fig. 1d",
+    "Fig. 2b",
+    "Fig. 2c",
+    "Fig. 2d",
+    "Fig. 2e",
+    "Fig. 3a",
+    "Fig. 3b",
+    "Fig. 3c",
+    "Fig. 4a",
+    "Fig. 4b",
+    "Fig. 4c",
+    "Fig. 5b",
+    "Fig. 5c",
+    "Fig. 5d",
+    "Fig. 5f",
+    "Fig. 5g",
+    "Fig. 5h"
+  ],
+  "fig5d_source_rows": [
+    [
+      "Condition",
+      "Recall@10",
+      "Time Spent (s)"
+    ],
+    [
+      "Expert+AI",
+      0.81,
+      72.1
+    ],
+    [
+      "Expert",
+      0.78,
+      91.1
+    ]
+  ],
+  "fig5h_scope": "Human data extraction tasks, NOT the title/abstract screening selection stage. Topic/task summaries, NOT per-participant outcome records.",
+  "fig5h_total_rows": 64,
+  "fig5h_unique_topic_task_keys": 36,
+  "fig5h_matched_topics_tasks": 28,
+  "fig5h_unmatched_topic_task_keys": 8,
+  "fig5h_assisted_faster_matched_cells": 17,
+  "fig5h_assisted_slower_matched_cells": 11,
+  "fig5h_assisted_accuracy_higher_matched_cells": 5,
+  "fig5h_assisted_accuracy_lower_matched_cells": 4,
+  "fig5h_accuracy_equal_matched_cells": 19,
+  "fig5h_expert_mean_sec_of_matched_cells": 96.81785714285714,
+  "fig5h_expert_ai_mean_sec_of_matched_cells": 85.95357142857142,
+  "flag": "CONTEXT_ONLY_NOT_ADMITTED_AS_SECOND_RECORD_LEVEL_SCREENING_EXPERIMENT",
+  "reason": "The actual workbook Fig5h is an extraction-stage task mean table. It is not a participant-by-participant title/abstract screening decision dataset, and paired topic/task cells are neither randomized interventions nor independent reviewer records."
+}

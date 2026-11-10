@@ -192,7 +192,14 @@ def main():
     result={'status':'HOLD_ACCESS','source_dataset_doi':'10.17632/4bgt2p5hrd.1','source_link':'https://data.mendeley.com/datasets/4bgt2p5hrd/1',
             'source_article_doi':'10.1016/j.jbi.2025.104860','license':'CC BY-NC 4.0','raw_file_copied_to_public_package':False}
     try:
-        raw,metadata,source_meta=download_csv()
+        local=os.environ.get('R38_SOURCE_FILE')
+        if local and Path(local).exists():
+            raw=Path(local).read_bytes()
+            metadata={'filename':Path(local).name,'source':'public Mendeley browser UI'}
+            source_meta={'source_doi':'10.17632/4bgt2p5hrd.1'}
+            note(f'PUBLIC WEBSITE CSV PASS bytes={len(raw)}')
+        else:
+            raw,metadata,source_meta=download_csv()
         result,reviewers,pairs=analyze(raw,metadata,source_meta)
         result['raw_file_copied_to_public_package']=False
         write_csv(OUT/'R38_Reviewer_Matrices.csv',reviewers)

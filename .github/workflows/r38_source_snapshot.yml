@@ -1,7 +1,5 @@
 name: R38 public repository source snapshot
 on:
-  push:
-    branches: [r38-source-admission-picos]
   workflow_dispatch:
 jobs:
   snapshot:

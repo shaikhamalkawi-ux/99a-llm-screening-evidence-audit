@@ -1,3 +1,11 @@
+# R36 source-linked joint-target certificate (10 November 2026)
+
+R36 is a **new, source-bounded scientific revision** following the immutable R35 commit. It corrects the distinction between 16,364 policy-labeled states and 11,832 unique matrices; adds exact necessary/sufficient joint precision--recall target certificates and a nested-policy comparison, with additional 2026 novelty comparators. Fixed R34/35 source data are unchanged. R36 counts are **mathematical possibilities, not reviewer outcomes or probabilities**. New proof/code/results: `docs/R36_Exact_Joint_Target_Certificates.md`, `scripts/check_r36_joint_certificates.py`, `tests/test_r36_joint_certificates.py`, `data/R36_JointThreshold_Certificates.json`, `data/R36_JointTarget_Counts.csv`. Scientifically bounded prior art: `docs/R36_Closest_Prior_Art_and_Editorial_Boundary.md`.
+
+Reproduce using Python standard library: `python scripts/check_r36_joint_certificates.py && python scripts/validate_release.py && python -m unittest discover -s tests -v`. These operations do not recreate Loon Lens predictions or human decisions. Repository release/DOI and author/journal approval are pending; the R35 original public baseline is permanently pinned.
+
+---
+
 # R35 original source-linked reanalysis and publication-type check (10 November 2026)
 
 R35 adds a post-hoc **finite human-override stress envelope** to the five-publisher-report source-view audit. The Janoudi final article simulates perfect human correction among 145 or 221 flagged **predicted Includes**. A deterministic two-error-channel extension, using only its aggregate published counts, shows that *one* erroneous reversal of a correctly Included report can reduce recall from ~98.95% to ~98.61% even when precision improves. For the 145-report policy, at least 96 of 102 correctable false Includes must be repaired to obtain 80% precision if no initially correct Includes are wrongly overturned. This is **not** measured human behavior, inferred error probability, or net labor benefit. Source: `docs/R35_ImperfectAdjudication_Envelope.md`, inputs inherited unchanged from `data/R34_FiveSource_ConstraintInputs.json`, outputs `data/R35_AdjudicationEnvelope_Results.json` and `data/R35_AdjudicationEnvelope_Scenarios.csv`, analysis `scripts/check_r35_imperfect_adjudication.py`, tests `tests/test_r35_imperfect_adjudication.py`.

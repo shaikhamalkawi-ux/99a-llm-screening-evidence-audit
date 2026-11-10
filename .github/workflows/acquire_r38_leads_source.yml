@@ -1,0 +1,40 @@
+name: R38 acquire primary LEADS source data ZIP
+on:
+  push:
+    branches:
+      - r38-source-admission-picos
+  workflow_dispatch:
+jobs:
+  acquire:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Download official Nature Communications source data (CC BY 4.0)
+        continue-on-error: true
+        run: |
+          mkdir -p leads_evidence
+          curl -L --fail --retry 2 --max-time 90 -sS "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-025-62058-5/MediaObjects/41467_2025_62058_MOESM4_ESM.zip" -o leads_evidence/LEADS_2025_Official_SourceData.zip
+      - name: Validate byte authenticity and inspect archive members
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import zipfile,hashlib,json
+          p=Path('leads_evidence/LEADS_2025_Official_SourceData.zip')
+          audit={'source_article':'10.1038/s41467-025-62058-5','source':'https://www.nature.com/articles/s41467-025-62058-5','source_data_filename':'41467_2025_62058_MOESM4_ESM.zip','rights':'CC BY 4.0 per Nature Communications source page','status':'HOLD'}
+          if p.exists() and zipfile.is_zipfile(p):
+              with zipfile.ZipFile(p) as z:
+                  members=[{'path':i.filename,'uncompressed_size':i.file_size} for i in z.infolist() if not i.is_dir()]
+                  audit.update(status='ACQUIRED_INTACT',sha256=hashlib.sha256(p.read_bytes()).hexdigest(),bytes=p.stat().st_size,members=members,crc_bad_member=z.testzip())
+              print('ACQUIRED',audit['bytes'],'bytes,',len(members),'files')
+              for m in members[:40]:print('FILE',m)
+          else:
+              print('HOLD: official ZIP unavailable or invalid')
+          Path('leads_evidence/LEADS_SourceAdmission.json').write_text(json.dumps(audit,indent=2)+'\n')
+          PY
+      - name: Save source ZIP and provenance as research artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: r38-leads-official-source-data
+          path: leads_evidence/
+          retention-days: 30

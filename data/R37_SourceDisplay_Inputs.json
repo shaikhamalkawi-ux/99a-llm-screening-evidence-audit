@@ -1,0 +1,21 @@
+{
+  "scope": "Post-hoc source-display compatibility; published aggregate numbers only, not original model or human reruns",
+  "source_baseline": "data/R34_FiveSource_ConstraintInputs.json (unchanged)",
+  "janoudi": {
+    "doi": "10.1016/j.jval.2025.09.008",
+    "final_journal_locator": "Value in Health 28(11), Table 4 (printed p. 1634); publisher abstract also reports figures",
+    "policies": [
+      {"flagged_predicted_includes": 145, "displayed_precision_percent_one_decimal": "81.4"},
+      {"flagged_predicted_includes": 221, "displayed_precision_percent_one_decimal": "89.9"}
+    ]
+  },
+  "li": {
+    "doi": "10.1016/j.ijmedinf.2025.106205",
+    "final_journal_locator": "International Journal of Medical Informatics 207, 106205, named rule--DeepSeek-R1 Prompt II setting",
+    "displayed_precision_two_decimal": "0.34",
+    "displayed_recall_two_decimal": "0.77",
+    "displayed_npv_two_decimal": "1.00"
+  },
+  "rounding_rule": "Ordinary nearest specified decimal place, ties upward for nonnegative quantities; exact rational intervals [d-halfstep,d+halfstep), truncated at 0 and 1 where appropriate",
+  "claim_boundary": "For Janoudi only within fixed reference, fixed Include-only flagged sets and the binary override grid; for Li only under one shared unweighted 6331-record reference universe. Compatibility is not observation or proof that the source used these rounding assumptions."
+}

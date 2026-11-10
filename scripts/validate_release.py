@@ -67,6 +67,7 @@ def main():
                        'current_access_overlay':{'full_reports_checked':current['full_reports_access_checked'],
                          'final_publisher_fulltext_holds':current['final_publisher_holds'],
                          'frozen_candidate_ids':current['candidate_ids']},
-                       'review_type':'SOURCE_TRACEABLE_CRITICAL_REVIEW'},indent=2))
+                       'current_manuscript_track':'PROPOSED_ORIGINAL_RESEARCH_ARTICLE',
+                        'design':'RETROSPECTIVE_SOURCE_LINKED_DOCUMENTARY_REANALYSIS'},indent=2))
 
 if __name__=='__main__':main()

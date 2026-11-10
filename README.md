@@ -1,3 +1,13 @@
+# R35 original source-linked reanalysis and publication-type check (10 November 2026)
+
+R35 adds a post-hoc **finite human-override stress envelope** to the five-publisher-report source-view audit. The Janoudi final article simulates perfect human correction among 145 or 221 flagged **predicted Includes**. A deterministic two-error-channel extension, using only its aggregate published counts, shows that *one* erroneous reversal of a correctly Included report can reduce recall from ~98.95% to ~98.61% even when precision improves. For the 145-report policy, at least 96 of 102 correctable false Includes must be repaired to obtain 80% precision if no initially correct Includes are wrongly overturned. This is **not** measured human behavior, inferred error probability, or net labor benefit. Source: `docs/R35_ImperfectAdjudication_Envelope.md`, inputs inherited unchanged from `data/R34_FiveSource_ConstraintInputs.json`, outputs `data/R35_AdjudicationEnvelope_Results.json` and `data/R35_AdjudicationEnvelope_Scenarios.csv`, analysis `scripts/check_r35_imperfect_adjudication.py`, tests `tests/test_r35_imperfect_adjudication.py`.
+
+R35 **proposes** an original-research **Article** track in the journal template instead of asserting the corpus is a comprehensive or PRISMA-complete Review. This is not journal authorization. The inherited 60/54/21/11 evidence layers remain unchanged. This public archive has no publisher PDFs, private disclosures or person-level data.
+
+Reproduce: `python scripts/check_r35_imperfect_adjudication.py` and `python -m unittest discover -s tests -v`. The mathematical checks are stdlib-only. See `docs/R35_ArticleTrack_Editorial_Review.md` for the remaining research and author gates.
+
+---
+
 # Project 99a — LLM screening: evidence and human-effort claim audit
 
 ## R34: post-hoc source-view stress audit (10 November 2026)

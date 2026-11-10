@@ -1,0 +1,9 @@
+policy,counterfactual_scenario,fp_correctly_overridden,tp_incorrectly_overridden,tp,fn,fp,tn,precision_pct,recall_pct,accuracy_pct,source_kind
+Low/Medium Includes,baseline_no_overrides,0,0,284,3,167,3342,62.9712,98.9547,95.5216,MATHEMATICAL_COUNTERFACTUAL_NOT_HUMAN_OBSERVATION
+Low/Medium Includes,source_perfect_correction,102,0,284,3,65,3444,81.3754,98.9547,98.2086,MATHEMATICAL_COUNTERFACTUAL_NOT_HUMAN_OBSERVATION
+Low/Medium Includes,ninety_percent_of_correctable_fp_floor_no_new_errors,91,0,284,3,76,3433,78.8889,98.9547,97.9189,MATHEMATICAL_COUNTERFACTUAL_NOT_HUMAN_OBSERVATION
+Low/Medium Includes,all_fp_corrected_one_new_false_negative,102,1,283,4,65,3444,81.3218,98.6063,98.1823,MATHEMATICAL_COUNTERFACTUAL_NOT_HUMAN_OBSERVATION
+Low/Medium/High Includes,baseline_no_overrides,0,0,284,3,167,3342,62.9712,98.9547,95.5216,MATHEMATICAL_COUNTERFACTUAL_NOT_HUMAN_OBSERVATION
+Low/Medium/High Includes,source_perfect_correction,135,0,284,3,32,3477,89.8734,98.9547,99.0780,MATHEMATICAL_COUNTERFACTUAL_NOT_HUMAN_OBSERVATION
+Low/Medium/High Includes,ninety_percent_of_correctable_fp_floor_no_new_errors,121,0,284,3,46,3463,86.0606,98.9547,98.7092,MATHEMATICAL_COUNTERFACTUAL_NOT_HUMAN_OBSERVATION
+Low/Medium/High Includes,all_fp_corrected_one_new_false_negative,135,1,283,4,32,3477,89.8413,98.6063,99.0516,MATHEMATICAL_COUNTERFACTUAL_NOT_HUMAN_OBSERVATION

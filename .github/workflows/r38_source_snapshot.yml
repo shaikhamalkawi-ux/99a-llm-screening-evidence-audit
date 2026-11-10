@@ -1,0 +1,29 @@
+name: R38 public repository source snapshot
+on:
+  push:
+    branches: [r38-source-admission-picos]
+  workflow_dispatch:
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create complete source tree ZIP without git/cache/private data
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import zipfile
+          with zipfile.ZipFile('R38_Public_Source_Snapshot.zip','w',compression=zipfile.ZIP_DEFLATED) as z:
+              for f in sorted(Path('.').rglob('*')):
+                  if not f.is_file():continue
+                  if any(p in {'.git','__pycache__','r38_private','r38_evidence','picos_public','leads_evidence'} for p in f.parts):continue
+                  if f.name=='R38_Public_Source_Snapshot.zip':continue
+                  z.write(f,f.as_posix())
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: r38-source-tree-snapshot
+          path: R38_Public_Source_Snapshot.zip
+          retention-days: 3

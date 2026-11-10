@@ -20,5 +20,6 @@ jobs:
           python scripts/check_insuk_2025.py
           python scripts/validate_r32_core_coverage.py
           python scripts/validate_r33_atlas.py
+          python scripts/check_r34_source_constraints.py
       - name: Run conditional logic and publisher-source consistency tests
         run: python -m unittest discover -s tests -v

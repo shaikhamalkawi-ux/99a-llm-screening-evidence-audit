@@ -1,6 +1,12 @@
 # Project 99a — LLM screening: evidence and human-effort claim audit
 
-**Public reproducibility material for a source-traceable critical review (development state: R33, 10 November 2026).**
+## R34: post-hoc source-view stress audit (10 November 2026)
+
+The current manuscript adds a **five-final-report source-view constraint audit** that tests how published metrics can and cannot support stronger claims. Its derived numbers are explicitly conditional on original aggregate displays, assumed common reference sets, and printed rounding. It never claims to rerun source LLMs or to fix an author's manuscript. New files: `data/R34_OriginalPDF_SourceFingerprints_5.csv`, `data/R34_FiveSource_ConstraintInputs.json`, `data/R34_SourceView_ClaimLicenses_5.csv`, `scripts/check_r34_source_constraints.py`, `tests/test_r34_source_constraints.py`, and `docs/R34_SourceView_Stress_Audit.md`. The historical 60-candidate queue, 54 inspected full reports, 21 selected interpretations, 11 November discoveries, and all original source observations are unchanged. **No systematic-review admission, prevalence estimate, pooled labor saving or net person-hours are inferred.**
+
+Direct checks: `python scripts/check_r34_source_constraints.py`, `python scripts/validate_release.py`, and `python -m unittest discover -s tests -v`. This R34 angle is a **bounded source-audit case reanalysis**, not a validated reporting framework.
+
+**Public reproducibility material for a source-traceable critical review (development state: R34, 10 November 2026).**
 
 The accompanying manuscript studies what a reported *workload saving* actually measures in LLM-assisted screening. This repository contains **bibliographic metadata, original-source links, interpretation rules, and executable consistency checks**. It does not provide third-party article PDFs or replicate the experiments in the original papers.
 

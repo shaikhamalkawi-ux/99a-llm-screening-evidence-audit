@@ -1,0 +1,67 @@
+{
+  "ok": true,
+  "scope": "five final publisher reports, printed-source conditional arithmetic only",
+  "zhang": {
+    "source_table_n": 959,
+    "source_methods_n": 936,
+    "source_included": 61,
+    "percent_of_table_n_1dp": "6.4",
+    "percent_of_methods_n_1dp": "6.5",
+    "published_percent_1dp": "6.5",
+    "source_denominator_unresolved": true
+  },
+  "insuk": {
+    "published_count_ambiguity": true,
+    "source_specific_rows": 3,
+    "no_author_error_certified": true
+  },
+  "cao": {
+    "reported_final_included_covered_percent": "59.16",
+    "counterfactual_coverage_ceiling_if_all_unavailable_excluded_percent": "59.16",
+    "assumed_ten_thousand_abstract_human_hours": "83.33",
+    "no_observed_net_person_time": true
+  },
+  "janoudi": {
+    "baseline_errors": 170,
+    "simulated_cases": [
+      {
+        "flagged_records": 145,
+        "fraction_of_corpus_pct_1dp": "3.8",
+        "corrected_errors_if_perfect": 102,
+        "fraction_of_total_errors_corrected_pct_1dp": "60.0",
+        "remaining_false_negatives": 3
+      },
+      {
+        "flagged_records": 221,
+        "fraction_of_corpus_pct_1dp": "5.8",
+        "corrected_errors_if_perfect": 135,
+        "fraction_of_total_errors_corrected_pct_1dp": "79.4",
+        "remaining_false_negatives": 3
+      }
+    ],
+    "human_routing_executed": false
+  },
+  "li": {
+    "shared_universe_assumption_necessary": true,
+    "two_decimal_rounding_assumption_necessary": true,
+    "conditionally_feasible_matrices": 7,
+    "feasible_tp": 87,
+    "feasible_fn": 26,
+    "feasible_predicted_include_counts": [
+      253,
+      259
+    ],
+    "npv_exact_feasible_range": [
+      0.995718,
+      0.995722
+    ],
+    "counterfactual_auto_excluded_fraction_pct_range": [
+      "95.91",
+      "96.00"
+    ],
+    "not_the_actual_reported_model_confusion_matrix": true,
+    "no_empirical_person_time": true
+  },
+  "study_inclusion_denominator_unchanged": true,
+  "claim": "Selected source-view constraints, not systematic prevalence, revised original authors results, net personnel savings, or a model replication"
+}

@@ -1,0 +1,56 @@
+{
+  "scope": "Published-source display reconstruction only; not original-model or participant-data reproduction",
+  "cases": {
+    "ZHANG_2025": {
+      "doi": "10.1016/j.ijmedinf.2025.106035",
+      "journal_pdf_pages": "1-2",
+      "abstract_and_table1_mci_records": 959,
+      "methods_mci_records": 936,
+      "reported_mci_included": 61,
+      "printed_inclusion_pct_one_decimal": "6.5",
+      "assumption": "Two conflicting N values could refer to different phases or an error; no undocumented reconciliation"
+    },
+    "INSUK_2025": {
+      "doi": "10.1007/s10916-025-02246-4",
+      "journal_pdf_pages": "3 and 5",
+      "results_table1_records": 1648,
+      "table3_heading_records": 1684,
+      "source_confusion_reconstruction": "Conditional on one reference set; separate published FPR remains unresolved"
+    },
+    "CAO_2025": {
+      "doi": "10.7326/ANNALS-24-02189",
+      "journal_pdf_pages": "4-5 (printed pp. 392-394)",
+      "full_texts_available_for_test": 12690,
+      "source_reported_fulltext_access_pct_original_search": "7.56",
+      "source_reported_final_included_access_coverage_pct": "59.16",
+      "assumed_manual_abstract_seconds": 30,
+      "assumed_hourly_cost_usd": 20,
+      "assumption": "Coverage ceiling applies only to a hypothetical policy that treats all unavailable full texts as excluded; not authors' deployed pipeline"
+    },
+    "JANOUDI_2025": {
+      "doi": "10.1016/j.jval.2025.09.008",
+      "journal_pdf_pages": "3-5 (journal pp. 1633-1634), Tables 2 and 4",
+      "n": 3796,
+      "tp": 284,
+      "fn": 3,
+      "fp": 167,
+      "tn": 3342,
+      "simulated_review_counts": [145, 221],
+      "simulated_remaining_fp": [65, 32],
+      "simulated_remaining_fn": [3, 3],
+      "assumption": "Perfect correction of flagged errors; study did not time execution of this simulated routing"
+    },
+    "LI_2026": {
+      "doi": "10.1016/j.ijmedinf.2025.106205",
+      "journal_pdf_pages": "1-3,5-8",
+      "n": 6331,
+      "reference_positives": 113,
+      "reference_negatives": 6218,
+      "printed_best_rule_deepseek_precision_2dp": "0.34",
+      "printed_best_rule_deepseek_recall_2dp": "0.77",
+      "printed_best_rule_deepseek_npv_2dp": "1.00",
+      "reported_multi_setting_workload_reduction_pct_range": "94-98",
+      "assumption": "Integer feasibility only if all three metrics refer to one unweighted original 6331-record set and use nearest-hundredth rounding; does not establish unseen confusion counts"
+    }
+  }
+}

@@ -1,3 +1,9 @@
+# R40: Focused source-bounded mathematical interpretation (11 November 2026)
+
+This public branch adds only a verified policy-accounting interpretation from a *separate external derived benchmark* and established prior theory. The main R40 PDF (33 pages) and Supplement A–M (18 pages) are in the independent Google Drive project handoff, not stored as publisher article files in this code repository. A reproducible source-derived CSV and stdlib checker verify 1,680 matched policy rows, 840 repeated B0/B1 review-budget-mask pairs, 480 structural no-exclusion rows at b>=95%, and 184 mandatory-budget-overrun pairs. This is not 840 independent experiments. B2 fuzzy remains HOLD, not calibrated. See `docs/R40_Claim_Boundaries.md`. The historical R39 scientific source and all earlier locked experimental values are unchanged. No raw third-party abstract texts are redistributed.
+
+---
+
 # R39 — audited source-record reanalysis (10 November 2026)
 
 R39 integrates an already counted original investigation's released human reviewer decisions (PICOS source DOI `10.17632/4bgt2p5hrd.1`), without changing the R37 source-conditional arithmetic studies or the historical 60/54/21/11 evidence layers. Four reviewer decision vectors, one source reference and 1003 citations produce 17 reviewer-to-reference disagreements on 15 records. Source-independent decisions were recombined in *explicitly counterfactual*, never-executed Include-only policies: A1->A2 yields 100% precision and 88% recall, versus A1 alone 96.15% and 100%. The human review record itself is real; the synthetic sequencing is not. No new human intervention, net time saving, causal treatment effect or error probability is inferred. See `docs/R39_SourceLevel_Admission_and_Claim_Guards.md`. The source's CC BY-NC 4.0 CSV is intentionally excluded.

@@ -1,0 +1,20 @@
+{
+  "version": "R42",
+  "baseline": "R41 editor-first narrative",
+  "change": "Added one early closest-prior-work numeric table to main and integrated source; existing tables and equations unchanged",
+  "source_lock": true,
+  "prior_work_rows": 6,
+  "no_new_empirical_data": true,
+  "supplement_unchanged_sha256": "08c0e6c2080dc05d4ab8c539a96dff4dc3fda119811a60b836a13497190546b9",
+  "original_main_sha256": "ec08b7b1aa61726043b13b84c445f30dfe076abedaa019bd9f60750afe43622f",
+  "original_main_integrated_sha256": "d9052c0113a2d744406bc70688c64cda7e88ad6c72c53102abfed40472e5b36d",
+  "verified_references": [
+    "10.1002/cesm.70098;10.1017/rsm.2026.10118",
+    "10.1017/rsm.2026.10116;10.1017/rsm.2026.10114",
+    "10.1016/j.jval.2025.09.008",
+    "10.1016/j.ijmedinf.2025.106205",
+    "10.1016/j.jbi.2025.104860",
+    "10.1016/j.infsof.2026.108204"
+  ],
+  "uncertainty": "All contrasts are source-conditional. B2 fuzzy not tested."
+}

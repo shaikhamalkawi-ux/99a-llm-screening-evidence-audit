@@ -1,0 +1,136 @@
+{
+  "version": "R40",
+  "scope": "Post hoc arithmetic readback of derived benchmark CSV; not raw-source rerun",
+  "source_csv_sha256": "4590955b6cca5375c97af17e4350d4f6fa84ff5e811286c4934af48cf06861d7",
+  "source_csv_bytes": 197164,
+  "all_derived_rows": 1740,
+  "matched_policy_rows": 1680,
+  "matched_review_budget_mask_pairs": 840,
+  "budget_ge_95_structurally_no_auto_exclusion_rows": 480,
+  "scenario_pairs_over_nominal_human_budget": 184,
+  "distinct_test_review_units": 8,
+  "distinct_external_review_units": 22,
+  "unmasked_observed_routing": {
+    "test_50": {
+      "B0": {
+        "records": 30783,
+        "final_reference_positives": 315,
+        "human_review": 15394,
+        "provisional_include": 1536,
+        "auto_excluded": 13853,
+        "final_positives_auto_excluded": 67
+      },
+      "B1": {
+        "records": 30783,
+        "final_reference_positives": 315,
+        "human_review": 15394,
+        "provisional_include": 1536,
+        "auto_excluded": 13853,
+        "final_positives_auto_excluded": 49
+      }
+    },
+    "test_90": {
+      "B0": {
+        "records": 30783,
+        "final_reference_positives": 315,
+        "human_review": 27707,
+        "provisional_include": 1536,
+        "auto_excluded": 1540,
+        "final_positives_auto_excluded": 0
+      },
+      "B1": {
+        "records": 30783,
+        "final_reference_positives": 315,
+        "human_review": 27707,
+        "provisional_include": 1536,
+        "auto_excluded": 1540,
+        "final_positives_auto_excluded": 2
+      }
+    },
+    "test_95": {
+      "B0": {
+        "records": 30783,
+        "final_reference_positives": 315,
+        "human_review": 29247,
+        "provisional_include": 1536,
+        "auto_excluded": 0,
+        "final_positives_auto_excluded": 0
+      },
+      "B1": {
+        "records": 30783,
+        "final_reference_positives": 315,
+        "human_review": 29247,
+        "provisional_include": 1536,
+        "auto_excluded": 0,
+        "final_positives_auto_excluded": 0
+      }
+    },
+    "external_50": {
+      "B0": {
+        "records": 138902,
+        "final_reference_positives": 598,
+        "human_review": 69456,
+        "provisional_include": 6935,
+        "auto_excluded": 62511,
+        "final_positives_auto_excluded": 74
+      },
+      "B1": {
+        "records": 138902,
+        "final_reference_positives": 598,
+        "human_review": 69456,
+        "provisional_include": 6935,
+        "auto_excluded": 62511,
+        "final_positives_auto_excluded": 81
+      }
+    },
+    "external_90": {
+      "B0": {
+        "records": 138902,
+        "final_reference_positives": 598,
+        "human_review": 125019,
+        "provisional_include": 6935,
+        "auto_excluded": 6948,
+        "final_positives_auto_excluded": 4
+      },
+      "B1": {
+        "records": 138902,
+        "final_reference_positives": 598,
+        "human_review": 125019,
+        "provisional_include": 6935,
+        "auto_excluded": 6948,
+        "final_positives_auto_excluded": 6
+      }
+    },
+    "external_95": {
+      "B0": {
+        "records": 138902,
+        "final_reference_positives": 598,
+        "human_review": 131967,
+        "provisional_include": 6935,
+        "auto_excluded": 0,
+        "final_positives_auto_excluded": 0
+      },
+      "B1": {
+        "records": 138902,
+        "final_reference_positives": 598,
+        "human_review": 131967,
+        "provisional_include": 6935,
+        "auto_excluded": 0,
+        "final_positives_auto_excluded": 0
+      }
+    }
+  },
+  "theory_checks": {
+    "all_rows_N_equals_H_plus_P_plus_E": true,
+    "all_rows_H_equals_max_mandatory_and_nominal": true,
+    "all_rows_P_equals_5percent_cap": true,
+    "zero_auto_FN_is_structural_at_95plus": true
+  },
+  "claims_denied": [
+    "No fuzzy B2 calibration",
+    "No observed human review times",
+    "No causal effect",
+    "No title/abstract reference separate from final inclusion",
+    "No 840 independent experiments"
+  ]
+}

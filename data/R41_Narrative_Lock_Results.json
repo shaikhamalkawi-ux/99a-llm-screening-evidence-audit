@@ -1,0 +1,55 @@
+{
+  "title": "R41 narrative editorial reconstruction",
+  "r40_main_sha256": "7ec9620a87887c4139c7072032d76977abb61e59eb2d80e4dede1900114af05a",
+  "r41_main_sha256": "ec08b7b1aa61726043b13b84c445f30dfe076abedaa019bd9f60750afe43622f",
+  "supplement_sha256_unchanged": "08c0e6c2080dc05d4ab8c539a96dff4dc3fda119811a60b836a13497190546b9",
+  "table_equation_blocks": {
+    "table": {
+      "r40": 15,
+      "r41": 15,
+      "byte_identical_multiset": true
+    },
+    "table*": {
+      "r40": 15,
+      "r41": 15,
+      "byte_identical_multiset": true
+    },
+    "longtable": {
+      "r40": 0,
+      "r41": 0,
+      "byte_identical_multiset": true
+    },
+    "figure": {
+      "r40": 0,
+      "r41": 0,
+      "byte_identical_multiset": true
+    },
+    "equation": {
+      "r40": 3,
+      "r41": 3,
+      "byte_identical_multiset": true
+    },
+    "equation*": {
+      "r40": 3,
+      "r41": 3,
+      "byte_identical_multiset": true
+    },
+    "align": {
+      "r40": 0,
+      "r41": 0,
+      "byte_identical_multiset": true
+    },
+    "align*": {
+      "r40": 0,
+      "r41": 0,
+      "byte_identical_multiset": true
+    }
+  },
+  "major_original_versions_preserved": true,
+  "original_sections_reordered": "Only Results subsections reordered; no tables/equations/data changed",
+  "analysis_claim_boundary": "No new measurements, models, policies or causality claims",
+  "original_intro_words": 958,
+  "narrative_intro_words": 560,
+  "original_conclusion_words": 417,
+  "narrative_conclusion_words": 270
+}

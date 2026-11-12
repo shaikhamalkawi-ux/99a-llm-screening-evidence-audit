@@ -1,0 +1,95 @@
+{
+  "version": "R43",
+  "scope": "Literature closure only; three verified contextual comparators",
+  "new_comparators": [
+    "ringeval2026",
+    "akaraci2026",
+    "liu2026consistency"
+  ],
+  "original_source_preserved": true,
+  "bib_prefix_byte_identical_R42": true,
+  "supplement_tex_byte_identical_R42": true,
+  "new_original_empirical_results": 0,
+  "number_of_main_tables_unchanged": true,
+  "math_environment_count_unchanged": true,
+  "file_sha256": {
+    "main.tex": "1269325dede3e00e0074d717b2e262c618183cd4eeafcc67e56eb3c645bcd649",
+    "main_integrated.tex": "6b248572c8993fcdca8dd4cfd2e8b8d3e0dcfeca1fedef3e903de199d0dfd319",
+    "supplement.tex": "08c0e6c2080dc05d4ab8c539a96dff4dc3fda119811a60b836a13497190546b9",
+    "references.bib": "eae59176e65c114582ae170b8654228a01c41bf647469342140cdb7a9c0c1fa8"
+  },
+  "original_r42_source_sha256": {
+    "main.tex": "e514892feb35d6f19a249d124dfb7d414c1f0aad5e5b26173d77da7e8dea221d",
+    "main_integrated.tex": "8667d98d4367627ad80941dc031efbdf936239d08b1171793a12b378eadd849b",
+    "supplement.tex": "08c0e6c2080dc05d4ab8c539a96dff4dc3fda119811a60b836a13497190546b9",
+    "references.bib": "ad2777e588670934d2f75cb3bceeeba41e2ba93aca9dd1a1fbc048ebdef5d608"
+  },
+  "main_pages": 34,
+  "supplement_pages": 18,
+  "other_notes": [
+    "No model reruns",
+    "No fuzzy B2 evaluation",
+    "3 papers added as contextual comparison outside 60 candidate count"
+  ],
+  "pdf_preflight": {
+    "99a_R43_Main_Manuscript_LiteratureClosure.pdf": {
+      "pages": 34,
+      "bytes": 378444,
+      "sha256": "f76ee099ed03174115168ba9ddb8e944f905ee0e24feac9708e3ce8503222ad6",
+      "blank_pages": [],
+      "type3_fonts": 0
+    },
+    "99a_R43_Supplementary_Appendices_A-M.pdf": {
+      "pages": 18,
+      "bytes": 276529,
+      "sha256": "f40c21cc4e175ea31eba82ce9c5069efc2f83c3397fc992c8af9d21a2cc61891",
+      "blank_pages": [],
+      "type3_fonts": 0
+    },
+    "99a_R43_Paper_Then_Supplement_Complete.pdf": {
+      "pages": 52,
+      "bytes": 620471,
+      "sha256": "67cd491fab5dc9a0c70cbd7e7d872690cc63d7dd64256bf1111e550bc04a225a",
+      "blank_pages": [],
+      "type3_fonts": 0
+    },
+    "99a_R43_Integrated_Source_Reference.pdf": {
+      "pages": 49,
+      "bytes": 483842,
+      "sha256": "0a95beb37c789ef6fd0e3721e46e9ffe1986a1c8c5c270aa1f463fffd00b3314",
+      "blank_pages": [],
+      "type3_fonts": 0
+    },
+    "R43_Independent_External_Reviewer_Report.pdf": {
+      "pages": 1,
+      "bytes": 2934,
+      "sha256": "f930135dc702a09a4a6d66dec6029dd1080efc9d53972b353bfa865ca7d37be7",
+      "blank_pages": [],
+      "type3_fonts": 0
+    }
+  },
+  "page_text_identity_in_combined": 52,
+  "clean_replay": {
+    "main": {
+      "delivered_pages": 34,
+      "clean_pages": 34,
+      "changed_text_pages": [],
+      "identical_page_text": true
+    },
+    "supplement": {
+      "delivered_pages": 18,
+      "clean_pages": 18,
+      "changed_text_pages": [],
+      "identical_page_text": true
+    },
+    "main_integrated": {
+      "delivered_pages": 49,
+      "clean_pages": 49,
+      "changed_text_pages": [],
+      "identical_page_text": true
+    },
+    "replay_method": "clean extraction of supplied Overleaf source; pdflatex and bibtex.original; supplement replay uses SOURCE_DATE_EPOCH=1794355200 and FORCE_SOURCE_DATE=1 to preserve inherited dynamic class footer date November 11, 2026"
+  },
+  "supplement_pdf_sha256_r42": "f40c21cc4e175ea31eba82ce9c5069efc2f83c3397fc992c8af9d21a2cc61891",
+  "supplement_pdf_sha256_r43": "f40c21cc4e175ea31eba82ce9c5069efc2f83c3397fc992c8af9d21a2cc61891"
+}

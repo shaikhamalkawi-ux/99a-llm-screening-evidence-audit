@@ -1,0 +1,209 @@
+{
+  "project": "99a",
+  "version": "R45",
+  "type": "original_source_independent_arithmetic_recheck",
+  "record_level_model_rerun": false,
+  "new_human_review": false,
+  "conditional_cases": {
+    "zhang": {
+      "original_abstract_and_table_1_N": 959,
+      "methods_sentence_N": 936,
+      "source_included": 61,
+      "inclusion_rate_if_959_pct": 6.360792492179353,
+      "inclusion_rate_if_936_pct": 6.517094017094017,
+      "verdict": "UNRESOLVED_WITHIN_REPORT_STAGE_DENOMINATOR; no correction proposed"
+    },
+    "insuk": {
+      "screening_records_reported": 1648,
+      "experienced_reviewer_excluded": 1615,
+      "positive_reference": 33,
+      "table3_heading_reports_n": 1684,
+      "conditional_common_reference_matrices": {
+        "junior": {
+          "TP": 21,
+          "FP": 55,
+          "FN": 12,
+          "TN": 1560,
+          "standard_FPR": 0.034055727554179564,
+          "printed_FPR": 0.0378,
+          "delta_FPR": -0.0037442724458204334
+        },
+        "chatgpt": {
+          "TP": 27,
+          "FP": 136,
+          "FN": 6,
+          "TN": 1479,
+          "standard_FPR": 0.08421052631578947,
+          "printed_FPR": 0.0884,
+          "delta_FPR": -0.004189473684210526
+        },
+        "claude": {
+          "TP": 27,
+          "FP": 85,
+          "FN": 6,
+          "TN": 1530,
+          "standard_FPR": 0.05263157894736842,
+          "printed_FPR": 0.0574,
+          "delta_FPR": -0.004768421052631579
+        }
+      },
+      "verdict": "FPR_AND_HEADING_NOT_RECONCILED; no confirmed study error"
+    },
+    "cao": {
+      "source_estimated_abstract_seconds_per_record": 30,
+      "hypothetical_manual_hours_for_10000": 83.33333333333333,
+      "publisher_free_fulltext_count": 12690,
+      "share_all_search_pct": 7.56,
+      "share_original_included_pct": 59.16,
+      "counterfactual_upper_recall_percent_if_unavailable_fulltext_auto_excluded": 59.16,
+      "verdict": "MODELED_NOT_OBSERVED_PERSON_TIME; fulltext gate only counterfactual"
+    },
+    "janoudi": {
+      "baseline": {
+        "TP": 284,
+        "FN": 3,
+        "FP": 167,
+        "TN": 3342
+      },
+      "include_only_simulation": {
+        "145": {
+          "false_includes_corrected_under_ideal": 102,
+          "true_includes_flagged": 43,
+          "ideal_precision": 0.8137535816618912,
+          "one_decimal_published_pct": 81.4,
+          "all_binary_reversal_states_matching_display": [
+            [
+              102,
+              0
+            ]
+          ],
+          "baseline_false_negatives_persist": 3
+        },
+        "221": {
+          "false_includes_corrected_under_ideal": 135,
+          "true_includes_flagged": 86,
+          "ideal_precision": 0.8987341772151899,
+          "one_decimal_published_pct": 89.9,
+          "all_binary_reversal_states_matching_display": [
+            [
+              135,
+              0
+            ]
+          ],
+          "baseline_false_negatives_persist": 3
+        }
+      },
+      "verdict": "UNIQUE_IDEAL_CORRECTION_DISPLAY_UNDER_BINARY_GRID; not executed human work"
+    },
+    "li": {
+      "total_records": 6331,
+      "reference_positive": 113,
+      "reference_negative": 6218,
+      "printed_P": 0.34,
+      "printed_R": 0.77,
+      "printed_NPV": 1.0,
+      "compatible_matrices": [
+        {
+          "TP": 87,
+          "FP": 166,
+          "FN": 26,
+          "TN": 6052,
+          "unrounded_NPV": 0.995722277064824
+        },
+        {
+          "TP": 87,
+          "FP": 167,
+          "FN": 26,
+          "TN": 6051,
+          "unrounded_NPV": 0.9957215731446437
+        },
+        {
+          "TP": 87,
+          "FP": 168,
+          "FN": 26,
+          "TN": 6050,
+          "unrounded_NPV": 0.9957208689927584
+        },
+        {
+          "TP": 87,
+          "FP": 169,
+          "FN": 26,
+          "TN": 6049,
+          "unrounded_NPV": 0.9957201646090535
+        },
+        {
+          "TP": 87,
+          "FP": 170,
+          "FN": 26,
+          "TN": 6048,
+          "unrounded_NPV": 0.9957194599934146
+        },
+        {
+          "TP": 87,
+          "FP": 171,
+          "FN": 26,
+          "TN": 6047,
+          "unrounded_NPV": 0.9957187551457269
+        },
+        {
+          "TP": 87,
+          "FP": 172,
+          "FN": 26,
+          "TN": 6046,
+          "unrounded_NPV": 0.9957180500658761
+        }
+      ],
+      "verdict": "SEVEN_INTEGER_STATES_IF_COMMON_REFERENCE; no recovered unpublished matrix or measured labor"
+    }
+  },
+  "original_pdf_checks": {
+    "zhang": {
+      "sha256": "736940c3a95a216cc0b864e92d3bf4ba95a5c3bd1a3137c7f5fd1c72423f9b8c",
+      "doi": "10.1016/j.ijmedinf.2025.106035",
+      "pages_checked": [
+        1,
+        2
+      ],
+      "source_verification": "SHA256_AND_ORIGINAL_PDF_PAGE_TEXT_PASS"
+    },
+    "insuk": {
+      "sha256": "50bd7c2f3d58de827a18b6325f6524ab6a6107f784d41fa8108b98084c208eed",
+      "doi": "10.1007/s10916-025-02246-4",
+      "pages_checked": [
+        3,
+        5
+      ],
+      "source_verification": "SHA256_AND_ORIGINAL_PDF_PAGE_TEXT_PASS"
+    },
+    "cao": {
+      "sha256": "0734a7b3b07cc37166608ad627309e1e4c45854a7ce1a60ed272c3bc90ec4a1b",
+      "doi": "10.7326/ANNALS-24-02189",
+      "pages_checked": [
+        4,
+        6,
+        7
+      ],
+      "source_verification": "SHA256_AND_ORIGINAL_PDF_PAGE_TEXT_PASS"
+    },
+    "janoudi": {
+      "sha256": "07fb23032dbd81fb09cfba5e004a887c34b44f2d2c0483d152ba7b74feb1ad7c",
+      "doi": "10.1016/j.jval.2025.09.008",
+      "pages_checked": [
+        3,
+        4,
+        5
+      ],
+      "source_verification": "SHA256_AND_ORIGINAL_PDF_PAGE_TEXT_PASS"
+    },
+    "li": {
+      "sha256": "04bbfe3d75ee90b96d4f211d964ae38b8cedc808a3c6bc40592192a1cff800da",
+      "doi": "10.1016/j.ijmedinf.2025.106205",
+      "pages_checked": [
+        1,
+        3,
+        5
+      ],
+      "source_verification": "SHA256_AND_ORIGINAL_PDF_PAGE_TEXT_PASS"
+    }
+  }
+}

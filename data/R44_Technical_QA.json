@@ -1,0 +1,43 @@
+{
+  "baseline": "R43",
+  "new_version": "R44",
+  "scope": "major-editorial review; no new empirical experiment",
+  "preservation": {
+    "all_result_subsection_bodies_verbatim": true,
+    "all_main_table_and_equation_environments_byte_identical_multisets": true,
+    "supplement_scientific_content_byte_identical": true,
+    "all_original_sci_numbers_preserved_in_source_tables": true
+  },
+  "pdfs": {
+    "main": {
+      "pages": 31,
+      "bytes": 364031,
+      "sha256": "5559240cce8329e5f6a6ed044c4f3e40cad8d958eced2ead73e9a932a4bd5966",
+      "min_page_chars": 2798,
+      "font_embedded": true,
+      "text_bounds_outliers": 0
+    },
+    "supplement": {
+      "pages": 18,
+      "bytes": 276341,
+      "sha256": "bfb5308aeb0a3cc18d9fd513ee934929665e29accc9d4108be5848014cd4291b",
+      "min_page_chars": 2543,
+      "font_embedded": true,
+      "text_bounds_outliers": 0
+    },
+    "main_integrated": {
+      "pages": 47,
+      "bytes": 469899,
+      "sha256": "146681c48326e301fec14e88f1e9aafa6168a1ebd960e564db58f433a9be4642",
+      "min_page_chars": 1783,
+      "font_embedded": true,
+      "text_bounds_outliers": 0
+    }
+  },
+  "bibliography_empty_access_dates": 0,
+  "author_metadata_status": "pending authors; do not infer",
+  "methodology_design": "purposive retrospective source-linked documentary reanalysis; five access-triggered post hoc cases; not PRISMA systematic review",
+  "disclosure": "PICOS replay unexecuted; B2 fuzzy HOLD; model human-time causality not claimed",
+  "source_selection_reframing": "selection and confirmation bias explicitly disclosed",
+  "generated_utc": "2026-11-15 author-review QA"
+}

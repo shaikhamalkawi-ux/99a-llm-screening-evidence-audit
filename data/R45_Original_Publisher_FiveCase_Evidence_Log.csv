@@ -1,0 +1,6 @@
+case,doi,original_pdf_sha256,publisher_pdf_pages,page_locators,directly_rechecked_finding,condition_or_limit
+zhang,10.1016/j.ijmedinf.2025.106035,736940c3a95a216cc0b864e92d3bf4ba95a5c3bd1a3137c7f5fd1c72423f9b8c,9,1–2,Abstract and Table 1 use 959 citations; Methods use 936; 61 included,Two stage denominators unresolved
+insuk,10.1007/s10916-025-02246-4,50bd7c2f3d58de827a18b6325f6524ab6a6107f784d41fa8108b98084c208eed,9,"3,5",1648 in Results versus 1684 Table 3 heading; conditional FPR=0.0842 vs printed 0.0884 for ChatGPT,No confirmed publisher error; reference set may differ
+cao,10.7326/ANNALS-24-02189,0734a7b3b07cc37166608ad627309e1e4c45854a7ce1a60ed272c3bc90ec4a1b,18,"4,6–7","30 s per abstract assumed; 12,690 available full texts = 59.16% of original included","Modelled hours and access-only counterfactual, not human-time causal result"
+janoudi,10.1016/j.jval.2025.09.008,07fb23032dbd81fb09cfba5e004a887c34b44f2d2c0483d152ba7b74feb1ad7c,7,3–5,"3796 baseline; simulated 145/221 Include queues; 284,3,167,3342 model matrix",Ideal correction was not executed
+li,10.1016/j.ijmedinf.2025.106205,04bbfe3d75ee90b96d4f211d964ae38b8cedc808a3c6bc40592192a1cff800da,11,"1,3,5","113 of 6331 positives, P=.34 R=.77 NPV=1.00; 7 compatible integer matrices",Assumes one common unweighted reference; cannot recover unpublished matrix

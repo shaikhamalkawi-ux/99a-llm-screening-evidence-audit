@@ -1,0 +1,51 @@
+{
+  "version": "R45",
+  "release_type": "targeted reviewer closure",
+  "main_pages": 31,
+  "supplement_pages": 19,
+  "combined_pages": 50,
+  "combined_order": "main pages 1–31, appendix pages 32–50",
+  "combined_page_text_identical_count": 50,
+  "source_rechecked_original_publisher_pdf_count": 5,
+  "source_verification": "five exact PDF digests, source-page text, independent arithmetic",
+  "all_main_other_tables_source_identical": true,
+  "main_table_env_count_before": 16,
+  "main_table_env_count_after": 15,
+  "supplement_table_env_count_before": 8,
+  "supplement_table_env_count_after": 9,
+  "priorwork_table_moved_to_appendix_H": true,
+  "main_original_equations_unchanged": true,
+  "bibliography_bib_byte_identical": true,
+  "split_sentence_fixed": true,
+  "pdf_fonts_all_embedded": true,
+  "type3_fonts": 0,
+  "undefined_citations": 0,
+  "undefined_references": 0,
+  "overfull_boxes": 0,
+  "no_source_results_recalculated_or_model_changed": true,
+  "human_time_new_measurements": false,
+  "author_metadata_status": "pending author approval",
+  "fuzzy_B2": "HOLD, not scored",
+  "files": {
+    "main": {
+      "bytes": 362127,
+      "sha256": "53a4ea9721c7917e4255775454f53bbbd30f5877f1631332b757c7ced5cd371f",
+      "pages": 31
+    },
+    "supp": {
+      "bytes": 282034,
+      "sha256": "5f74256776684abc478aecbdcc3a0c282c05a6578dadc397d51491156afce0b0",
+      "pages": 19
+    },
+    "integrated": {
+      "bytes": 470653,
+      "sha256": "80684b58b4f65343224bcc07b45196a8f18a72571b6d919deb31f3331cb9317a",
+      "pages": 47
+    },
+    "combined": {
+      "bytes": 654334,
+      "sha256": "ab6a0d781792ac3f0ee2a50f104049ad996ad85bb1450e3c62222b6fedbd29a3",
+      "pages": 50
+    }
+  }
+}

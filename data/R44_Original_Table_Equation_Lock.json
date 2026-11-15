@@ -1,0 +1,62 @@
+{
+  "main/table": {
+    "old": 16,
+    "new": 16,
+    "identical": true
+  },
+  "main/table*": {
+    "old": 0,
+    "new": 0,
+    "identical": true
+  },
+  "main/equation": {
+    "old": 3,
+    "new": 3,
+    "identical": true
+  },
+  "main/equation*": {
+    "old": 0,
+    "new": 0,
+    "identical": true
+  },
+  "main/align": {
+    "old": 0,
+    "new": 0,
+    "identical": true
+  },
+  "main/align*": {
+    "old": 0,
+    "new": 0,
+    "identical": true
+  },
+  "main_integrated/table": {
+    "old": 24,
+    "new": 24,
+    "identical": true
+  },
+  "main_integrated/table*": {
+    "old": 0,
+    "new": 0,
+    "identical": true
+  },
+  "main_integrated/equation": {
+    "old": 3,
+    "new": 3,
+    "identical": true
+  },
+  "main_integrated/equation*": {
+    "old": 0,
+    "new": 0,
+    "identical": true
+  },
+  "main_integrated/align": {
+    "old": 0,
+    "new": 0,
+    "identical": true
+  },
+  "main_integrated/align*": {
+    "old": 0,
+    "new": 0,
+    "identical": true
+  }
+}

@@ -1,0 +1,7 @@
+reviewer_a,reviewer_b,decision_disagreements,both_wrong,a_only_wrong,b_only_wrong,overlapping_reference_positive_misses,overlapping_reference_negative_false_includes
+A1,A2,11,0,1,10,0,0
+A1,B1,2,0,1,1,0,0
+A1,B2,6,0,1,5,0,0
+A2,B1,9,1,9,0,0,1
+A2,B2,13,1,9,4,0,1
+B1,B2,4,1,0,4,0,1

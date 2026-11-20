@@ -1,0 +1,292 @@
+{
+  "status": "ADMITTED_PRIMARY_RECORD_LEVEL_REANALYSIS",
+  "source_dataset_doi": "10.17632/4bgt2p5hrd.1",
+  "article_doi": "10.1016/j.jbi.2025.104860",
+  "source_url": "https://data.mendeley.com/datasets/4bgt2p5hrd/1",
+  "source_file_name": "Screening_articles and decisions.csv",
+  "original_dataset_license": "CC BY-NC 4.0",
+  "source": {
+    "file_sha256": "11e8cba6a21f936253e9a2c85d88b942efcdf5401b1e8b7bf5cbcedd0e851425",
+    "file_size_bytes": 1963035,
+    "rows": 1003,
+    "header": [
+      "Title",
+      "Authors",
+      "Journal",
+      "Year",
+      "Volume",
+      "Issue",
+      "DOI",
+      "Abstract",
+      "PICOS Summary",
+      "Gold_std dataset",
+      "A1_reviewer",
+      "A2_reviewer",
+      "B1_reviewer",
+      "B2_reviewer"
+    ]
+  },
+  "reference_positives": 25,
+  "reference_negatives": 978,
+  "directly_observed_reviewer_labels": true,
+  "published_reviewer_times_minutes_not_per_record": {
+    "A1": 116,
+    "A2": 463,
+    "B1": 90,
+    "B2": 370
+  },
+  "reviewer_matrices": {
+    "A1": {
+      "tp": 25,
+      "fp": 1,
+      "fn": 0,
+      "tn": 977,
+      "precision": 0.9615384615384616,
+      "recall": 1.0,
+      "specificity": 0.9989775051124744,
+      "accuracy": 0.9990029910269193,
+      "f1": 0.9803921568627451
+    },
+    "A2": {
+      "tp": 22,
+      "fp": 7,
+      "fn": 3,
+      "tn": 971,
+      "precision": 0.7586206896551724,
+      "recall": 0.88,
+      "specificity": 0.9928425357873211,
+      "accuracy": 0.9900299102691924,
+      "f1": 0.8148148148148148
+    },
+    "B1": {
+      "tp": 25,
+      "fp": 1,
+      "fn": 0,
+      "tn": 977,
+      "precision": 0.9615384615384616,
+      "recall": 1.0,
+      "specificity": 0.9989775051124744,
+      "accuracy": 0.9990029910269193,
+      "f1": 0.9803921568627451
+    },
+    "B2": {
+      "tp": 23,
+      "fp": 3,
+      "fn": 2,
+      "tn": 975,
+      "precision": 0.8846153846153846,
+      "recall": 0.92,
+      "specificity": 0.9969325153374233,
+      "accuracy": 0.9950149551345963,
+      "f1": 0.9019607843137255
+    }
+  },
+  "error_overlap": {
+    "sum_of_reviewer_error_events": 17,
+    "distinct_records_with_at_least_one_error": 15,
+    "assisted_pair_fp_overlap": 0,
+    "unassisted_pair_fn_overlap": 0
+  },
+  "reviewer_pair_disagreements": [
+    {
+      "reviewer_a": "A1",
+      "reviewer_b": "A2",
+      "decision_disagreements": 11,
+      "both_wrong": 0,
+      "a_only_wrong": 1,
+      "b_only_wrong": 10,
+      "overlapping_reference_positive_misses": 0,
+      "overlapping_reference_negative_false_includes": 0
+    },
+    {
+      "reviewer_a": "A1",
+      "reviewer_b": "B1",
+      "decision_disagreements": 2,
+      "both_wrong": 0,
+      "a_only_wrong": 1,
+      "b_only_wrong": 1,
+      "overlapping_reference_positive_misses": 0,
+      "overlapping_reference_negative_false_includes": 0
+    },
+    {
+      "reviewer_a": "A1",
+      "reviewer_b": "B2",
+      "decision_disagreements": 6,
+      "both_wrong": 0,
+      "a_only_wrong": 1,
+      "b_only_wrong": 5,
+      "overlapping_reference_positive_misses": 0,
+      "overlapping_reference_negative_false_includes": 0
+    },
+    {
+      "reviewer_a": "A2",
+      "reviewer_b": "B1",
+      "decision_disagreements": 9,
+      "both_wrong": 1,
+      "a_only_wrong": 9,
+      "b_only_wrong": 0,
+      "overlapping_reference_positive_misses": 0,
+      "overlapping_reference_negative_false_includes": 1
+    },
+    {
+      "reviewer_a": "A2",
+      "reviewer_b": "B2",
+      "decision_disagreements": 13,
+      "both_wrong": 1,
+      "a_only_wrong": 9,
+      "b_only_wrong": 4,
+      "overlapping_reference_positive_misses": 0,
+      "overlapping_reference_negative_false_includes": 1
+    },
+    {
+      "reviewer_a": "B1",
+      "reviewer_b": "B2",
+      "decision_disagreements": 4,
+      "both_wrong": 1,
+      "a_only_wrong": 0,
+      "b_only_wrong": 4,
+      "overlapping_reference_positive_misses": 0,
+      "overlapping_reference_negative_false_includes": 1
+    }
+  ],
+  "counterfactual_consensus_policies": [
+    {
+      "first": "A1",
+      "second": "B1",
+      "rule": "AND",
+      "kind": "POST_HOC_CONSENSUS_REPLAY_NOT_EXECUTED",
+      "tp": 25,
+      "fp": 0,
+      "fn": 0,
+      "tn": 978,
+      "precision": 1.0,
+      "recall": 1.0,
+      "specificity": 1.0,
+      "accuracy": 1.0,
+      "f1": 1.0
+    },
+    {
+      "first": "A1",
+      "second": "B1",
+      "rule": "OR",
+      "kind": "POST_HOC_CONSENSUS_REPLAY_NOT_EXECUTED",
+      "tp": 25,
+      "fp": 2,
+      "fn": 0,
+      "tn": 976,
+      "precision": 0.9259259259259259,
+      "recall": 1.0,
+      "specificity": 0.9979550102249489,
+      "accuracy": 0.9980059820538385,
+      "f1": 0.9615384615384616
+    },
+    {
+      "first": "A2",
+      "second": "B2",
+      "rule": "AND",
+      "kind": "POST_HOC_CONSENSUS_REPLAY_NOT_EXECUTED",
+      "tp": 20,
+      "fp": 1,
+      "fn": 5,
+      "tn": 977,
+      "precision": 0.9523809523809523,
+      "recall": 0.8,
+      "specificity": 0.9989775051124744,
+      "accuracy": 0.9940179461615155,
+      "f1": 0.8695652173913043
+    },
+    {
+      "first": "A2",
+      "second": "B2",
+      "rule": "OR",
+      "kind": "POST_HOC_CONSENSUS_REPLAY_NOT_EXECUTED",
+      "tp": 25,
+      "fp": 9,
+      "fn": 0,
+      "tn": 969,
+      "precision": 0.7352941176470589,
+      "recall": 1.0,
+      "specificity": 0.99079754601227,
+      "accuracy": 0.9910269192422732,
+      "f1": 0.847457627118644
+    }
+  ],
+  "counterfactual_include_only_override_policies": [
+    {
+      "first_stage": "A1",
+      "hypothetical_checker": "A2",
+      "flagged_includes": 26,
+      "corrected_false_includes_x": 1,
+      "newly_missed_true_includes_y": 3,
+      "kind": "COUNTERFACTUAL_REPLAY_OF_OBSERVED_INDEPENDENT_LABELS_NOT_SEQUENTIAL_HUMAN_WORKFLOW",
+      "tp": 22,
+      "fp": 0,
+      "fn": 3,
+      "tn": 978,
+      "precision": 1.0,
+      "recall": 0.88,
+      "specificity": 1.0,
+      "accuracy": 0.9970089730807578,
+      "f1": 0.9361702127659575
+    },
+    {
+      "first_stage": "A1",
+      "hypothetical_checker": "B2",
+      "flagged_includes": 26,
+      "corrected_false_includes_x": 1,
+      "newly_missed_true_includes_y": 2,
+      "kind": "COUNTERFACTUAL_REPLAY_OF_OBSERVED_INDEPENDENT_LABELS_NOT_SEQUENTIAL_HUMAN_WORKFLOW",
+      "tp": 23,
+      "fp": 0,
+      "fn": 2,
+      "tn": 978,
+      "precision": 1.0,
+      "recall": 0.92,
+      "specificity": 1.0,
+      "accuracy": 0.9980059820538385,
+      "f1": 0.9583333333333334
+    },
+    {
+      "first_stage": "B1",
+      "hypothetical_checker": "A2",
+      "flagged_includes": 26,
+      "corrected_false_includes_x": 0,
+      "newly_missed_true_includes_y": 3,
+      "kind": "COUNTERFACTUAL_REPLAY_OF_OBSERVED_INDEPENDENT_LABELS_NOT_SEQUENTIAL_HUMAN_WORKFLOW",
+      "tp": 22,
+      "fp": 1,
+      "fn": 3,
+      "tn": 977,
+      "precision": 0.9565217391304348,
+      "recall": 0.88,
+      "specificity": 0.9989775051124744,
+      "accuracy": 0.996011964107677,
+      "f1": 0.9166666666666666
+    },
+    {
+      "first_stage": "B1",
+      "hypothetical_checker": "B2",
+      "flagged_includes": 26,
+      "corrected_false_includes_x": 0,
+      "newly_missed_true_includes_y": 2,
+      "kind": "COUNTERFACTUAL_REPLAY_OF_OBSERVED_INDEPENDENT_LABELS_NOT_SEQUENTIAL_HUMAN_WORKFLOW",
+      "tp": 23,
+      "fp": 1,
+      "fn": 2,
+      "tn": 977,
+      "precision": 0.9583333333333334,
+      "recall": 0.92,
+      "specificity": 0.9989775051124744,
+      "accuracy": 0.9970089730807578,
+      "f1": 0.9387755102040817
+    }
+  ],
+  "limitations": [
+    "One screened candidate set with 25 reference-included reports; not a representative sample of other systematic reviews.",
+    "Reference labels were supplied by source authors, not independently re-adjudicated.",
+    "Different people used assisted versus unassisted interfaces and could differ in skill; no causal AI effect is identified.",
+    "The AND/OR and sequential override policies are post-hoc recombinations of recorded independent decisions, not actually observed team workflows.",
+    "Published 90/116/370/463 minutes are reviewer-wide totals, not recorded verification or sequential consensus time.",
+    "No original LLM model was rerun, no randomized intervention, no net labor savings or policy deployment validation."
+  ]
+}

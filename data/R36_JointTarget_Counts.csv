@@ -1,0 +1,7 @@
+policy,precision_min_fraction,recall_min_fraction,number_of_feasible_count_states_NOT_probabilities
+policy_145,4/5,49/50,19
+policy_145,17/20,49/50,0
+policy_145,9/10,49/50,0
+policy_221,4/5,49/50,118
+policy_221,17/20,49/50,55
+policy_221,9/10,49/50,0

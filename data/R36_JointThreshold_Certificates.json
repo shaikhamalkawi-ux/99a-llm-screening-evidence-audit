@@ -1,0 +1,191 @@
+{
+  "version": "R36",
+  "source_doi": "10.1016/j.jval.2025.09.008",
+  "source_only_post_hoc_counterfactual_not_human_measurement": true,
+  "baseline_matrix": [
+    284,
+    3,
+    167,
+    3342
+  ],
+  "policy_145": {
+    "C": 102,
+    "T": 43,
+    "policy_tagged_states": 4532,
+    "feasible_target_certificates": [
+      {
+        "precision_target": "4/5",
+        "recall_target": "49/50",
+        "feasible_policy_tagged_states_not_probabilities": 19,
+        "min_corrections_by_permitted_y": [
+          {
+            "y": 0,
+            "min_fp_corrections": 96
+          },
+          {
+            "y": 1,
+            "min_fp_corrections": 97
+          },
+          {
+            "y": 2,
+            "min_fp_corrections": 97
+          }
+        ],
+        "feasible": true
+      },
+      {
+        "precision_target": "17/20",
+        "recall_target": "49/50",
+        "feasible_policy_tagged_states_not_probabilities": 0,
+        "min_corrections_by_permitted_y": [
+          {
+            "y": 0,
+            "min_fp_corrections": null
+          },
+          {
+            "y": 1,
+            "min_fp_corrections": null
+          },
+          {
+            "y": 2,
+            "min_fp_corrections": null
+          }
+        ],
+        "feasible": false
+      },
+      {
+        "precision_target": "9/10",
+        "recall_target": "49/50",
+        "feasible_policy_tagged_states_not_probabilities": 0,
+        "min_corrections_by_permitted_y": [
+          {
+            "y": 0,
+            "min_fp_corrections": null
+          },
+          {
+            "y": 1,
+            "min_fp_corrections": null
+          },
+          {
+            "y": 2,
+            "min_fp_corrections": null
+          }
+        ],
+        "feasible": false
+      }
+    ],
+    "all_fp_and_all_tp_reversed": {
+      "tp": 241,
+      "fp": 65,
+      "fn": 46,
+      "precision_fraction": "241/306",
+      "recall_fraction": "241/287",
+      "precision_pct": "78.7582",
+      "recall_pct": "83.9721"
+    },
+    "precision_gain_iff": "284*x > 167*y",
+    "recall_equals_baseline_iff": "y=0"
+  },
+  "policy_221": {
+    "C": 135,
+    "T": 86,
+    "policy_tagged_states": 11832,
+    "feasible_target_certificates": [
+      {
+        "precision_target": "4/5",
+        "recall_target": "49/50",
+        "feasible_policy_tagged_states_not_probabilities": 118,
+        "min_corrections_by_permitted_y": [
+          {
+            "y": 0,
+            "min_fp_corrections": 96
+          },
+          {
+            "y": 1,
+            "min_fp_corrections": 97
+          },
+          {
+            "y": 2,
+            "min_fp_corrections": 97
+          }
+        ],
+        "feasible": true
+      },
+      {
+        "precision_target": "17/20",
+        "recall_target": "49/50",
+        "feasible_policy_tagged_states_not_probabilities": 55,
+        "min_corrections_by_permitted_y": [
+          {
+            "y": 0,
+            "min_fp_corrections": 117
+          },
+          {
+            "y": 1,
+            "min_fp_corrections": 118
+          },
+          {
+            "y": 2,
+            "min_fp_corrections": 118
+          }
+        ],
+        "feasible": true
+      },
+      {
+        "precision_target": "9/10",
+        "recall_target": "49/50",
+        "feasible_policy_tagged_states_not_probabilities": 0,
+        "min_corrections_by_permitted_y": [
+          {
+            "y": 0,
+            "min_fp_corrections": null
+          },
+          {
+            "y": 1,
+            "min_fp_corrections": null
+          },
+          {
+            "y": 2,
+            "min_fp_corrections": null
+          }
+        ],
+        "feasible": false
+      }
+    ],
+    "all_fp_and_all_tp_reversed": {
+      "tp": 198,
+      "fp": 32,
+      "fn": 89,
+      "precision_fraction": "99/115",
+      "recall_fraction": "198/287",
+      "precision_pct": "86.0870",
+      "recall_pct": "68.9895"
+    },
+    "precision_gain_iff": "284*x > 167*y",
+    "recall_equals_baseline_iff": "y=0"
+  },
+  "policy_tagged_states_total": 16364,
+  "distinct_untagged_confusion_matrices": 11832,
+  "nested_extra_flags": {
+    "false_includes": 33,
+    "true_includes": 43
+  },
+  "nested_precision_increase_iff": "(284-y)*delta_x > (167-x)*delta_y",
+  "nested_policy_counterexample": {
+    "small_x": 102,
+    "small_y": 0,
+    "extra_corrected_false_includes": 33,
+    "extra_wrongly_excluded_true_includes": 43,
+    "large_x": 135,
+    "large_y": 43,
+    "precision_pct": "88.2784",
+    "recall_pct": "83.9721"
+  },
+  "limits": [
+    "No probabilities assigned to count states",
+    "No observed human correction/errors/time",
+    "No review of initial model Excludes",
+    "Reference fixed to source adjudication",
+    "Cannot transport to other human-routing policies or cohorts without new inputs"
+  ]
+}

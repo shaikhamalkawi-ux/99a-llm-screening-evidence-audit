@@ -1,0 +1,31 @@
+{
+  "project": "99a",
+  "research_extension": "R38 source admission only; R37 manuscript preserved",
+  "date": "2026-11-10",
+  "primary_dataset": {
+    "name": "Generative AI-Assisted Title and Abstract Screening",
+    "doi": "10.17632/4bgt2p5hrd.1",
+    "source_download_page": "https://data.mendeley.com/datasets/4bgt2p5hrd/1",
+    "source_csv_file": "Screening_articles and decisions.csv",
+    "source_csv_bytes": 1963035,
+    "source_csv_sha256": "11e8cba6a21f936253e9a2c85d88b942efcdf5401b1e8b7bf5cbcedd0e851425",
+    "official_zip_sha256": "7dd21a5e24bff0d91291bb14483d3c6e8675a9134a2afaae70c66abe2741de9e",
+    "original_license": "CC BY-NC 4.0",
+    "public_redistribution": false,
+    "private_drive_source_storage": true
+  },
+  "secondary_context_source": {
+    "doi": "10.1038/s41467-025-62058-5",
+    "file": "41467_2025_62058_MOESM4_ESM.zip",
+    "sha256": "104fad1ea40e656405ba2ff30598de08a07ec3ac79bf7b9f5cdb4a4a728dee96",
+    "file_size": 4847017,
+    "admission": "CONTEXT_ONLY_NOT_INDEPENDENT_SCREENING_DECISION_DATA",
+    "original_license": "CC BY 4.0 subject to source specific attribution"
+  },
+  "analysis_boundaries": [
+    "Source dataset has n=1003 and 25 source-defined positives",
+    "The four observer decisions are real, but override/AND/OR policy replays were never deployed",
+    "No per-record human time, randomized treatment effect, or independent reference recoding",
+    "The R37 manuscript and frozen 60/54/21/11 source accounts remain intact"
+  ]
+}

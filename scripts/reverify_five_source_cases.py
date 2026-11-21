@@ -2,7 +2,7 @@
 """Independent arithmetic readback of FIVE publisher PDFs for Project 99a.
 
 Usage:
-    python reverify_five_source_cases.py --source-dir /mnt/data --out R45_FiveCase_Readback.json
+    python reverify_five_source_cases.py --source-dir PATH_TO_SOURCE_PDFS --out R45_FiveCase_Readback.json
 
 Only reported aggregate inputs are used. The source copies are user-provided and
 are NEVER included in public reproducibility ZIPs or manuscript packages.

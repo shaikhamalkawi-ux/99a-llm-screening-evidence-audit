@@ -1,0 +1,4252 @@
+{
+  "source_commit": "297806d9f7db602b1f0c1f046d61a46293a42b53",
+  "reference_stage": "title_abstract",
+  "estimand": "equal item-weight expectation over all available distinct-worker unordered pairs",
+  "counts_are": "exact rational expectations, not realized integer observations",
+  "reviews": {
+    "Appendicitis": {
+      "role": "primary",
+      "variants": {
+        "author_filter__unknown_omit": {
+          "records": 1664,
+          "reference_positives": 242,
+          "pair_combinations_not_independent_n": 16209,
+          "items_with_fewer_than_two_usable_votes": 0,
+          "positives_with_fewer_than_two_usable_votes": 0,
+          "disagreement_expected_records": {
+            "exact": "4759/30",
+            "value": 158.63333333333333
+          },
+          "disagreement_fraction": {
+            "exact": "4759/49920",
+            "value": 0.09533253205128205
+          },
+          "disagreement_expected_reference_positive_records": {
+            "exact": "2113/30",
+            "value": 70.43333333333334
+          },
+          "disagreement_expected_reference_negative_records": {
+            "exact": "441/5",
+            "value": 88.2
+          },
+          "observed_shared_error_diagnostics": {
+            "reference_positive_items_with_at_least_one_false_excluding_pair": 148,
+            "reference_negative_items_with_at_least_one_false_retaining_pair": 74,
+            "items_without_unresolved_votes": 1663,
+            "unanimous_false_exclusion_items_without_unresolved_votes": 41,
+            "unanimous_false_retention_items_without_unresolved_votes": 0
+          },
+          "policies": {
+            "single": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "2567/20",
+                  "value": 128.35
+                },
+                "FP": {
+                  "exact": "597/10",
+                  "value": 59.7
+                },
+                "FN": {
+                  "exact": "2273/20",
+                  "value": 113.65
+                },
+                "TN": {
+                  "exact": "13623/10",
+                  "value": 1362.3
+                }
+              },
+              "recall": {
+                "exact": "2567/4840",
+                "value": 0.5303719008264463
+              },
+              "precision": {
+                "exact": "2567/3761",
+                "value": 0.6825312416910396
+              },
+              "specificity": {
+                "exact": "4541/4740",
+                "value": 0.9580168776371308
+              },
+              "retained_fraction": {
+                "exact": "3761/33280",
+                "value": 0.1130108173076923
+              }
+            },
+            "AND": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "1397/15",
+                  "value": 93.13333333333334
+                },
+                "FP": {
+                  "exact": "78/5",
+                  "value": 15.6
+                },
+                "FN": {
+                  "exact": "2233/15",
+                  "value": 148.86666666666667
+                },
+                "TN": {
+                  "exact": "7032/5",
+                  "value": 1406.4
+                }
+              },
+              "recall": {
+                "exact": "127/330",
+                "value": 0.38484848484848483
+              },
+              "precision": {
+                "exact": "1397/1631",
+                "value": 0.8565297363580625
+              },
+              "specificity": {
+                "exact": "1172/1185",
+                "value": 0.9890295358649789
+              },
+              "retained_fraction": {
+                "exact": "1631/24960",
+                "value": 0.06534455128205129
+              }
+            },
+            "OR": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "4907/30",
+                  "value": 163.56666666666666
+                },
+                "FP": {
+                  "exact": "519/5",
+                  "value": 103.8
+                },
+                "FN": {
+                  "exact": "2353/30",
+                  "value": 78.43333333333334
+                },
+                "TN": {
+                  "exact": "6591/5",
+                  "value": 1318.2
+                }
+              },
+              "recall": {
+                "exact": "4907/7260",
+                "value": 0.6758953168044077
+              },
+              "precision": {
+                "exact": "4907/8021",
+                "value": 0.6117691060964967
+              },
+              "specificity": {
+                "exact": "2197/2370",
+                "value": 0.9270042194092827
+              },
+              "retained_fraction": {
+                "exact": "617/3840",
+                "value": 0.16067708333333333
+              }
+            },
+            "ideal_disagreement_review": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "4907/30",
+                  "value": 163.56666666666666
+                },
+                "FP": {
+                  "exact": "78/5",
+                  "value": 15.6
+                },
+                "FN": {
+                  "exact": "2353/30",
+                  "value": 78.43333333333334
+                },
+                "TN": {
+                  "exact": "7032/5",
+                  "value": 1406.4
+                }
+              },
+              "recall": {
+                "exact": "4907/7260",
+                "value": 0.6758953168044077
+              },
+              "precision": {
+                "exact": "4907/5375",
+                "value": 0.9129302325581395
+              },
+              "specificity": {
+                "exact": "1172/1185",
+                "value": 0.9890295358649789
+              },
+              "retained_fraction": {
+                "exact": "1075/9984",
+                "value": 0.10767227564102565
+              }
+            }
+          }
+        },
+        "author_filter__unknown_exclude": {
+          "records": 1664,
+          "reference_positives": 242,
+          "pair_combinations_not_independent_n": 16213,
+          "items_with_fewer_than_two_usable_votes": 0,
+          "positives_with_fewer_than_two_usable_votes": 0,
+          "disagreement_expected_records": {
+            "exact": "4759/30",
+            "value": 158.63333333333333
+          },
+          "disagreement_fraction": {
+            "exact": "4759/49920",
+            "value": 0.09533253205128205
+          },
+          "disagreement_expected_reference_positive_records": {
+            "exact": "2113/30",
+            "value": 70.43333333333334
+          },
+          "disagreement_expected_reference_negative_records": {
+            "exact": "441/5",
+            "value": 88.2
+          },
+          "observed_shared_error_diagnostics": {
+            "reference_positive_items_with_at_least_one_false_excluding_pair": 148,
+            "reference_negative_items_with_at_least_one_false_retaining_pair": 74,
+            "items_without_unresolved_votes": 1663,
+            "unanimous_false_exclusion_items_without_unresolved_votes": 41,
+            "unanimous_false_retention_items_without_unresolved_votes": 0
+          },
+          "policies": {
+            "single": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "2567/20",
+                  "value": 128.35
+                },
+                "FP": {
+                  "exact": "597/10",
+                  "value": 59.7
+                },
+                "FN": {
+                  "exact": "2273/20",
+                  "value": 113.65
+                },
+                "TN": {
+                  "exact": "13623/10",
+                  "value": 1362.3
+                }
+              },
+              "recall": {
+                "exact": "2567/4840",
+                "value": 0.5303719008264463
+              },
+              "precision": {
+                "exact": "2567/3761",
+                "value": 0.6825312416910396
+              },
+              "specificity": {
+                "exact": "4541/4740",
+                "value": 0.9580168776371308
+              },
+              "retained_fraction": {
+                "exact": "3761/33280",
+                "value": 0.1130108173076923
+              }
+            },
+            "AND": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "1397/15",
+                  "value": 93.13333333333334
+                },
+                "FP": {
+                  "exact": "78/5",
+                  "value": 15.6
+                },
+                "FN": {
+                  "exact": "2233/15",
+                  "value": 148.86666666666667
+                },
+                "TN": {
+                  "exact": "7032/5",
+                  "value": 1406.4
+                }
+              },
+              "recall": {
+                "exact": "127/330",
+                "value": 0.38484848484848483
+              },
+              "precision": {
+                "exact": "1397/1631",
+                "value": 0.8565297363580625
+              },
+              "specificity": {
+                "exact": "1172/1185",
+                "value": 0.9890295358649789
+              },
+              "retained_fraction": {
+                "exact": "1631/24960",
+                "value": 0.06534455128205129
+              }
+            },
+            "OR": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "4907/30",
+                  "value": 163.56666666666666
+                },
+                "FP": {
+                  "exact": "519/5",
+                  "value": 103.8
+                },
+                "FN": {
+                  "exact": "2353/30",
+                  "value": 78.43333333333334
+                },
+                "TN": {
+                  "exact": "6591/5",
+                  "value": 1318.2
+                }
+              },
+              "recall": {
+                "exact": "4907/7260",
+                "value": 0.6758953168044077
+              },
+              "precision": {
+                "exact": "4907/8021",
+                "value": 0.6117691060964967
+              },
+              "specificity": {
+                "exact": "2197/2370",
+                "value": 0.9270042194092827
+              },
+              "retained_fraction": {
+                "exact": "617/3840",
+                "value": 0.16067708333333333
+              }
+            },
+            "ideal_disagreement_review": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "4907/30",
+                  "value": 163.56666666666666
+                },
+                "FP": {
+                  "exact": "78/5",
+                  "value": 15.6
+                },
+                "FN": {
+                  "exact": "2353/30",
+                  "value": 78.43333333333334
+                },
+                "TN": {
+                  "exact": "7032/5",
+                  "value": 1406.4
+                }
+              },
+              "recall": {
+                "exact": "4907/7260",
+                "value": 0.6758953168044077
+              },
+              "precision": {
+                "exact": "4907/5375",
+                "value": 0.9129302325581395
+              },
+              "specificity": {
+                "exact": "1172/1185",
+                "value": 0.9890295358649789
+              },
+              "retained_fraction": {
+                "exact": "1075/9984",
+                "value": 0.10767227564102565
+              }
+            }
+          }
+        },
+        "author_filter__unknown_retain": {
+          "records": 1664,
+          "reference_positives": 242,
+          "pair_combinations_not_independent_n": 16213,
+          "items_with_fewer_than_two_usable_votes": 0,
+          "positives_with_fewer_than_two_usable_votes": 0,
+          "disagreement_expected_records": {
+            "exact": "4771/30",
+            "value": 159.03333333333333
+          },
+          "disagreement_fraction": {
+            "exact": "367/3840",
+            "value": 0.09557291666666666
+          },
+          "disagreement_expected_reference_positive_records": {
+            "exact": "2113/30",
+            "value": 70.43333333333334
+          },
+          "disagreement_expected_reference_negative_records": {
+            "exact": "443/5",
+            "value": 88.6
+          },
+          "observed_shared_error_diagnostics": {
+            "reference_positive_items_with_at_least_one_false_excluding_pair": 148,
+            "reference_negative_items_with_at_least_one_false_retaining_pair": 74,
+            "items_without_unresolved_votes": 1663,
+            "unanimous_false_exclusion_items_without_unresolved_votes": 41,
+            "unanimous_false_retention_items_without_unresolved_votes": 0
+          },
+          "policies": {
+            "single": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "2567/20",
+                  "value": 128.35
+                },
+                "FP": {
+                  "exact": "599/10",
+                  "value": 59.9
+                },
+                "FN": {
+                  "exact": "2273/20",
+                  "value": 113.65
+                },
+                "TN": {
+                  "exact": "13621/10",
+                  "value": 1362.1
+                }
+              },
+              "recall": {
+                "exact": "2567/4840",
+                "value": 0.5303719008264463
+              },
+              "precision": {
+                "exact": "2567/3765",
+                "value": 0.6818061088977424
+              },
+              "specificity": {
+                "exact": "13621/14220",
+                "value": 0.9578762306610408
+              },
+              "retained_fraction": {
+                "exact": "753/6656",
+                "value": 0.11313100961538461
+              }
+            },
+            "AND": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "1397/15",
+                  "value": 93.13333333333334
+                },
+                "FP": {
+                  "exact": "78/5",
+                  "value": 15.6
+                },
+                "FN": {
+                  "exact": "2233/15",
+                  "value": 148.86666666666667
+                },
+                "TN": {
+                  "exact": "7032/5",
+                  "value": 1406.4
+                }
+              },
+              "recall": {
+                "exact": "127/330",
+                "value": 0.38484848484848483
+              },
+              "precision": {
+                "exact": "1397/1631",
+                "value": 0.8565297363580625
+              },
+              "specificity": {
+                "exact": "1172/1185",
+                "value": 0.9890295358649789
+              },
+              "retained_fraction": {
+                "exact": "1631/24960",
+                "value": 0.06534455128205129
+              }
+            },
+            "OR": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "4907/30",
+                  "value": 163.56666666666666
+                },
+                "FP": {
+                  "exact": "521/5",
+                  "value": 104.2
+                },
+                "FN": {
+                  "exact": "2353/30",
+                  "value": 78.43333333333334
+                },
+                "TN": {
+                  "exact": "6589/5",
+                  "value": 1317.8
+                }
+              },
+              "recall": {
+                "exact": "4907/7260",
+                "value": 0.6758953168044077
+              },
+              "precision": {
+                "exact": "4907/8033",
+                "value": 0.6108552222083904
+              },
+              "specificity": {
+                "exact": "6589/7110",
+                "value": 0.9267229254571027
+              },
+              "retained_fraction": {
+                "exact": "8033/49920",
+                "value": 0.16091746794871795
+              }
+            },
+            "ideal_disagreement_review": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "4907/30",
+                  "value": 163.56666666666666
+                },
+                "FP": {
+                  "exact": "78/5",
+                  "value": 15.6
+                },
+                "FN": {
+                  "exact": "2353/30",
+                  "value": 78.43333333333334
+                },
+                "TN": {
+                  "exact": "7032/5",
+                  "value": 1406.4
+                }
+              },
+              "recall": {
+                "exact": "4907/7260",
+                "value": 0.6758953168044077
+              },
+              "precision": {
+                "exact": "4907/5375",
+                "value": 0.9129302325581395
+              },
+              "specificity": {
+                "exact": "1172/1185",
+                "value": 0.9890295358649789
+              },
+              "retained_fraction": {
+                "exact": "1075/9984",
+                "value": 0.10767227564102565
+              }
+            }
+          }
+        },
+        "all_workers__unknown_omit": {
+          "records": 1664,
+          "reference_positives": 242,
+          "pair_combinations_not_independent_n": 16209,
+          "items_with_fewer_than_two_usable_votes": 0,
+          "positives_with_fewer_than_two_usable_votes": 0,
+          "disagreement_expected_records": {
+            "exact": "4759/30",
+            "value": 158.63333333333333
+          },
+          "disagreement_fraction": {
+            "exact": "4759/49920",
+            "value": 0.09533253205128205
+          },
+          "disagreement_expected_reference_positive_records": {
+            "exact": "2113/30",
+            "value": 70.43333333333334
+          },
+          "disagreement_expected_reference_negative_records": {
+            "exact": "441/5",
+            "value": 88.2
+          },
+          "observed_shared_error_diagnostics": {
+            "reference_positive_items_with_at_least_one_false_excluding_pair": 148,
+            "reference_negative_items_with_at_least_one_false_retaining_pair": 74,
+            "items_without_unresolved_votes": 1663,
+            "unanimous_false_exclusion_items_without_unresolved_votes": 41,
+            "unanimous_false_retention_items_without_unresolved_votes": 0
+          },
+          "policies": {
+            "single": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "2567/20",
+                  "value": 128.35
+                },
+                "FP": {
+                  "exact": "597/10",
+                  "value": 59.7
+                },
+                "FN": {
+                  "exact": "2273/20",
+                  "value": 113.65
+                },
+                "TN": {
+                  "exact": "13623/10",
+                  "value": 1362.3
+                }
+              },
+              "recall": {
+                "exact": "2567/4840",
+                "value": 0.5303719008264463
+              },
+              "precision": {
+                "exact": "2567/3761",
+                "value": 0.6825312416910396
+              },
+              "specificity": {
+                "exact": "4541/4740",
+                "value": 0.9580168776371308
+              },
+              "retained_fraction": {
+                "exact": "3761/33280",
+                "value": 0.1130108173076923
+              }
+            },
+            "AND": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "1397/15",
+                  "value": 93.13333333333334
+                },
+                "FP": {
+                  "exact": "78/5",
+                  "value": 15.6
+                },
+                "FN": {
+                  "exact": "2233/15",
+                  "value": 148.86666666666667
+                },
+                "TN": {
+                  "exact": "7032/5",
+                  "value": 1406.4
+                }
+              },
+              "recall": {
+                "exact": "127/330",
+                "value": 0.38484848484848483
+              },
+              "precision": {
+                "exact": "1397/1631",
+                "value": 0.8565297363580625
+              },
+              "specificity": {
+                "exact": "1172/1185",
+                "value": 0.9890295358649789
+              },
+              "retained_fraction": {
+                "exact": "1631/24960",
+                "value": 0.06534455128205129
+              }
+            },
+            "OR": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "4907/30",
+                  "value": 163.56666666666666
+                },
+                "FP": {
+                  "exact": "519/5",
+                  "value": 103.8
+                },
+                "FN": {
+                  "exact": "2353/30",
+                  "value": 78.43333333333334
+                },
+                "TN": {
+                  "exact": "6591/5",
+                  "value": 1318.2
+                }
+              },
+              "recall": {
+                "exact": "4907/7260",
+                "value": 0.6758953168044077
+              },
+              "precision": {
+                "exact": "4907/8021",
+                "value": 0.6117691060964967
+              },
+              "specificity": {
+                "exact": "2197/2370",
+                "value": 0.9270042194092827
+              },
+              "retained_fraction": {
+                "exact": "617/3840",
+                "value": 0.16067708333333333
+              }
+            },
+            "ideal_disagreement_review": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "4907/30",
+                  "value": 163.56666666666666
+                },
+                "FP": {
+                  "exact": "78/5",
+                  "value": 15.6
+                },
+                "FN": {
+                  "exact": "2353/30",
+                  "value": 78.43333333333334
+                },
+                "TN": {
+                  "exact": "7032/5",
+                  "value": 1406.4
+                }
+              },
+              "recall": {
+                "exact": "4907/7260",
+                "value": 0.6758953168044077
+              },
+              "precision": {
+                "exact": "4907/5375",
+                "value": 0.9129302325581395
+              },
+              "specificity": {
+                "exact": "1172/1185",
+                "value": 0.9890295358649789
+              },
+              "retained_fraction": {
+                "exact": "1075/9984",
+                "value": 0.10767227564102565
+              }
+            }
+          }
+        },
+        "all_workers__unknown_exclude": {
+          "records": 1664,
+          "reference_positives": 242,
+          "pair_combinations_not_independent_n": 16213,
+          "items_with_fewer_than_two_usable_votes": 0,
+          "positives_with_fewer_than_two_usable_votes": 0,
+          "disagreement_expected_records": {
+            "exact": "4759/30",
+            "value": 158.63333333333333
+          },
+          "disagreement_fraction": {
+            "exact": "4759/49920",
+            "value": 0.09533253205128205
+          },
+          "disagreement_expected_reference_positive_records": {
+            "exact": "2113/30",
+            "value": 70.43333333333334
+          },
+          "disagreement_expected_reference_negative_records": {
+            "exact": "441/5",
+            "value": 88.2
+          },
+          "observed_shared_error_diagnostics": {
+            "reference_positive_items_with_at_least_one_false_excluding_pair": 148,
+            "reference_negative_items_with_at_least_one_false_retaining_pair": 74,
+            "items_without_unresolved_votes": 1663,
+            "unanimous_false_exclusion_items_without_unresolved_votes": 41,
+            "unanimous_false_retention_items_without_unresolved_votes": 0
+          },
+          "policies": {
+            "single": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "2567/20",
+                  "value": 128.35
+                },
+                "FP": {
+                  "exact": "597/10",
+                  "value": 59.7
+                },
+                "FN": {
+                  "exact": "2273/20",
+                  "value": 113.65
+                },
+                "TN": {
+                  "exact": "13623/10",
+                  "value": 1362.3
+                }
+              },
+              "recall": {
+                "exact": "2567/4840",
+                "value": 0.5303719008264463
+              },
+              "precision": {
+                "exact": "2567/3761",
+                "value": 0.6825312416910396
+              },
+              "specificity": {
+                "exact": "4541/4740",
+                "value": 0.9580168776371308
+              },
+              "retained_fraction": {
+                "exact": "3761/33280",
+                "value": 0.1130108173076923
+              }
+            },
+            "AND": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "1397/15",
+                  "value": 93.13333333333334
+                },
+                "FP": {
+                  "exact": "78/5",
+                  "value": 15.6
+                },
+                "FN": {
+                  "exact": "2233/15",
+                  "value": 148.86666666666667
+                },
+                "TN": {
+                  "exact": "7032/5",
+                  "value": 1406.4
+                }
+              },
+              "recall": {
+                "exact": "127/330",
+                "value": 0.38484848484848483
+              },
+              "precision": {
+                "exact": "1397/1631",
+                "value": 0.8565297363580625
+              },
+              "specificity": {
+                "exact": "1172/1185",
+                "value": 0.9890295358649789
+              },
+              "retained_fraction": {
+                "exact": "1631/24960",
+                "value": 0.06534455128205129
+              }
+            },
+            "OR": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "4907/30",
+                  "value": 163.56666666666666
+                },
+                "FP": {
+                  "exact": "519/5",
+                  "value": 103.8
+                },
+                "FN": {
+                  "exact": "2353/30",
+                  "value": 78.43333333333334
+                },
+                "TN": {
+                  "exact": "6591/5",
+                  "value": 1318.2
+                }
+              },
+              "recall": {
+                "exact": "4907/7260",
+                "value": 0.6758953168044077
+              },
+              "precision": {
+                "exact": "4907/8021",
+                "value": 0.6117691060964967
+              },
+              "specificity": {
+                "exact": "2197/2370",
+                "value": 0.9270042194092827
+              },
+              "retained_fraction": {
+                "exact": "617/3840",
+                "value": 0.16067708333333333
+              }
+            },
+            "ideal_disagreement_review": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "4907/30",
+                  "value": 163.56666666666666
+                },
+                "FP": {
+                  "exact": "78/5",
+                  "value": 15.6
+                },
+                "FN": {
+                  "exact": "2353/30",
+                  "value": 78.43333333333334
+                },
+                "TN": {
+                  "exact": "7032/5",
+                  "value": 1406.4
+                }
+              },
+              "recall": {
+                "exact": "4907/7260",
+                "value": 0.6758953168044077
+              },
+              "precision": {
+                "exact": "4907/5375",
+                "value": 0.9129302325581395
+              },
+              "specificity": {
+                "exact": "1172/1185",
+                "value": 0.9890295358649789
+              },
+              "retained_fraction": {
+                "exact": "1075/9984",
+                "value": 0.10767227564102565
+              }
+            }
+          }
+        },
+        "all_workers__unknown_retain": {
+          "records": 1664,
+          "reference_positives": 242,
+          "pair_combinations_not_independent_n": 16213,
+          "items_with_fewer_than_two_usable_votes": 0,
+          "positives_with_fewer_than_two_usable_votes": 0,
+          "disagreement_expected_records": {
+            "exact": "4771/30",
+            "value": 159.03333333333333
+          },
+          "disagreement_fraction": {
+            "exact": "367/3840",
+            "value": 0.09557291666666666
+          },
+          "disagreement_expected_reference_positive_records": {
+            "exact": "2113/30",
+            "value": 70.43333333333334
+          },
+          "disagreement_expected_reference_negative_records": {
+            "exact": "443/5",
+            "value": 88.6
+          },
+          "observed_shared_error_diagnostics": {
+            "reference_positive_items_with_at_least_one_false_excluding_pair": 148,
+            "reference_negative_items_with_at_least_one_false_retaining_pair": 74,
+            "items_without_unresolved_votes": 1663,
+            "unanimous_false_exclusion_items_without_unresolved_votes": 41,
+            "unanimous_false_retention_items_without_unresolved_votes": 0
+          },
+          "policies": {
+            "single": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "2567/20",
+                  "value": 128.35
+                },
+                "FP": {
+                  "exact": "599/10",
+                  "value": 59.9
+                },
+                "FN": {
+                  "exact": "2273/20",
+                  "value": 113.65
+                },
+                "TN": {
+                  "exact": "13621/10",
+                  "value": 1362.1
+                }
+              },
+              "recall": {
+                "exact": "2567/4840",
+                "value": 0.5303719008264463
+              },
+              "precision": {
+                "exact": "2567/3765",
+                "value": 0.6818061088977424
+              },
+              "specificity": {
+                "exact": "13621/14220",
+                "value": 0.9578762306610408
+              },
+              "retained_fraction": {
+                "exact": "753/6656",
+                "value": 0.11313100961538461
+              }
+            },
+            "AND": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "1397/15",
+                  "value": 93.13333333333334
+                },
+                "FP": {
+                  "exact": "78/5",
+                  "value": 15.6
+                },
+                "FN": {
+                  "exact": "2233/15",
+                  "value": 148.86666666666667
+                },
+                "TN": {
+                  "exact": "7032/5",
+                  "value": 1406.4
+                }
+              },
+              "recall": {
+                "exact": "127/330",
+                "value": 0.38484848484848483
+              },
+              "precision": {
+                "exact": "1397/1631",
+                "value": 0.8565297363580625
+              },
+              "specificity": {
+                "exact": "1172/1185",
+                "value": 0.9890295358649789
+              },
+              "retained_fraction": {
+                "exact": "1631/24960",
+                "value": 0.06534455128205129
+              }
+            },
+            "OR": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "4907/30",
+                  "value": 163.56666666666666
+                },
+                "FP": {
+                  "exact": "521/5",
+                  "value": 104.2
+                },
+                "FN": {
+                  "exact": "2353/30",
+                  "value": 78.43333333333334
+                },
+                "TN": {
+                  "exact": "6589/5",
+                  "value": 1317.8
+                }
+              },
+              "recall": {
+                "exact": "4907/7260",
+                "value": 0.6758953168044077
+              },
+              "precision": {
+                "exact": "4907/8033",
+                "value": 0.6108552222083904
+              },
+              "specificity": {
+                "exact": "6589/7110",
+                "value": 0.9267229254571027
+              },
+              "retained_fraction": {
+                "exact": "8033/49920",
+                "value": 0.16091746794871795
+              }
+            },
+            "ideal_disagreement_review": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "4907/30",
+                  "value": 163.56666666666666
+                },
+                "FP": {
+                  "exact": "78/5",
+                  "value": 15.6
+                },
+                "FN": {
+                  "exact": "2353/30",
+                  "value": 78.43333333333334
+                },
+                "TN": {
+                  "exact": "7032/5",
+                  "value": 1406.4
+                }
+              },
+              "recall": {
+                "exact": "4907/7260",
+                "value": 0.6758953168044077
+              },
+              "precision": {
+                "exact": "4907/5375",
+                "value": 0.9129302325581395
+              },
+              "specificity": {
+                "exact": "1172/1185",
+                "value": 0.9890295358649789
+              },
+              "retained_fraction": {
+                "exact": "1075/9984",
+                "value": 0.10767227564102565
+              }
+            }
+          }
+        }
+      }
+    },
+    "DST": {
+      "role": "primary",
+      "variants": {
+        "author_filter__unknown_omit": {
+          "records": 8071,
+          "reference_positives": 183,
+          "pair_combinations_not_independent_n": 75726,
+          "items_with_fewer_than_two_usable_votes": 0,
+          "positives_with_fewer_than_two_usable_votes": 0,
+          "disagreement_expected_records": {
+            "exact": "8411/10",
+            "value": 841.1
+          },
+          "disagreement_fraction": {
+            "exact": "8411/80710",
+            "value": 0.10421261305910048
+          },
+          "disagreement_expected_reference_positive_records": {
+            "exact": "2233/30",
+            "value": 74.43333333333334
+          },
+          "disagreement_expected_reference_negative_records": {
+            "exact": "2300/3",
+            "value": 766.6666666666666
+          },
+          "observed_shared_error_diagnostics": {
+            "reference_positive_items_with_at_least_one_false_excluding_pair": 133,
+            "reference_negative_items_with_at_least_one_false_retaining_pair": 321,
+            "items_without_unresolved_votes": 8058,
+            "unanimous_false_exclusion_items_without_unresolved_votes": 24,
+            "unanimous_false_retention_items_without_unresolved_votes": 3
+          },
+          "policies": {
+            "single": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "1749/20",
+                  "value": 87.45
+                },
+                "FP": {
+                  "exact": "2629/6",
+                  "value": 438.1666666666667
+                },
+                "FN": {
+                  "exact": "1911/20",
+                  "value": 95.55
+                },
+                "TN": {
+                  "exact": "44699/6",
+                  "value": 7449.833333333333
+                }
+              },
+              "recall": {
+                "exact": "583/1220",
+                "value": 0.4778688524590164
+              },
+              "precision": {
+                "exact": "477/2867",
+                "value": 0.1663760027903732
+              },
+              "specificity": {
+                "exact": "44699/47328",
+                "value": 0.9444514874915484
+              },
+              "retained_fraction": {
+                "exact": "31537/484260",
+                "value": 0.06512410688473134
+              }
+            },
+            "AND": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "1507/30",
+                  "value": 50.233333333333334
+                },
+                "FP": {
+                  "exact": "329/6",
+                  "value": 54.833333333333336
+                },
+                "FN": {
+                  "exact": "3983/30",
+                  "value": 132.76666666666668
+                },
+                "TN": {
+                  "exact": "46999/6",
+                  "value": 7833.166666666667
+                }
+              },
+              "recall": {
+                "exact": "1507/5490",
+                "value": 0.2744990892531876
+              },
+              "precision": {
+                "exact": "1507/3152",
+                "value": 0.4781091370558376
+              },
+              "specificity": {
+                "exact": "46999/47328",
+                "value": 0.9930485125084516
+              },
+              "retained_fraction": {
+                "exact": "1576/121065",
+                "value": 0.013017800355181101
+              }
+            },
+            "OR": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "374/3",
+                  "value": 124.66666666666667
+                },
+                "FP": {
+                  "exact": "1643/2",
+                  "value": 821.5
+                },
+                "FN": {
+                  "exact": "175/3",
+                  "value": 58.333333333333336
+                },
+                "TN": {
+                  "exact": "14133/2",
+                  "value": 7066.5
+                }
+              },
+              "recall": {
+                "exact": "374/549",
+                "value": 0.6812386156648452
+              },
+              "precision": {
+                "exact": "748/5677",
+                "value": 0.1317597322529505
+              },
+              "specificity": {
+                "exact": "14133/15776",
+                "value": 0.8958544624746451
+              },
+              "retained_fraction": {
+                "exact": "811/6918",
+                "value": 0.11723041341428159
+              }
+            },
+            "ideal_disagreement_review": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "374/3",
+                  "value": 124.66666666666667
+                },
+                "FP": {
+                  "exact": "329/6",
+                  "value": 54.833333333333336
+                },
+                "FN": {
+                  "exact": "175/3",
+                  "value": 58.333333333333336
+                },
+                "TN": {
+                  "exact": "46999/6",
+                  "value": 7833.166666666667
+                }
+              },
+              "recall": {
+                "exact": "374/549",
+                "value": 0.6812386156648452
+              },
+              "precision": {
+                "exact": "748/1077",
+                "value": 0.6945218198700093
+              },
+              "specificity": {
+                "exact": "46999/47328",
+                "value": 0.9930485125084516
+              },
+              "retained_fraction": {
+                "exact": "359/16142",
+                "value": 0.02224011894436873
+              }
+            }
+          }
+        },
+        "author_filter__unknown_exclude": {
+          "records": 8071,
+          "reference_positives": 183,
+          "pair_combinations_not_independent_n": 75773,
+          "items_with_fewer_than_two_usable_votes": 0,
+          "positives_with_fewer_than_two_usable_votes": 0,
+          "disagreement_expected_records": {
+            "exact": "12614/15",
+            "value": 840.9333333333333
+          },
+          "disagreement_fraction": {
+            "exact": "1802/17295",
+            "value": 0.10419196299508529
+          },
+          "disagreement_expected_reference_positive_records": {
+            "exact": "2233/30",
+            "value": 74.43333333333334
+          },
+          "disagreement_expected_reference_negative_records": {
+            "exact": "1533/2",
+            "value": 766.5
+          },
+          "observed_shared_error_diagnostics": {
+            "reference_positive_items_with_at_least_one_false_excluding_pair": 133,
+            "reference_negative_items_with_at_least_one_false_retaining_pair": 321,
+            "items_without_unresolved_votes": 8058,
+            "unanimous_false_exclusion_items_without_unresolved_votes": 24,
+            "unanimous_false_retention_items_without_unresolved_votes": 3
+          },
+          "policies": {
+            "single": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "1749/20",
+                  "value": 87.45
+                },
+                "FP": {
+                  "exact": "5257/12",
+                  "value": 438.0833333333333
+                },
+                "FN": {
+                  "exact": "1911/20",
+                  "value": 95.55
+                },
+                "TN": {
+                  "exact": "89399/12",
+                  "value": 7449.916666666667
+                }
+              },
+              "recall": {
+                "exact": "583/1220",
+                "value": 0.4778688524590164
+              },
+              "precision": {
+                "exact": "5247/31532",
+                "value": 0.16640238487885323
+              },
+              "specificity": {
+                "exact": "89399/94656",
+                "value": 0.9444620520622042
+              },
+              "retained_fraction": {
+                "exact": "7883/121065",
+                "value": 0.06511378185272375
+              }
+            },
+            "AND": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "1507/30",
+                  "value": 50.233333333333334
+                },
+                "FP": {
+                  "exact": "329/6",
+                  "value": 54.833333333333336
+                },
+                "FN": {
+                  "exact": "3983/30",
+                  "value": 132.76666666666668
+                },
+                "TN": {
+                  "exact": "46999/6",
+                  "value": 7833.166666666667
+                }
+              },
+              "recall": {
+                "exact": "1507/5490",
+                "value": 0.2744990892531876
+              },
+              "precision": {
+                "exact": "1507/3152",
+                "value": 0.4781091370558376
+              },
+              "specificity": {
+                "exact": "46999/47328",
+                "value": 0.9930485125084516
+              },
+              "retained_fraction": {
+                "exact": "1576/121065",
+                "value": 0.013017800355181101
+              }
+            },
+            "OR": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "374/3",
+                  "value": 124.66666666666667
+                },
+                "FP": {
+                  "exact": "2464/3",
+                  "value": 821.3333333333334
+                },
+                "FN": {
+                  "exact": "175/3",
+                  "value": 58.333333333333336
+                },
+                "TN": {
+                  "exact": "21200/3",
+                  "value": 7066.666666666667
+                }
+              },
+              "recall": {
+                "exact": "374/549",
+                "value": 0.6812386156648452
+              },
+              "precision": {
+                "exact": "17/129",
+                "value": 0.13178294573643412
+              },
+              "specificity": {
+                "exact": "1325/1479",
+                "value": 0.8958755916159568
+              },
+              "retained_fraction": {
+                "exact": "946/8071",
+                "value": 0.11720976335026638
+              }
+            },
+            "ideal_disagreement_review": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "374/3",
+                  "value": 124.66666666666667
+                },
+                "FP": {
+                  "exact": "329/6",
+                  "value": 54.833333333333336
+                },
+                "FN": {
+                  "exact": "175/3",
+                  "value": 58.333333333333336
+                },
+                "TN": {
+                  "exact": "46999/6",
+                  "value": 7833.166666666667
+                }
+              },
+              "recall": {
+                "exact": "374/549",
+                "value": 0.6812386156648452
+              },
+              "precision": {
+                "exact": "748/1077",
+                "value": 0.6945218198700093
+              },
+              "specificity": {
+                "exact": "46999/47328",
+                "value": 0.9930485125084516
+              },
+              "retained_fraction": {
+                "exact": "359/16142",
+                "value": 0.02224011894436873
+              }
+            }
+          }
+        },
+        "author_filter__unknown_retain": {
+          "records": 8071,
+          "reference_positives": 183,
+          "pair_combinations_not_independent_n": 75773,
+          "items_with_fewer_than_two_usable_votes": 0,
+          "positives_with_fewer_than_two_usable_votes": 0,
+          "disagreement_expected_records": {
+            "exact": "8463/10",
+            "value": 846.3
+          },
+          "disagreement_fraction": {
+            "exact": "1209/11530",
+            "value": 0.10485689505637467
+          },
+          "disagreement_expected_reference_positive_records": {
+            "exact": "2233/30",
+            "value": 74.43333333333334
+          },
+          "disagreement_expected_reference_negative_records": {
+            "exact": "11578/15",
+            "value": 771.8666666666667
+          },
+          "observed_shared_error_diagnostics": {
+            "reference_positive_items_with_at_least_one_false_excluding_pair": 133,
+            "reference_negative_items_with_at_least_one_false_retaining_pair": 322,
+            "items_without_unresolved_votes": 8058,
+            "unanimous_false_exclusion_items_without_unresolved_votes": 24,
+            "unanimous_false_retention_items_without_unresolved_votes": 3
+          },
+          "policies": {
+            "single": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "1749/20",
+                  "value": 87.45
+                },
+                "FP": {
+                  "exact": "6614/15",
+                  "value": 440.93333333333334
+                },
+                "FN": {
+                  "exact": "1911/20",
+                  "value": 95.55
+                },
+                "TN": {
+                  "exact": "111706/15",
+                  "value": 7447.066666666667
+                }
+              },
+              "recall": {
+                "exact": "583/1220",
+                "value": 0.4778688524590164
+              },
+              "precision": {
+                "exact": "5247/31703",
+                "value": 0.16550484181307762
+              },
+              "specificity": {
+                "exact": "55853/59160",
+                "value": 0.9441007437457741
+              },
+              "retained_fraction": {
+                "exact": "4529/69180",
+                "value": 0.06546689794738364
+              }
+            },
+            "AND": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "1507/30",
+                  "value": 50.233333333333334
+                },
+                "FP": {
+                  "exact": "55",
+                  "value": 55.0
+                },
+                "FN": {
+                  "exact": "3983/30",
+                  "value": 132.76666666666668
+                },
+                "TN": {
+                  "exact": "7833",
+                  "value": 7833.0
+                }
+              },
+              "recall": {
+                "exact": "1507/5490",
+                "value": 0.2744990892531876
+              },
+              "precision": {
+                "exact": "137/287",
+                "value": 0.47735191637630664
+              },
+              "specificity": {
+                "exact": "7833/7888",
+                "value": 0.9930273833671399
+              },
+              "retained_fraction": {
+                "exact": "451/34590",
+                "value": 0.0130384504191963
+              }
+            },
+            "OR": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "374/3",
+                  "value": 124.66666666666667
+                },
+                "FP": {
+                  "exact": "12403/15",
+                  "value": 826.8666666666667
+                },
+                "FN": {
+                  "exact": "175/3",
+                  "value": 58.333333333333336
+                },
+                "TN": {
+                  "exact": "105917/15",
+                  "value": 7061.133333333333
+                }
+              },
+              "recall": {
+                "exact": "374/549",
+                "value": 0.6812386156648452
+              },
+              "precision": {
+                "exact": "1870/14273",
+                "value": 0.13101660477825264
+              },
+              "specificity": {
+                "exact": "105917/118320",
+                "value": 0.8951741041244083
+              },
+              "retained_fraction": {
+                "exact": "2039/17295",
+                "value": 0.11789534547557097
+              }
+            },
+            "ideal_disagreement_review": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "374/3",
+                  "value": 124.66666666666667
+                },
+                "FP": {
+                  "exact": "55",
+                  "value": 55.0
+                },
+                "FN": {
+                  "exact": "175/3",
+                  "value": 58.333333333333336
+                },
+                "TN": {
+                  "exact": "7833",
+                  "value": 7833.0
+                }
+              },
+              "recall": {
+                "exact": "374/549",
+                "value": 0.6812386156648452
+              },
+              "precision": {
+                "exact": "34/49",
+                "value": 0.6938775510204082
+              },
+              "specificity": {
+                "exact": "7833/7888",
+                "value": 0.9930273833671399
+              },
+              "retained_fraction": {
+                "exact": "77/3459",
+                "value": 0.022260769008383925
+              }
+            }
+          }
+        },
+        "all_workers__unknown_omit": {
+          "records": 8071,
+          "reference_positives": 183,
+          "pair_combinations_not_independent_n": 79691,
+          "items_with_fewer_than_two_usable_votes": 0,
+          "positives_with_fewer_than_two_usable_votes": 0,
+          "disagreement_expected_records": {
+            "exact": "830",
+            "value": 830.0
+          },
+          "disagreement_fraction": {
+            "exact": "830/8071",
+            "value": 0.10283731879568826
+          },
+          "disagreement_expected_reference_positive_records": {
+            "exact": "1127/15",
+            "value": 75.13333333333334
+          },
+          "disagreement_expected_reference_negative_records": {
+            "exact": "11323/15",
+            "value": 754.8666666666667
+          },
+          "observed_shared_error_diagnostics": {
+            "reference_positive_items_with_at_least_one_false_excluding_pair": 140,
+            "reference_negative_items_with_at_least_one_false_retaining_pair": 323,
+            "items_without_unresolved_votes": 8058,
+            "unanimous_false_exclusion_items_without_unresolved_votes": 24,
+            "unanimous_false_retention_items_without_unresolved_votes": 3
+          },
+          "policies": {
+            "single": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "428/5",
+                  "value": 85.6
+                },
+                "FP": {
+                  "exact": "6463/15",
+                  "value": 430.8666666666667
+                },
+                "FN": {
+                  "exact": "487/5",
+                  "value": 97.4
+                },
+                "TN": {
+                  "exact": "111857/15",
+                  "value": 7457.133333333333
+                }
+              },
+              "recall": {
+                "exact": "428/915",
+                "value": 0.46775956284153003
+              },
+              "precision": {
+                "exact": "1284/7747",
+                "value": 0.16574157738479411
+              },
+              "specificity": {
+                "exact": "111857/118320",
+                "value": 0.9453769438810007
+              },
+              "retained_fraction": {
+                "exact": "7747/121065",
+                "value": 0.06399041837029695
+              }
+            },
+            "AND": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "1441/30",
+                  "value": 48.03333333333333
+                },
+                "FP": {
+                  "exact": "1603/30",
+                  "value": 53.43333333333333
+                },
+                "FN": {
+                  "exact": "4049/30",
+                  "value": 134.96666666666667
+                },
+                "TN": {
+                  "exact": "235037/30",
+                  "value": 7834.566666666667
+                }
+              },
+              "recall": {
+                "exact": "1441/5490",
+                "value": 0.26247723132969036
+              },
+              "precision": {
+                "exact": "1441/3044",
+                "value": 0.47339027595269384
+              },
+              "specificity": {
+                "exact": "235037/236640",
+                "value": 0.9932259972954699
+              },
+              "retained_fraction": {
+                "exact": "1522/121065",
+                "value": 0.012571758972452815
+              }
+            },
+            "OR": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "739/6",
+                  "value": 123.16666666666667
+                },
+                "FP": {
+                  "exact": "8083/10",
+                  "value": 808.3
+                },
+                "FN": {
+                  "exact": "359/6",
+                  "value": 59.833333333333336
+                },
+                "TN": {
+                  "exact": "70797/10",
+                  "value": 7079.7
+                }
+              },
+              "recall": {
+                "exact": "739/1098",
+                "value": 0.6730418943533698
+              },
+              "precision": {
+                "exact": "3695/27944",
+                "value": 0.1322287432006871
+              },
+              "specificity": {
+                "exact": "70797/78880",
+                "value": 0.8975278904665315
+              },
+              "retained_fraction": {
+                "exact": "1996/17295",
+                "value": 0.11540907776814108
+              }
+            },
+            "ideal_disagreement_review": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "739/6",
+                  "value": 123.16666666666667
+                },
+                "FP": {
+                  "exact": "1603/30",
+                  "value": 53.43333333333333
+                },
+                "FN": {
+                  "exact": "359/6",
+                  "value": 59.833333333333336
+                },
+                "TN": {
+                  "exact": "235037/30",
+                  "value": 7834.566666666667
+                }
+              },
+              "recall": {
+                "exact": "739/1098",
+                "value": 0.6730418943533698
+              },
+              "precision": {
+                "exact": "3695/5298",
+                "value": 0.697432993582484
+              },
+              "specificity": {
+                "exact": "235037/236640",
+                "value": 0.9932259972954699
+              },
+              "retained_fraction": {
+                "exact": "883/40355",
+                "value": 0.021880807830504275
+              }
+            }
+          }
+        },
+        "all_workers__unknown_exclude": {
+          "records": 8071,
+          "reference_positives": 183,
+          "pair_combinations_not_independent_n": 79742,
+          "items_with_fewer_than_two_usable_votes": 0,
+          "positives_with_fewer_than_two_usable_votes": 0,
+          "disagreement_expected_records": {
+            "exact": "8299/10",
+            "value": 829.9
+          },
+          "disagreement_fraction": {
+            "exact": "8299/80710",
+            "value": 0.10282492875727915
+          },
+          "disagreement_expected_reference_positive_records": {
+            "exact": "1127/15",
+            "value": 75.13333333333334
+          },
+          "disagreement_expected_reference_negative_records": {
+            "exact": "22643/30",
+            "value": 754.7666666666667
+          },
+          "observed_shared_error_diagnostics": {
+            "reference_positive_items_with_at_least_one_false_excluding_pair": 140,
+            "reference_negative_items_with_at_least_one_false_retaining_pair": 323,
+            "items_without_unresolved_votes": 8058,
+            "unanimous_false_exclusion_items_without_unresolved_votes": 24,
+            "unanimous_false_retention_items_without_unresolved_votes": 3
+          },
+          "policies": {
+            "single": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "428/5",
+                  "value": 85.6
+                },
+                "FP": {
+                  "exact": "25849/60",
+                  "value": 430.81666666666666
+                },
+                "FN": {
+                  "exact": "487/5",
+                  "value": 97.4
+                },
+                "TN": {
+                  "exact": "447431/60",
+                  "value": 7457.183333333333
+                }
+              },
+              "recall": {
+                "exact": "428/915",
+                "value": 0.46775956284153003
+              },
+              "precision": {
+                "exact": "5136/30985",
+                "value": 0.16575762465709215
+              },
+              "specificity": {
+                "exact": "447431/473280",
+                "value": 0.9453832826233942
+              },
+              "retained_fraction": {
+                "exact": "6197/96852",
+                "value": 0.06398422335109238
+              }
+            },
+            "AND": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "1441/30",
+                  "value": 48.03333333333333
+                },
+                "FP": {
+                  "exact": "1603/30",
+                  "value": 53.43333333333333
+                },
+                "FN": {
+                  "exact": "4049/30",
+                  "value": 134.96666666666667
+                },
+                "TN": {
+                  "exact": "235037/30",
+                  "value": 7834.566666666667
+                }
+              },
+              "recall": {
+                "exact": "1441/5490",
+                "value": 0.26247723132969036
+              },
+              "precision": {
+                "exact": "1441/3044",
+                "value": 0.47339027595269384
+              },
+              "specificity": {
+                "exact": "235037/236640",
+                "value": 0.9932259972954699
+              },
+              "retained_fraction": {
+                "exact": "1522/121065",
+                "value": 0.012571758972452815
+              }
+            },
+            "OR": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "739/6",
+                  "value": 123.16666666666667
+                },
+                "FP": {
+                  "exact": "4041/5",
+                  "value": 808.2
+                },
+                "FN": {
+                  "exact": "359/6",
+                  "value": 59.833333333333336
+                },
+                "TN": {
+                  "exact": "35399/5",
+                  "value": 7079.8
+                }
+              },
+              "recall": {
+                "exact": "739/1098",
+                "value": 0.6730418943533698
+              },
+              "precision": {
+                "exact": "3695/27941",
+                "value": 0.13224294048172935
+              },
+              "specificity": {
+                "exact": "35399/39440",
+                "value": 0.8975405679513184
+              },
+              "retained_fraction": {
+                "exact": "27941/242130",
+                "value": 0.11539668772973197
+              }
+            },
+            "ideal_disagreement_review": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "739/6",
+                  "value": 123.16666666666667
+                },
+                "FP": {
+                  "exact": "1603/30",
+                  "value": 53.43333333333333
+                },
+                "FN": {
+                  "exact": "359/6",
+                  "value": 59.833333333333336
+                },
+                "TN": {
+                  "exact": "235037/30",
+                  "value": 7834.566666666667
+                }
+              },
+              "recall": {
+                "exact": "739/1098",
+                "value": 0.6730418943533698
+              },
+              "precision": {
+                "exact": "3695/5298",
+                "value": 0.697432993582484
+              },
+              "specificity": {
+                "exact": "235037/236640",
+                "value": 0.9932259972954699
+              },
+              "retained_fraction": {
+                "exact": "883/40355",
+                "value": 0.021880807830504275
+              }
+            }
+          }
+        },
+        "all_workers__unknown_retain": {
+          "records": 8071,
+          "reference_positives": 183,
+          "pair_combinations_not_independent_n": 79742,
+          "items_with_fewer_than_two_usable_votes": 0,
+          "positives_with_fewer_than_two_usable_votes": 0,
+          "disagreement_expected_records": {
+            "exact": "835",
+            "value": 835.0
+          },
+          "disagreement_fraction": {
+            "exact": "835/8071",
+            "value": 0.10345682071614422
+          },
+          "disagreement_expected_reference_positive_records": {
+            "exact": "1127/15",
+            "value": 75.13333333333334
+          },
+          "disagreement_expected_reference_negative_records": {
+            "exact": "11398/15",
+            "value": 759.8666666666667
+          },
+          "observed_shared_error_diagnostics": {
+            "reference_positive_items_with_at_least_one_false_excluding_pair": 140,
+            "reference_negative_items_with_at_least_one_false_retaining_pair": 324,
+            "items_without_unresolved_votes": 8058,
+            "unanimous_false_exclusion_items_without_unresolved_votes": 24,
+            "unanimous_false_retention_items_without_unresolved_votes": 3
+          },
+          "policies": {
+            "single": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "428/5",
+                  "value": 85.6
+                },
+                "FP": {
+                  "exact": "6502/15",
+                  "value": 433.46666666666664
+                },
+                "FN": {
+                  "exact": "487/5",
+                  "value": 97.4
+                },
+                "TN": {
+                  "exact": "111818/15",
+                  "value": 7454.533333333334
+                }
+              },
+              "recall": {
+                "exact": "428/915",
+                "value": 0.46775956284153003
+              },
+              "precision": {
+                "exact": "642/3893",
+                "value": 0.16491137939892114
+              },
+              "specificity": {
+                "exact": "55909/59160",
+                "value": 0.9450473292765382
+              },
+              "retained_fraction": {
+                "exact": "7786/121065",
+                "value": 0.06431255936893404
+              }
+            },
+            "AND": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "1441/30",
+                  "value": 48.03333333333333
+                },
+                "FP": {
+                  "exact": "803/15",
+                  "value": 53.53333333333333
+                },
+                "FN": {
+                  "exact": "4049/30",
+                  "value": 134.96666666666667
+                },
+                "TN": {
+                  "exact": "117517/15",
+                  "value": 7834.466666666666
+                }
+              },
+              "recall": {
+                "exact": "1441/5490",
+                "value": 0.26247723132969036
+              },
+              "precision": {
+                "exact": "131/277",
+                "value": 0.4729241877256318
+              },
+              "specificity": {
+                "exact": "117517/118320",
+                "value": 0.993213319810683
+              },
+              "retained_fraction": {
+                "exact": "3047/242130",
+                "value": 0.012584149010861934
+              }
+            },
+            "OR": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "739/6",
+                  "value": 123.16666666666667
+                },
+                "FP": {
+                  "exact": "4067/5",
+                  "value": 813.4
+                },
+                "FN": {
+                  "exact": "359/6",
+                  "value": 59.833333333333336
+                },
+                "TN": {
+                  "exact": "35373/5",
+                  "value": 7074.6
+                }
+              },
+              "recall": {
+                "exact": "739/1098",
+                "value": 0.6730418943533698
+              },
+              "precision": {
+                "exact": "3695/28097",
+                "value": 0.13150870199665446
+              },
+              "specificity": {
+                "exact": "35373/39440",
+                "value": 0.8968813387423935
+              },
+              "retained_fraction": {
+                "exact": "28097/242130",
+                "value": 0.11604096972700616
+              }
+            },
+            "ideal_disagreement_review": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "739/6",
+                  "value": 123.16666666666667
+                },
+                "FP": {
+                  "exact": "803/15",
+                  "value": 53.53333333333333
+                },
+                "FN": {
+                  "exact": "359/6",
+                  "value": 59.833333333333336
+                },
+                "TN": {
+                  "exact": "117517/15",
+                  "value": 7834.466666666666
+                }
+              },
+              "recall": {
+                "exact": "739/1098",
+                "value": 0.6730418943533698
+              },
+              "precision": {
+                "exact": "3695/5301",
+                "value": 0.6970382946613847
+              },
+              "specificity": {
+                "exact": "117517/118320",
+                "value": 0.993213319810683
+              },
+              "retained_fraction": {
+                "exact": "1767/80710",
+                "value": 0.021893197868913392
+              }
+            }
+          }
+        }
+      }
+    },
+    "Omega3": {
+      "role": "primary",
+      "variants": {
+        "author_filter__unknown_omit": {
+          "records": 5774,
+          "reference_positives": 310,
+          "pair_combinations_not_independent_n": 54296,
+          "items_with_fewer_than_two_usable_votes": 0,
+          "positives_with_fewer_than_two_usable_votes": 0,
+          "disagreement_expected_records": {
+            "exact": "14702/15",
+            "value": 980.1333333333333
+          },
+          "disagreement_fraction": {
+            "exact": "7351/43305",
+            "value": 0.16974945156448448
+          },
+          "disagreement_expected_reference_positive_records": {
+            "exact": "409/3",
+            "value": 136.33333333333334
+          },
+          "disagreement_expected_reference_negative_records": {
+            "exact": "4219/5",
+            "value": 843.8
+          },
+          "observed_shared_error_diagnostics": {
+            "reference_positive_items_with_at_least_one_false_excluding_pair": 177,
+            "reference_negative_items_with_at_least_one_false_retaining_pair": 821,
+            "items_without_unresolved_votes": 5770,
+            "unanimous_false_exclusion_items_without_unresolved_votes": 12,
+            "unanimous_false_retention_items_without_unresolved_votes": 28
+          },
+          "policies": {
+            "single": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "5801/30",
+                  "value": 193.36666666666667
+                },
+                "FP": {
+                  "exact": "1255/2",
+                  "value": 627.5
+                },
+                "FN": {
+                  "exact": "3499/30",
+                  "value": 116.63333333333334
+                },
+                "TN": {
+                  "exact": "9673/2",
+                  "value": 4836.5
+                }
+              },
+              "recall": {
+                "exact": "5801/9300",
+                "value": 0.6237634408602151
+              },
+              "precision": {
+                "exact": "5801/24626",
+                "value": 0.23556403800860878
+              },
+              "specificity": {
+                "exact": "9673/10928",
+                "value": 0.8851573938506588
+              },
+              "retained_fraction": {
+                "exact": "12313/86610",
+                "value": 0.14216603163606975
+              }
+            },
+            "AND": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "626/5",
+                  "value": 125.2
+                },
+                "FP": {
+                  "exact": "1028/5",
+                  "value": 205.6
+                },
+                "FN": {
+                  "exact": "924/5",
+                  "value": 184.8
+                },
+                "TN": {
+                  "exact": "26292/5",
+                  "value": 5258.4
+                }
+              },
+              "recall": {
+                "exact": "313/775",
+                "value": 0.4038709677419355
+              },
+              "precision": {
+                "exact": "313/827",
+                "value": 0.3784764207980653
+              },
+              "specificity": {
+                "exact": "6573/6830",
+                "value": 0.9623718887262079
+              },
+              "retained_fraction": {
+                "exact": "827/14435",
+                "value": 0.0572913058538275
+              }
+            },
+            "OR": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "3923/15",
+                  "value": 261.53333333333336
+                },
+                "FP": {
+                  "exact": "5247/5",
+                  "value": 1049.4
+                },
+                "FN": {
+                  "exact": "727/15",
+                  "value": 48.46666666666667
+                },
+                "TN": {
+                  "exact": "22073/5",
+                  "value": 4414.6
+                }
+              },
+              "recall": {
+                "exact": "3923/4650",
+                "value": 0.8436559139784946
+              },
+              "precision": {
+                "exact": "3923/19664",
+                "value": 0.19950162733930024
+              },
+              "specificity": {
+                "exact": "22073/27320",
+                "value": 0.8079428989751098
+              },
+              "retained_fraction": {
+                "exact": "9832/43305",
+                "value": 0.22704075741831198
+              }
+            },
+            "ideal_disagreement_review": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "3923/15",
+                  "value": 261.53333333333336
+                },
+                "FP": {
+                  "exact": "1028/5",
+                  "value": 205.6
+                },
+                "FN": {
+                  "exact": "727/15",
+                  "value": 48.46666666666667
+                },
+                "TN": {
+                  "exact": "26292/5",
+                  "value": 5258.4
+                }
+              },
+              "recall": {
+                "exact": "3923/4650",
+                "value": 0.8436559139784946
+              },
+              "precision": {
+                "exact": "3923/7007",
+                "value": 0.5598687027258455
+              },
+              "specificity": {
+                "exact": "6573/6830",
+                "value": 0.9623718887262079
+              },
+              "retained_fraction": {
+                "exact": "7007/86610",
+                "value": 0.08090289804872416
+              }
+            }
+          }
+        },
+        "author_filter__unknown_exclude": {
+          "records": 5774,
+          "reference_positives": 310,
+          "pair_combinations_not_independent_n": 54310,
+          "items_with_fewer_than_two_usable_votes": 0,
+          "positives_with_fewer_than_two_usable_votes": 0,
+          "disagreement_expected_records": {
+            "exact": "29401/30",
+            "value": 980.0333333333333
+          },
+          "disagreement_fraction": {
+            "exact": "29401/173220",
+            "value": 0.1697321325482046
+          },
+          "disagreement_expected_reference_positive_records": {
+            "exact": "409/3",
+            "value": 136.33333333333334
+          },
+          "disagreement_expected_reference_negative_records": {
+            "exact": "8437/10",
+            "value": 843.7
+          },
+          "observed_shared_error_diagnostics": {
+            "reference_positive_items_with_at_least_one_false_excluding_pair": 177,
+            "reference_negative_items_with_at_least_one_false_retaining_pair": 821,
+            "items_without_unresolved_votes": 5770,
+            "unanimous_false_exclusion_items_without_unresolved_votes": 12,
+            "unanimous_false_retention_items_without_unresolved_votes": 28
+          },
+          "policies": {
+            "single": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "5801/30",
+                  "value": 193.36666666666667
+                },
+                "FP": {
+                  "exact": "12549/20",
+                  "value": 627.45
+                },
+                "FN": {
+                  "exact": "3499/30",
+                  "value": 116.63333333333334
+                },
+                "TN": {
+                  "exact": "96731/20",
+                  "value": 4836.55
+                }
+              },
+              "recall": {
+                "exact": "5801/9300",
+                "value": 0.6237634408602151
+              },
+              "precision": {
+                "exact": "11602/49249",
+                "value": 0.23557838737842393
+              },
+              "specificity": {
+                "exact": "96731/109280",
+                "value": 0.8851665446559297
+              },
+              "retained_fraction": {
+                "exact": "49249/346440",
+                "value": 0.1421573721279298
+              }
+            },
+            "AND": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "626/5",
+                  "value": 125.2
+                },
+                "FP": {
+                  "exact": "1028/5",
+                  "value": 205.6
+                },
+                "FN": {
+                  "exact": "924/5",
+                  "value": 184.8
+                },
+                "TN": {
+                  "exact": "26292/5",
+                  "value": 5258.4
+                }
+              },
+              "recall": {
+                "exact": "313/775",
+                "value": 0.4038709677419355
+              },
+              "precision": {
+                "exact": "313/827",
+                "value": 0.3784764207980653
+              },
+              "specificity": {
+                "exact": "6573/6830",
+                "value": 0.9623718887262079
+              },
+              "retained_fraction": {
+                "exact": "827/14435",
+                "value": 0.0572913058538275
+              }
+            },
+            "OR": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "3923/15",
+                  "value": 261.53333333333336
+                },
+                "FP": {
+                  "exact": "10493/10",
+                  "value": 1049.3
+                },
+                "FN": {
+                  "exact": "727/15",
+                  "value": 48.46666666666667
+                },
+                "TN": {
+                  "exact": "44147/10",
+                  "value": 4414.7
+                }
+              },
+              "recall": {
+                "exact": "3923/4650",
+                "value": 0.8436559139784946
+              },
+              "precision": {
+                "exact": "7846/39325",
+                "value": 0.19951684678957407
+              },
+              "specificity": {
+                "exact": "44147/54640",
+                "value": 0.8079612005856516
+              },
+              "retained_fraction": {
+                "exact": "7865/34644",
+                "value": 0.2270234384020321
+              }
+            },
+            "ideal_disagreement_review": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "3923/15",
+                  "value": 261.53333333333336
+                },
+                "FP": {
+                  "exact": "1028/5",
+                  "value": 205.6
+                },
+                "FN": {
+                  "exact": "727/15",
+                  "value": 48.46666666666667
+                },
+                "TN": {
+                  "exact": "26292/5",
+                  "value": 5258.4
+                }
+              },
+              "recall": {
+                "exact": "3923/4650",
+                "value": 0.8436559139784946
+              },
+              "precision": {
+                "exact": "3923/7007",
+                "value": 0.5598687027258455
+              },
+              "specificity": {
+                "exact": "6573/6830",
+                "value": 0.9623718887262079
+              },
+              "retained_fraction": {
+                "exact": "7007/86610",
+                "value": 0.08090289804872416
+              }
+            }
+          }
+        },
+        "author_filter__unknown_retain": {
+          "records": 5774,
+          "reference_positives": 310,
+          "pair_combinations_not_independent_n": 54310,
+          "items_with_fewer_than_two_usable_votes": 0,
+          "positives_with_fewer_than_two_usable_votes": 0,
+          "disagreement_expected_records": {
+            "exact": "29449/30",
+            "value": 981.6333333333333
+          },
+          "disagreement_fraction": {
+            "exact": "29449/173220",
+            "value": 0.1700092368086826
+          },
+          "disagreement_expected_reference_positive_records": {
+            "exact": "409/3",
+            "value": 136.33333333333334
+          },
+          "disagreement_expected_reference_negative_records": {
+            "exact": "8453/10",
+            "value": 845.3
+          },
+          "observed_shared_error_diagnostics": {
+            "reference_positive_items_with_at_least_one_false_excluding_pair": 177,
+            "reference_negative_items_with_at_least_one_false_retaining_pair": 822,
+            "items_without_unresolved_votes": 5770,
+            "unanimous_false_exclusion_items_without_unresolved_votes": 12,
+            "unanimous_false_retention_items_without_unresolved_votes": 28
+          },
+          "policies": {
+            "single": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "5801/30",
+                  "value": 193.36666666666667
+                },
+                "FP": {
+                  "exact": "12567/20",
+                  "value": 628.35
+                },
+                "FN": {
+                  "exact": "3499/30",
+                  "value": 116.63333333333334
+                },
+                "TN": {
+                  "exact": "96713/20",
+                  "value": 4835.65
+                }
+              },
+              "recall": {
+                "exact": "5801/9300",
+                "value": 0.6237634408602151
+              },
+              "precision": {
+                "exact": "11602/49303",
+                "value": 0.23532036590065514
+              },
+              "specificity": {
+                "exact": "96713/109280",
+                "value": 0.8850018301610542
+              },
+              "retained_fraction": {
+                "exact": "49303/346440",
+                "value": 0.14231324327444866
+              }
+            },
+            "AND": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "626/5",
+                  "value": 125.2
+                },
+                "FP": {
+                  "exact": "2057/10",
+                  "value": 205.7
+                },
+                "FN": {
+                  "exact": "924/5",
+                  "value": 184.8
+                },
+                "TN": {
+                  "exact": "52583/10",
+                  "value": 5258.3
+                }
+              },
+              "recall": {
+                "exact": "313/775",
+                "value": 0.4038709677419355
+              },
+              "precision": {
+                "exact": "1252/3309",
+                "value": 0.37836204291326686
+              },
+              "specificity": {
+                "exact": "52583/54640",
+                "value": 0.9623535871156662
+              },
+              "retained_fraction": {
+                "exact": "3309/57740",
+                "value": 0.05730862487010738
+              }
+            },
+            "OR": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "3923/15",
+                  "value": 261.53333333333336
+                },
+                "FP": {
+                  "exact": "1051",
+                  "value": 1051.0
+                },
+                "FN": {
+                  "exact": "727/15",
+                  "value": 48.46666666666667
+                },
+                "TN": {
+                  "exact": "4413",
+                  "value": 4413.0
+                }
+              },
+              "recall": {
+                "exact": "3923/4650",
+                "value": 0.8436559139784946
+              },
+              "precision": {
+                "exact": "3923/19688",
+                "value": 0.1992584315318976
+              },
+              "specificity": {
+                "exact": "4413/5464",
+                "value": 0.8076500732064422
+              },
+              "retained_fraction": {
+                "exact": "9844/43305",
+                "value": 0.22731786167878998
+              }
+            },
+            "ideal_disagreement_review": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "3923/15",
+                  "value": 261.53333333333336
+                },
+                "FP": {
+                  "exact": "2057/10",
+                  "value": 205.7
+                },
+                "FN": {
+                  "exact": "727/15",
+                  "value": 48.46666666666667
+                },
+                "TN": {
+                  "exact": "52583/10",
+                  "value": 5258.3
+                }
+              },
+              "recall": {
+                "exact": "3923/4650",
+                "value": 0.8436559139784946
+              },
+              "precision": {
+                "exact": "7846/14017",
+                "value": 0.5597488763644146
+              },
+              "specificity": {
+                "exact": "52583/54640",
+                "value": 0.9623535871156662
+              },
+              "retained_fraction": {
+                "exact": "14017/173220",
+                "value": 0.08092021706500405
+              }
+            }
+          }
+        },
+        "all_workers__unknown_omit": {
+          "records": 5774,
+          "reference_positives": 310,
+          "pair_combinations_not_independent_n": 57065,
+          "items_with_fewer_than_two_usable_votes": 0,
+          "positives_with_fewer_than_two_usable_votes": 0,
+          "disagreement_expected_records": {
+            "exact": "15277/15",
+            "value": 1018.4666666666667
+          },
+          "disagreement_fraction": {
+            "exact": "15277/86610",
+            "value": 0.17638840780510334
+          },
+          "disagreement_expected_reference_positive_records": {
+            "exact": "134",
+            "value": 134.0
+          },
+          "disagreement_expected_reference_negative_records": {
+            "exact": "13267/15",
+            "value": 884.4666666666667
+          },
+          "observed_shared_error_diagnostics": {
+            "reference_positive_items_with_at_least_one_false_excluding_pair": 177,
+            "reference_negative_items_with_at_least_one_false_retaining_pair": 880,
+            "items_without_unresolved_votes": 5770,
+            "unanimous_false_exclusion_items_without_unresolved_votes": 12,
+            "unanimous_false_retention_items_without_unresolved_votes": 25
+          },
+          "policies": {
+            "single": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "1943/10",
+                  "value": 194.3
+                },
+                "FP": {
+                  "exact": "19723/30",
+                  "value": 657.4333333333333
+                },
+                "FN": {
+                  "exact": "1157/10",
+                  "value": 115.7
+                },
+                "TN": {
+                  "exact": "144197/30",
+                  "value": 4806.566666666667
+                }
+              },
+              "recall": {
+                "exact": "1943/3100",
+                "value": 0.6267741935483871
+              },
+              "precision": {
+                "exact": "5829/25552",
+                "value": 0.22812304320601126
+              },
+              "specificity": {
+                "exact": "144197/163920",
+                "value": 0.879679111761835
+              },
+              "retained_fraction": {
+                "exact": "6388/43305",
+                "value": 0.14751183466112458
+              }
+            },
+            "AND": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "1273/10",
+                  "value": 127.3
+                },
+                "FP": {
+                  "exact": "1076/5",
+                  "value": 215.2
+                },
+                "FN": {
+                  "exact": "1827/10",
+                  "value": 182.7
+                },
+                "TN": {
+                  "exact": "26244/5",
+                  "value": 5248.8
+                }
+              },
+              "recall": {
+                "exact": "1273/3100",
+                "value": 0.4106451612903226
+              },
+              "precision": {
+                "exact": "1273/3425",
+                "value": 0.3716788321167883
+              },
+              "specificity": {
+                "exact": "6561/6830",
+                "value": 0.9606149341142021
+              },
+              "retained_fraction": {
+                "exact": "685/11548",
+                "value": 0.059317630758572916
+              }
+            },
+            "OR": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "2613/10",
+                  "value": 261.3
+                },
+                "FP": {
+                  "exact": "3299/3",
+                  "value": 1099.6666666666667
+                },
+                "FN": {
+                  "exact": "487/10",
+                  "value": 48.7
+                },
+                "TN": {
+                  "exact": "13093/3",
+                  "value": 4364.333333333333
+                }
+              },
+              "recall": {
+                "exact": "2613/3100",
+                "value": 0.8429032258064516
+              },
+              "precision": {
+                "exact": "7839/40829",
+                "value": 0.1919958852776213
+              },
+              "specificity": {
+                "exact": "13093/16392",
+                "value": 0.798743289409468
+              },
+              "retained_fraction": {
+                "exact": "40829/173220",
+                "value": 0.23570603856367625
+              }
+            },
+            "ideal_disagreement_review": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "2613/10",
+                  "value": 261.3
+                },
+                "FP": {
+                  "exact": "1076/5",
+                  "value": 215.2
+                },
+                "FN": {
+                  "exact": "487/10",
+                  "value": 48.7
+                },
+                "TN": {
+                  "exact": "26244/5",
+                  "value": 5248.8
+                }
+              },
+              "recall": {
+                "exact": "2613/3100",
+                "value": 0.8429032258064516
+              },
+              "precision": {
+                "exact": "2613/4765",
+                "value": 0.5483735571878279
+              },
+              "specificity": {
+                "exact": "6561/6830",
+                "value": 0.9606149341142021
+              },
+              "retained_fraction": {
+                "exact": "953/11548",
+                "value": 0.08252511257360581
+              }
+            }
+          }
+        },
+        "all_workers__unknown_exclude": {
+          "records": 5774,
+          "reference_positives": 310,
+          "pair_combinations_not_independent_n": 57081,
+          "items_with_fewer_than_two_usable_votes": 0,
+          "positives_with_fewer_than_two_usable_votes": 0,
+          "disagreement_expected_records": {
+            "exact": "15274/15",
+            "value": 1018.2666666666667
+          },
+          "disagreement_fraction": {
+            "exact": "7637/43305",
+            "value": 0.17635376977254358
+          },
+          "disagreement_expected_reference_positive_records": {
+            "exact": "134",
+            "value": 134.0
+          },
+          "disagreement_expected_reference_negative_records": {
+            "exact": "13264/15",
+            "value": 884.2666666666667
+          },
+          "observed_shared_error_diagnostics": {
+            "reference_positive_items_with_at_least_one_false_excluding_pair": 177,
+            "reference_negative_items_with_at_least_one_false_retaining_pair": 880,
+            "items_without_unresolved_votes": 5770,
+            "unanimous_false_exclusion_items_without_unresolved_votes": 12,
+            "unanimous_false_retention_items_without_unresolved_votes": 25
+          },
+          "policies": {
+            "single": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "1943/10",
+                  "value": 194.3
+                },
+                "FP": {
+                  "exact": "1972/3",
+                  "value": 657.3333333333334
+                },
+                "FN": {
+                  "exact": "1157/10",
+                  "value": 115.7
+                },
+                "TN": {
+                  "exact": "14420/3",
+                  "value": 4806.666666666667
+                }
+              },
+              "recall": {
+                "exact": "1943/3100",
+                "value": 0.6267741935483871
+              },
+              "precision": {
+                "exact": "201/881",
+                "value": 0.22814982973893302
+              },
+              "specificity": {
+                "exact": "3605/4098",
+                "value": 0.8796974133723767
+              },
+              "retained_fraction": {
+                "exact": "25549/173220",
+                "value": 0.1474945156448447
+              }
+            },
+            "AND": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "1273/10",
+                  "value": 127.3
+                },
+                "FP": {
+                  "exact": "1076/5",
+                  "value": 215.2
+                },
+                "FN": {
+                  "exact": "1827/10",
+                  "value": 182.7
+                },
+                "TN": {
+                  "exact": "26244/5",
+                  "value": 5248.8
+                }
+              },
+              "recall": {
+                "exact": "1273/3100",
+                "value": 0.4106451612903226
+              },
+              "precision": {
+                "exact": "1273/3425",
+                "value": 0.3716788321167883
+              },
+              "specificity": {
+                "exact": "6561/6830",
+                "value": 0.9606149341142021
+              },
+              "retained_fraction": {
+                "exact": "685/11548",
+                "value": 0.059317630758572916
+              }
+            },
+            "OR": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "2613/10",
+                  "value": 261.3
+                },
+                "FP": {
+                  "exact": "16492/15",
+                  "value": 1099.4666666666667
+                },
+                "FN": {
+                  "exact": "487/10",
+                  "value": 48.7
+                },
+                "TN": {
+                  "exact": "65468/15",
+                  "value": 4364.533333333334
+                }
+              },
+              "recall": {
+                "exact": "2613/3100",
+                "value": 0.8429032258064516
+              },
+              "precision": {
+                "exact": "7839/40823",
+                "value": 0.19202410405898634
+              },
+              "specificity": {
+                "exact": "16367/20490",
+                "value": 0.7987798926305515
+              },
+              "retained_fraction": {
+                "exact": "40823/173220",
+                "value": 0.2356714005311165
+              }
+            },
+            "ideal_disagreement_review": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "2613/10",
+                  "value": 261.3
+                },
+                "FP": {
+                  "exact": "1076/5",
+                  "value": 215.2
+                },
+                "FN": {
+                  "exact": "487/10",
+                  "value": 48.7
+                },
+                "TN": {
+                  "exact": "26244/5",
+                  "value": 5248.8
+                }
+              },
+              "recall": {
+                "exact": "2613/3100",
+                "value": 0.8429032258064516
+              },
+              "precision": {
+                "exact": "2613/4765",
+                "value": 0.5483735571878279
+              },
+              "specificity": {
+                "exact": "6561/6830",
+                "value": 0.9606149341142021
+              },
+              "retained_fraction": {
+                "exact": "953/11548",
+                "value": 0.08252511257360581
+              }
+            }
+          }
+        },
+        "all_workers__unknown_retain": {
+          "records": 5774,
+          "reference_positives": 310,
+          "pair_combinations_not_independent_n": 57081,
+          "items_with_fewer_than_two_usable_votes": 0,
+          "positives_with_fewer_than_two_usable_votes": 0,
+          "disagreement_expected_records": {
+            "exact": "15292/15",
+            "value": 1019.4666666666667
+          },
+          "disagreement_fraction": {
+            "exact": "7646/43305",
+            "value": 0.17656159796790208
+          },
+          "disagreement_expected_reference_positive_records": {
+            "exact": "134",
+            "value": 134.0
+          },
+          "disagreement_expected_reference_negative_records": {
+            "exact": "13282/15",
+            "value": 885.4666666666667
+          },
+          "observed_shared_error_diagnostics": {
+            "reference_positive_items_with_at_least_one_false_excluding_pair": 177,
+            "reference_negative_items_with_at_least_one_false_retaining_pair": 882,
+            "items_without_unresolved_votes": 5770,
+            "unanimous_false_exclusion_items_without_unresolved_votes": 12,
+            "unanimous_false_retention_items_without_unresolved_votes": 25
+          },
+          "policies": {
+            "single": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "1943/10",
+                  "value": 194.3
+                },
+                "FP": {
+                  "exact": "9872/15",
+                  "value": 658.1333333333333
+                },
+                "FN": {
+                  "exact": "1157/10",
+                  "value": 115.7
+                },
+                "TN": {
+                  "exact": "72088/15",
+                  "value": 4805.866666666667
+                }
+              },
+              "recall": {
+                "exact": "1943/3100",
+                "value": 0.6267741935483871
+              },
+              "precision": {
+                "exact": "5829/25573",
+                "value": 0.22793571344777694
+              },
+              "specificity": {
+                "exact": "9011/10245",
+                "value": 0.8795510004880429
+              },
+              "retained_fraction": {
+                "exact": "25573/173220",
+                "value": 0.1476330677750837
+              }
+            },
+            "AND": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "1273/10",
+                  "value": 127.3
+                },
+                "FP": {
+                  "exact": "1077/5",
+                  "value": 215.4
+                },
+                "FN": {
+                  "exact": "1827/10",
+                  "value": 182.7
+                },
+                "TN": {
+                  "exact": "26243/5",
+                  "value": 5248.6
+                }
+              },
+              "recall": {
+                "exact": "1273/3100",
+                "value": 0.4106451612903226
+              },
+              "precision": {
+                "exact": "1273/3427",
+                "value": 0.37146192004668804
+              },
+              "specificity": {
+                "exact": "26243/27320",
+                "value": 0.9605783308931186
+              },
+              "retained_fraction": {
+                "exact": "3427/57740",
+                "value": 0.059352268791132666
+              }
+            },
+            "OR": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "2613/10",
+                  "value": 261.3
+                },
+                "FP": {
+                  "exact": "16513/15",
+                  "value": 1100.8666666666666
+                },
+                "FN": {
+                  "exact": "487/10",
+                  "value": 48.7
+                },
+                "TN": {
+                  "exact": "65447/15",
+                  "value": 4363.133333333333
+                }
+              },
+              "recall": {
+                "exact": "2613/3100",
+                "value": 0.8429032258064516
+              },
+              "precision": {
+                "exact": "7839/40865",
+                "value": 0.19182674660467391
+              },
+              "specificity": {
+                "exact": "65447/81960",
+                "value": 0.7985236700829673
+              },
+              "retained_fraction": {
+                "exact": "8173/34644",
+                "value": 0.23591386675903475
+              }
+            },
+            "ideal_disagreement_review": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "2613/10",
+                  "value": 261.3
+                },
+                "FP": {
+                  "exact": "1077/5",
+                  "value": 215.4
+                },
+                "FN": {
+                  "exact": "487/10",
+                  "value": 48.7
+                },
+                "TN": {
+                  "exact": "26243/5",
+                  "value": 5248.6
+                }
+              },
+              "recall": {
+                "exact": "2613/3100",
+                "value": 0.8429032258064516
+              },
+              "precision": {
+                "exact": "871/1589",
+                "value": 0.5481434864694776
+              },
+              "specificity": {
+                "exact": "26243/27320",
+                "value": 0.9605783308931186
+              },
+              "retained_fraction": {
+                "exact": "4767/57740",
+                "value": 0.08255975060616556
+              }
+            }
+          }
+        }
+      }
+    },
+    "ProtonBeam": {
+      "role": "pilot_descriptive_only",
+      "variants": {
+        "author_filter__unknown_omit": {
+          "records": 3306,
+          "reference_positives": 180,
+          "pair_combinations_not_independent_n": 5443,
+          "items_with_fewer_than_two_usable_votes": 1329,
+          "positives_with_fewer_than_two_usable_votes": 57,
+          "disagreement_expected_records": {
+            "exact": "2471/6",
+            "value": 411.8333333333333
+          },
+          "disagreement_fraction": {
+            "exact": "2471/19836",
+            "value": 0.1245714861867312
+          },
+          "disagreement_expected_reference_positive_records": {
+            "exact": "16",
+            "value": 16.0
+          },
+          "disagreement_expected_reference_negative_records": {
+            "exact": "2375/6",
+            "value": 395.8333333333333
+          },
+          "observed_shared_error_diagnostics": {
+            "reference_positive_items_with_at_least_one_false_excluding_pair": 8,
+            "reference_negative_items_with_at_least_one_false_retaining_pair": 216,
+            "items_without_unresolved_votes": 3305,
+            "unanimous_false_exclusion_items_without_unresolved_votes": 7,
+            "unanimous_false_retention_items_without_unresolved_votes": 155
+          },
+          "policies": {
+            "single": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "494/3",
+                  "value": 164.66666666666666
+                },
+                "FP": {
+                  "exact": "1495/4",
+                  "value": 373.75
+                },
+                "FN": {
+                  "exact": "46/3",
+                  "value": 15.333333333333334
+                },
+                "TN": {
+                  "exact": "11009/4",
+                  "value": 2752.25
+                }
+              },
+              "recall": {
+                "exact": "247/270",
+                "value": 0.9148148148148149
+              },
+              "precision": {
+                "exact": "152/497",
+                "value": 0.3058350100603622
+              },
+              "specificity": {
+                "exact": "11009/12504",
+                "value": 0.8804382597568778
+              },
+              "retained_fraction": {
+                "exact": "6461/39672",
+                "value": 0.16286045573704375
+              }
+            },
+            "AND": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "470/3",
+                  "value": 156.66666666666666
+                },
+                "FP": {
+                  "exact": "1055/6",
+                  "value": 175.83333333333334
+                },
+                "FN": {
+                  "exact": "70/3",
+                  "value": 23.333333333333332
+                },
+                "TN": {
+                  "exact": "17701/6",
+                  "value": 2950.1666666666665
+                }
+              },
+              "recall": {
+                "exact": "47/54",
+                "value": 0.8703703703703703
+              },
+              "precision": {
+                "exact": "188/399",
+                "value": 0.47117794486215536
+              },
+              "specificity": {
+                "exact": "17701/18756",
+                "value": 0.9437513329068031
+              },
+              "retained_fraction": {
+                "exact": "35/348",
+                "value": 0.10057471264367816
+              }
+            },
+            "OR": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "518/3",
+                  "value": 172.66666666666666
+                },
+                "FP": {
+                  "exact": "1715/3",
+                  "value": 571.6666666666666
+                },
+                "FN": {
+                  "exact": "22/3",
+                  "value": 7.333333333333333
+                },
+                "TN": {
+                  "exact": "7663/3",
+                  "value": 2554.3333333333335
+                }
+              },
+              "recall": {
+                "exact": "259/270",
+                "value": 0.9592592592592593
+              },
+              "precision": {
+                "exact": "74/319",
+                "value": 0.23197492163009403
+              },
+              "specificity": {
+                "exact": "7663/9378",
+                "value": 0.8171251866069524
+              },
+              "retained_fraction": {
+                "exact": "77/342",
+                "value": 0.22514619883040934
+              }
+            },
+            "ideal_disagreement_review": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "518/3",
+                  "value": 172.66666666666666
+                },
+                "FP": {
+                  "exact": "1055/6",
+                  "value": 175.83333333333334
+                },
+                "FN": {
+                  "exact": "22/3",
+                  "value": 7.333333333333333
+                },
+                "TN": {
+                  "exact": "17701/6",
+                  "value": 2950.1666666666665
+                }
+              },
+              "recall": {
+                "exact": "259/270",
+                "value": 0.9592592592592593
+              },
+              "precision": {
+                "exact": "1036/2091",
+                "value": 0.4954567192730751
+              },
+              "specificity": {
+                "exact": "17701/18756",
+                "value": 0.9437513329068031
+              },
+              "retained_fraction": {
+                "exact": "697/6612",
+                "value": 0.10541439806412584
+              }
+            }
+          }
+        },
+        "author_filter__unknown_exclude": {
+          "records": 3306,
+          "reference_positives": 180,
+          "pair_combinations_not_independent_n": 5445,
+          "items_with_fewer_than_two_usable_votes": 1329,
+          "positives_with_fewer_than_two_usable_votes": 57,
+          "disagreement_expected_records": {
+            "exact": "825/2",
+            "value": 412.5
+          },
+          "disagreement_fraction": {
+            "exact": "275/2204",
+            "value": 0.12477313974591651
+          },
+          "disagreement_expected_reference_positive_records": {
+            "exact": "50/3",
+            "value": 16.666666666666668
+          },
+          "disagreement_expected_reference_negative_records": {
+            "exact": "2375/6",
+            "value": 395.8333333333333
+          },
+          "observed_shared_error_diagnostics": {
+            "reference_positive_items_with_at_least_one_false_excluding_pair": 8,
+            "reference_negative_items_with_at_least_one_false_retaining_pair": 216,
+            "items_without_unresolved_votes": 3305,
+            "unanimous_false_exclusion_items_without_unresolved_votes": 7,
+            "unanimous_false_retention_items_without_unresolved_votes": 155
+          },
+          "policies": {
+            "single": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "493/3",
+                  "value": 164.33333333333334
+                },
+                "FP": {
+                  "exact": "1495/4",
+                  "value": 373.75
+                },
+                "FN": {
+                  "exact": "47/3",
+                  "value": 15.666666666666666
+                },
+                "TN": {
+                  "exact": "11009/4",
+                  "value": 2752.25
+                }
+              },
+              "recall": {
+                "exact": "493/540",
+                "value": 0.912962962962963
+              },
+              "precision": {
+                "exact": "1972/6457",
+                "value": 0.30540498683599193
+              },
+              "specificity": {
+                "exact": "11009/12504",
+                "value": 0.8804382597568778
+              },
+              "retained_fraction": {
+                "exact": "6457/39672",
+                "value": 0.1627596289574511
+              }
+            },
+            "AND": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "156",
+                  "value": 156.0
+                },
+                "FP": {
+                  "exact": "1055/6",
+                  "value": 175.83333333333334
+                },
+                "FN": {
+                  "exact": "24",
+                  "value": 24.0
+                },
+                "TN": {
+                  "exact": "17701/6",
+                  "value": 2950.1666666666665
+                }
+              },
+              "recall": {
+                "exact": "13/15",
+                "value": 0.8666666666666667
+              },
+              "precision": {
+                "exact": "936/1991",
+                "value": 0.47011551983927674
+              },
+              "specificity": {
+                "exact": "17701/18756",
+                "value": 0.9437513329068031
+              },
+              "retained_fraction": {
+                "exact": "1991/19836",
+                "value": 0.10037305908449284
+              }
+            },
+            "OR": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "518/3",
+                  "value": 172.66666666666666
+                },
+                "FP": {
+                  "exact": "1715/3",
+                  "value": 571.6666666666666
+                },
+                "FN": {
+                  "exact": "22/3",
+                  "value": 7.333333333333333
+                },
+                "TN": {
+                  "exact": "7663/3",
+                  "value": 2554.3333333333335
+                }
+              },
+              "recall": {
+                "exact": "259/270",
+                "value": 0.9592592592592593
+              },
+              "precision": {
+                "exact": "74/319",
+                "value": 0.23197492163009403
+              },
+              "specificity": {
+                "exact": "7663/9378",
+                "value": 0.8171251866069524
+              },
+              "retained_fraction": {
+                "exact": "77/342",
+                "value": 0.22514619883040934
+              }
+            },
+            "ideal_disagreement_review": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "518/3",
+                  "value": 172.66666666666666
+                },
+                "FP": {
+                  "exact": "1055/6",
+                  "value": 175.83333333333334
+                },
+                "FN": {
+                  "exact": "22/3",
+                  "value": 7.333333333333333
+                },
+                "TN": {
+                  "exact": "17701/6",
+                  "value": 2950.1666666666665
+                }
+              },
+              "recall": {
+                "exact": "259/270",
+                "value": 0.9592592592592593
+              },
+              "precision": {
+                "exact": "1036/2091",
+                "value": 0.4954567192730751
+              },
+              "specificity": {
+                "exact": "17701/18756",
+                "value": 0.9437513329068031
+              },
+              "retained_fraction": {
+                "exact": "697/6612",
+                "value": 0.10541439806412584
+              }
+            }
+          }
+        },
+        "author_filter__unknown_retain": {
+          "records": 3306,
+          "reference_positives": 180,
+          "pair_combinations_not_independent_n": 5445,
+          "items_with_fewer_than_two_usable_votes": 1329,
+          "positives_with_fewer_than_two_usable_votes": 57,
+          "disagreement_expected_records": {
+            "exact": "2471/6",
+            "value": 411.8333333333333
+          },
+          "disagreement_fraction": {
+            "exact": "2471/19836",
+            "value": 0.1245714861867312
+          },
+          "disagreement_expected_reference_positive_records": {
+            "exact": "16",
+            "value": 16.0
+          },
+          "disagreement_expected_reference_negative_records": {
+            "exact": "2375/6",
+            "value": 395.8333333333333
+          },
+          "observed_shared_error_diagnostics": {
+            "reference_positive_items_with_at_least_one_false_excluding_pair": 8,
+            "reference_negative_items_with_at_least_one_false_retaining_pair": 216,
+            "items_without_unresolved_votes": 3305,
+            "unanimous_false_exclusion_items_without_unresolved_votes": 7,
+            "unanimous_false_retention_items_without_unresolved_votes": 155
+          },
+          "policies": {
+            "single": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "494/3",
+                  "value": 164.66666666666666
+                },
+                "FP": {
+                  "exact": "1495/4",
+                  "value": 373.75
+                },
+                "FN": {
+                  "exact": "46/3",
+                  "value": 15.333333333333334
+                },
+                "TN": {
+                  "exact": "11009/4",
+                  "value": 2752.25
+                }
+              },
+              "recall": {
+                "exact": "247/270",
+                "value": 0.9148148148148149
+              },
+              "precision": {
+                "exact": "152/497",
+                "value": 0.3058350100603622
+              },
+              "specificity": {
+                "exact": "11009/12504",
+                "value": 0.8804382597568778
+              },
+              "retained_fraction": {
+                "exact": "6461/39672",
+                "value": 0.16286045573704375
+              }
+            },
+            "AND": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "470/3",
+                  "value": 156.66666666666666
+                },
+                "FP": {
+                  "exact": "1055/6",
+                  "value": 175.83333333333334
+                },
+                "FN": {
+                  "exact": "70/3",
+                  "value": 23.333333333333332
+                },
+                "TN": {
+                  "exact": "17701/6",
+                  "value": 2950.1666666666665
+                }
+              },
+              "recall": {
+                "exact": "47/54",
+                "value": 0.8703703703703703
+              },
+              "precision": {
+                "exact": "188/399",
+                "value": 0.47117794486215536
+              },
+              "specificity": {
+                "exact": "17701/18756",
+                "value": 0.9437513329068031
+              },
+              "retained_fraction": {
+                "exact": "35/348",
+                "value": 0.10057471264367816
+              }
+            },
+            "OR": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "518/3",
+                  "value": 172.66666666666666
+                },
+                "FP": {
+                  "exact": "1715/3",
+                  "value": 571.6666666666666
+                },
+                "FN": {
+                  "exact": "22/3",
+                  "value": 7.333333333333333
+                },
+                "TN": {
+                  "exact": "7663/3",
+                  "value": 2554.3333333333335
+                }
+              },
+              "recall": {
+                "exact": "259/270",
+                "value": 0.9592592592592593
+              },
+              "precision": {
+                "exact": "74/319",
+                "value": 0.23197492163009403
+              },
+              "specificity": {
+                "exact": "7663/9378",
+                "value": 0.8171251866069524
+              },
+              "retained_fraction": {
+                "exact": "77/342",
+                "value": 0.22514619883040934
+              }
+            },
+            "ideal_disagreement_review": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "518/3",
+                  "value": 172.66666666666666
+                },
+                "FP": {
+                  "exact": "1055/6",
+                  "value": 175.83333333333334
+                },
+                "FN": {
+                  "exact": "22/3",
+                  "value": 7.333333333333333
+                },
+                "TN": {
+                  "exact": "17701/6",
+                  "value": 2950.1666666666665
+                }
+              },
+              "recall": {
+                "exact": "259/270",
+                "value": 0.9592592592592593
+              },
+              "precision": {
+                "exact": "1036/2091",
+                "value": 0.4954567192730751
+              },
+              "specificity": {
+                "exact": "17701/18756",
+                "value": 0.9437513329068031
+              },
+              "retained_fraction": {
+                "exact": "697/6612",
+                "value": 0.10541439806412584
+              }
+            }
+          }
+        },
+        "all_workers__unknown_omit": {
+          "records": 4749,
+          "reference_positives": 243,
+          "pair_combinations_not_independent_n": 47336,
+          "items_with_fewer_than_two_usable_votes": 0,
+          "positives_with_fewer_than_two_usable_votes": 0,
+          "disagreement_expected_records": {
+            "exact": "1784/3",
+            "value": 594.6666666666666
+          },
+          "disagreement_fraction": {
+            "exact": "1784/14247",
+            "value": 0.1252193444233874
+          },
+          "disagreement_expected_reference_positive_records": {
+            "exact": "2807/30",
+            "value": 93.56666666666666
+          },
+          "disagreement_expected_reference_negative_records": {
+            "exact": "5011/10",
+            "value": 501.1
+          },
+          "observed_shared_error_diagnostics": {
+            "reference_positive_items_with_at_least_one_false_excluding_pair": 105,
+            "reference_negative_items_with_at_least_one_false_retaining_pair": 460,
+            "items_without_unresolved_votes": 4712,
+            "unanimous_false_exclusion_items_without_unresolved_votes": 4,
+            "unanimous_false_retention_items_without_unresolved_votes": 8
+          },
+          "policies": {
+            "single": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "10027/60",
+                  "value": 167.11666666666667
+                },
+                "FP": {
+                  "exact": "6907/20",
+                  "value": 345.35
+                },
+                "FN": {
+                  "exact": "4553/60",
+                  "value": 75.88333333333334
+                },
+                "TN": {
+                  "exact": "83213/20",
+                  "value": 4160.65
+                }
+              },
+              "recall": {
+                "exact": "10027/14580",
+                "value": 0.6877229080932785
+              },
+              "precision": {
+                "exact": "10027/30748",
+                "value": 0.32610251073240537
+              },
+              "specificity": {
+                "exact": "83213/90120",
+                "value": 0.9233577452285842
+              },
+              "retained_fraction": {
+                "exact": "7687/71235",
+                "value": 0.10791043728504246
+              }
+            },
+            "AND": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "361/3",
+                  "value": 120.33333333333333
+                },
+                "FP": {
+                  "exact": "474/5",
+                  "value": 94.8
+                },
+                "FN": {
+                  "exact": "368/3",
+                  "value": 122.66666666666667
+                },
+                "TN": {
+                  "exact": "22056/5",
+                  "value": 4411.2
+                }
+              },
+              "recall": {
+                "exact": "361/729",
+                "value": 0.49519890260631
+              },
+              "precision": {
+                "exact": "1805/3227",
+                "value": 0.5593430430740626
+              },
+              "specificity": {
+                "exact": "3676/3755",
+                "value": 0.9789613848202396
+              },
+              "retained_fraction": {
+                "exact": "3227/71235",
+                "value": 0.04530076507334878
+              }
+            },
+            "OR": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "2139/10",
+                  "value": 213.9
+                },
+                "FP": {
+                  "exact": "5959/10",
+                  "value": 595.9
+                },
+                "FN": {
+                  "exact": "291/10",
+                  "value": 29.1
+                },
+                "TN": {
+                  "exact": "39101/10",
+                  "value": 3910.1
+                }
+              },
+              "recall": {
+                "exact": "713/810",
+                "value": 0.8802469135802469
+              },
+              "precision": {
+                "exact": "2139/8098",
+                "value": 0.2641392936527538
+              },
+              "specificity": {
+                "exact": "39101/45060",
+                "value": 0.8677541056369286
+              },
+              "retained_fraction": {
+                "exact": "4049/23745",
+                "value": 0.17052010949673616
+              }
+            },
+            "ideal_disagreement_review": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "2139/10",
+                  "value": 213.9
+                },
+                "FP": {
+                  "exact": "474/5",
+                  "value": 94.8
+                },
+                "FN": {
+                  "exact": "291/10",
+                  "value": 29.1
+                },
+                "TN": {
+                  "exact": "22056/5",
+                  "value": 4411.2
+                }
+              },
+              "recall": {
+                "exact": "713/810",
+                "value": 0.8802469135802469
+              },
+              "precision": {
+                "exact": "713/1029",
+                "value": 0.6929057337220602
+              },
+              "specificity": {
+                "exact": "3676/3755",
+                "value": 0.9789613848202396
+              },
+              "retained_fraction": {
+                "exact": "1029/15830",
+                "value": 0.06500315855969678
+              }
+            }
+          }
+        },
+        "all_workers__unknown_exclude": {
+          "records": 4749,
+          "reference_positives": 243,
+          "pair_combinations_not_independent_n": 47490,
+          "items_with_fewer_than_two_usable_votes": 0,
+          "positives_with_fewer_than_two_usable_votes": 0,
+          "disagreement_expected_records": {
+            "exact": "2973/5",
+            "value": 594.6
+          },
+          "disagreement_fraction": {
+            "exact": "991/7915",
+            "value": 0.1252053063802906
+          },
+          "disagreement_expected_reference_positive_records": {
+            "exact": "469/5",
+            "value": 93.8
+          },
+          "disagreement_expected_reference_negative_records": {
+            "exact": "2504/5",
+            "value": 500.8
+          },
+          "observed_shared_error_diagnostics": {
+            "reference_positive_items_with_at_least_one_false_excluding_pair": 109,
+            "reference_negative_items_with_at_least_one_false_retaining_pair": 460,
+            "items_without_unresolved_votes": 4712,
+            "unanimous_false_exclusion_items_without_unresolved_votes": 4,
+            "unanimous_false_retention_items_without_unresolved_votes": 8
+          },
+          "policies": {
+            "single": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "832/5",
+                  "value": 166.4
+                },
+                "FP": {
+                  "exact": "1722/5",
+                  "value": 344.4
+                },
+                "FN": {
+                  "exact": "383/5",
+                  "value": 76.6
+                },
+                "TN": {
+                  "exact": "20808/5",
+                  "value": 4161.6
+                }
+              },
+              "recall": {
+                "exact": "832/1215",
+                "value": 0.6847736625514403
+              },
+              "precision": {
+                "exact": "416/1277",
+                "value": 0.32576350822239625
+              },
+              "specificity": {
+                "exact": "3468/3755",
+                "value": 0.9235685752330226
+              },
+              "retained_fraction": {
+                "exact": "2554/23745",
+                "value": 0.10755948620762265
+              }
+            },
+            "AND": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "239/2",
+                  "value": 119.5
+                },
+                "FP": {
+                  "exact": "94",
+                  "value": 94.0
+                },
+                "FN": {
+                  "exact": "247/2",
+                  "value": 123.5
+                },
+                "TN": {
+                  "exact": "4412",
+                  "value": 4412.0
+                }
+              },
+              "recall": {
+                "exact": "239/486",
+                "value": 0.49176954732510286
+              },
+              "precision": {
+                "exact": "239/427",
+                "value": 0.5597189695550351
+              },
+              "specificity": {
+                "exact": "2206/2253",
+                "value": 0.979138925876609
+              },
+              "retained_fraction": {
+                "exact": "427/9498",
+                "value": 0.04495683301747736
+              }
+            },
+            "OR": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "2133/10",
+                  "value": 213.3
+                },
+                "FP": {
+                  "exact": "2974/5",
+                  "value": 594.8
+                },
+                "FN": {
+                  "exact": "297/10",
+                  "value": 29.7
+                },
+                "TN": {
+                  "exact": "19556/5",
+                  "value": 3911.2
+                }
+              },
+              "recall": {
+                "exact": "79/90",
+                "value": 0.8777777777777778
+              },
+              "precision": {
+                "exact": "2133/8081",
+                "value": 0.26395248112857317
+              },
+              "specificity": {
+                "exact": "9778/11265",
+                "value": 0.8679982245894363
+              },
+              "retained_fraction": {
+                "exact": "8081/47490",
+                "value": 0.17016213939776795
+              }
+            },
+            "ideal_disagreement_review": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "2133/10",
+                  "value": 213.3
+                },
+                "FP": {
+                  "exact": "94",
+                  "value": 94.0
+                },
+                "FN": {
+                  "exact": "297/10",
+                  "value": 29.7
+                },
+                "TN": {
+                  "exact": "4412",
+                  "value": 4412.0
+                }
+              },
+              "recall": {
+                "exact": "79/90",
+                "value": 0.8777777777777778
+              },
+              "precision": {
+                "exact": "2133/3073",
+                "value": 0.6941099902375529
+              },
+              "specificity": {
+                "exact": "2206/2253",
+                "value": 0.979138925876609
+              },
+              "retained_fraction": {
+                "exact": "3073/47490",
+                "value": 0.06470835965466414
+              }
+            }
+          }
+        },
+        "all_workers__unknown_retain": {
+          "records": 4749,
+          "reference_positives": 243,
+          "pair_combinations_not_independent_n": 47490,
+          "items_with_fewer_than_two_usable_votes": 0,
+          "positives_with_fewer_than_two_usable_votes": 0,
+          "disagreement_expected_records": {
+            "exact": "3017/5",
+            "value": 603.4
+          },
+          "disagreement_fraction": {
+            "exact": "3017/23745",
+            "value": 0.12705832806906717
+          },
+          "disagreement_expected_reference_positive_records": {
+            "exact": "93",
+            "value": 93.0
+          },
+          "disagreement_expected_reference_negative_records": {
+            "exact": "2552/5",
+            "value": 510.4
+          },
+          "observed_shared_error_diagnostics": {
+            "reference_positive_items_with_at_least_one_false_excluding_pair": 105,
+            "reference_negative_items_with_at_least_one_false_retaining_pair": 468,
+            "items_without_unresolved_votes": 4712,
+            "unanimous_false_exclusion_items_without_unresolved_votes": 4,
+            "unanimous_false_retention_items_without_unresolved_votes": 8
+          },
+          "policies": {
+            "single": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "837/5",
+                  "value": 167.4
+                },
+                "FP": {
+                  "exact": "1756/5",
+                  "value": 351.2
+                },
+                "FN": {
+                  "exact": "378/5",
+                  "value": 75.6
+                },
+                "TN": {
+                  "exact": "20774/5",
+                  "value": 4154.8
+                }
+              },
+              "recall": {
+                "exact": "31/45",
+                "value": 0.6888888888888889
+              },
+              "precision": {
+                "exact": "837/2593",
+                "value": 0.32279213266486695
+              },
+              "specificity": {
+                "exact": "10387/11265",
+                "value": 0.9220594762538837
+              },
+              "retained_fraction": {
+                "exact": "2593/23745",
+                "value": 0.10920193724994735
+              }
+            },
+            "AND": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "1209/10",
+                  "value": 120.9
+                },
+                "FP": {
+                  "exact": "96",
+                  "value": 96.0
+                },
+                "FN": {
+                  "exact": "1221/10",
+                  "value": 122.1
+                },
+                "TN": {
+                  "exact": "4410",
+                  "value": 4410.0
+                }
+              },
+              "recall": {
+                "exact": "403/810",
+                "value": 0.49753086419753084
+              },
+              "precision": {
+                "exact": "403/723",
+                "value": 0.5573997233748271
+              },
+              "specificity": {
+                "exact": "735/751",
+                "value": 0.9786950732356857
+              },
+              "retained_fraction": {
+                "exact": "723/15830",
+                "value": 0.04567277321541377
+              }
+            },
+            "OR": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "2139/10",
+                  "value": 213.9
+                },
+                "FP": {
+                  "exact": "3032/5",
+                  "value": 606.4
+                },
+                "FN": {
+                  "exact": "291/10",
+                  "value": 29.1
+                },
+                "TN": {
+                  "exact": "19498/5",
+                  "value": 3899.6
+                }
+              },
+              "recall": {
+                "exact": "713/810",
+                "value": 0.8802469135802469
+              },
+              "precision": {
+                "exact": "2139/8203",
+                "value": 0.2607582591734731
+              },
+              "specificity": {
+                "exact": "9749/11265",
+                "value": 0.8654238792720816
+              },
+              "retained_fraction": {
+                "exact": "8203/47490",
+                "value": 0.17273110128448094
+              }
+            },
+            "ideal_disagreement_review": {
+              "expected_counts": {
+                "TP": {
+                  "exact": "2139/10",
+                  "value": 213.9
+                },
+                "FP": {
+                  "exact": "96",
+                  "value": 96.0
+                },
+                "FN": {
+                  "exact": "291/10",
+                  "value": 29.1
+                },
+                "TN": {
+                  "exact": "4410",
+                  "value": 4410.0
+                }
+              },
+              "recall": {
+                "exact": "713/810",
+                "value": 0.8802469135802469
+              },
+              "precision": {
+                "exact": "713/1033",
+                "value": 0.6902226524685382
+              },
+              "specificity": {
+                "exact": "735/751",
+                "value": 0.9786950732356857
+              },
+              "retained_fraction": {
+                "exact": "1033/15830",
+                "value": 0.06525584333543905
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "status": "all_exact_comparisons_passed",
+  "checks": {
+    "expected_confusion_cells": 192,
+    "rates": 144,
+    "cohort_and_unanimity_controls": 60,
+    "disagreement_controls": 36,
+    "enumerated_cubes": 79
+  },
+  "independent_output_sha256": "554a733eda7bcad3bee961f8ab9d58b111bc3d111f610050300c56d123608bb0",
+  "independent_means": "Two separately written computational parsers, not independent human adjudication",
+  "remaining_limits": [
+    "Fixed original expert title/abstract reference",
+    "Hypothetical pair selection and disagreement correction",
+    "Three convenience-sampled reviews from one crowd study",
+    "No causal person-time or LLM-effect estimate"
+  ]
+}

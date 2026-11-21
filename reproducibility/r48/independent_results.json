@@ -1,0 +1,3828 @@
+{
+  "method": "Exact expectation over every unordered pair of distinct observed workers; each record total weight 1.",
+  "reference": "Main CSV Relevant, source expert title/abstract/keyword screening decision. No _Lvl2 decisions used.",
+  "decision_rule": "Any explicit criterion failure -> exclude; all required criteria Yes/CantTell or numeric>=10/NoInfo -> include; otherwise unresolved.",
+  "oracle_caveat": "Perfect reference correction is a hypothetical upper bound restricted to disagreements, not observed adjudication.",
+  "variants": {
+    "primary": {
+      "reviews": [
+        {
+          "review": "Appendicitis",
+          "unknown_policy": "omit",
+          "blacklist_enabled": true,
+          "raw_rows": 8325,
+          "non_honeypot_rows": 8213,
+          "source_blacklist_size": 30,
+          "excluded_blacklisted_rows": 0,
+          "retained_source_rows": 8213,
+          "unresolved_source_rows": 1,
+          "eligible_votes": 8212,
+          "distinct_workers_in_valid_votes": 21,
+          "eligible_records": 1664,
+          "gold_positive": 242,
+          "gold_negative": 1422,
+          "raw_unordered_pair_count": 16209,
+          "rejected_records": [],
+          "valid_votes_per_record": {
+            "5": 1557,
+            "4": 106,
+            "3": 1
+          },
+          "matrices": {
+            "single": {
+              "TP": {
+                "fraction": "2567/20",
+                "decimal": 128.35
+              },
+              "FP": {
+                "fraction": "597/10",
+                "decimal": 59.7
+              },
+              "FN": {
+                "fraction": "2273/20",
+                "decimal": 113.65
+              },
+              "TN": {
+                "fraction": "13623/10",
+                "decimal": 1362.3
+              }
+            },
+            "AND": {
+              "TP": {
+                "fraction": "1397/15",
+                "decimal": 93.13333333333334
+              },
+              "FP": {
+                "fraction": "78/5",
+                "decimal": 15.6
+              },
+              "FN": {
+                "fraction": "2233/15",
+                "decimal": 148.86666666666667
+              },
+              "TN": {
+                "fraction": "7032/5",
+                "decimal": 1406.4
+              }
+            },
+            "OR": {
+              "TP": {
+                "fraction": "4907/30",
+                "decimal": 163.56666666666666
+              },
+              "FP": {
+                "fraction": "519/5",
+                "decimal": 103.8
+              },
+              "FN": {
+                "fraction": "2353/30",
+                "decimal": 78.43333333333334
+              },
+              "TN": {
+                "fraction": "6591/5",
+                "decimal": 1318.2
+              }
+            },
+            "perfect_reference_correction_on_disagreement": {
+              "TP": {
+                "fraction": "4907/30",
+                "decimal": 163.56666666666666
+              },
+              "FP": {
+                "fraction": "78/5",
+                "decimal": 15.6
+              },
+              "FN": {
+                "fraction": "2353/30",
+                "decimal": 78.43333333333334
+              },
+              "TN": {
+                "fraction": "7032/5",
+                "decimal": 1406.4
+              }
+            }
+          },
+          "metrics": {
+            "single": {
+              "precision": {
+                "fraction": "2567/3761",
+                "decimal": 0.6825312416910396
+              },
+              "recall": {
+                "fraction": "2567/4840",
+                "decimal": 0.5303719008264463
+              },
+              "specificity": {
+                "fraction": "4541/4740",
+                "decimal": 0.9580168776371308
+              },
+              "accuracy": {
+                "fraction": "29813/33280",
+                "decimal": 0.8958233173076923
+              },
+              "selected_mass": {
+                "fraction": "3761/20",
+                "decimal": 188.05
+              },
+              "selected_fraction": {
+                "fraction": "3761/33280",
+                "decimal": 0.1130108173076923
+              },
+              "F1": {
+                "fraction": "5134/8601",
+                "decimal": 0.5969073363562376
+              }
+            },
+            "AND": {
+              "precision": {
+                "fraction": "1397/1631",
+                "decimal": 0.8565297363580625
+              },
+              "recall": {
+                "fraction": "127/330",
+                "decimal": 0.38484848484848483
+              },
+              "specificity": {
+                "fraction": "1172/1185",
+                "decimal": 0.9890295358649789
+              },
+              "accuracy": {
+                "fraction": "22493/24960",
+                "decimal": 0.901161858974359
+              },
+              "selected_mass": {
+                "fraction": "1631/15",
+                "decimal": 108.73333333333333
+              },
+              "selected_fraction": {
+                "fraction": "1631/24960",
+                "decimal": 0.06534455128205129
+              },
+              "F1": {
+                "fraction": "2794/5261",
+                "decimal": 0.5310777418741685
+              }
+            },
+            "OR": {
+              "precision": {
+                "fraction": "4907/8021",
+                "decimal": 0.6117691060964967
+              },
+              "recall": {
+                "fraction": "4907/7260",
+                "decimal": 0.6758953168044077
+              },
+              "specificity": {
+                "fraction": "2197/2370",
+                "decimal": 0.9270042194092827
+              },
+              "accuracy": {
+                "fraction": "44453/49920",
+                "decimal": 0.8904847756410257
+              },
+              "selected_mass": {
+                "fraction": "8021/30",
+                "decimal": 267.3666666666667
+              },
+              "selected_fraction": {
+                "fraction": "617/3840",
+                "decimal": 0.16067708333333333
+              },
+              "F1": {
+                "fraction": "1402/2183",
+                "decimal": 0.6422354557947778
+              }
+            },
+            "perfect_reference_correction_on_disagreement": {
+              "precision": {
+                "fraction": "4907/5375",
+                "decimal": 0.9129302325581395
+              },
+              "recall": {
+                "fraction": "4907/7260",
+                "decimal": 0.6758953168044077
+              },
+              "specificity": {
+                "fraction": "1172/1185",
+                "decimal": 0.9890295358649789
+              },
+              "accuracy": {
+                "fraction": "3623/3840",
+                "decimal": 0.9434895833333333
+              },
+              "selected_mass": {
+                "fraction": "1075/6",
+                "decimal": 179.16666666666666
+              },
+              "selected_fraction": {
+                "fraction": "1075/9984",
+                "decimal": 0.10767227564102565
+              },
+              "F1": {
+                "fraction": "1402/1805",
+                "decimal": 0.7767313019390581
+              }
+            }
+          },
+          "disagreement_mass": {
+            "all": {
+              "fraction": "4759/30",
+              "decimal": 158.63333333333333
+            },
+            "gold_positive": {
+              "fraction": "2113/30",
+              "decimal": 70.43333333333334
+            },
+            "gold_negative": {
+              "fraction": "441/5",
+              "decimal": 88.2
+            }
+          },
+          "disagreement_fraction": {
+            "fraction": "4759/49920",
+            "decimal": 0.09533253205128205
+          },
+          "unanimous_with_no_unknown": {
+            "FN_count": 41,
+            "FP_count": 0
+          }
+        },
+        {
+          "review": "DST",
+          "unknown_policy": "omit",
+          "blacklist_enabled": true,
+          "raw_rows": 40368,
+          "non_honeypot_rows": 40111,
+          "source_blacklist_size": 29,
+          "excluded_blacklisted_rows": 999,
+          "retained_source_rows": 39112,
+          "unresolved_source_rows": 13,
+          "eligible_votes": 39099,
+          "distinct_workers_in_valid_votes": 92,
+          "eligible_records": 8071,
+          "gold_positive": 183,
+          "gold_negative": 7888,
+          "raw_unordered_pair_count": 75726,
+          "rejected_records": [],
+          "valid_votes_per_record": {
+            "5": 6849,
+            "4": 1182,
+            "3": 38,
+            "6": 2
+          },
+          "matrices": {
+            "single": {
+              "TP": {
+                "fraction": "1749/20",
+                "decimal": 87.45
+              },
+              "FP": {
+                "fraction": "2629/6",
+                "decimal": 438.1666666666667
+              },
+              "FN": {
+                "fraction": "1911/20",
+                "decimal": 95.55
+              },
+              "TN": {
+                "fraction": "44699/6",
+                "decimal": 7449.833333333333
+              }
+            },
+            "AND": {
+              "TP": {
+                "fraction": "1507/30",
+                "decimal": 50.233333333333334
+              },
+              "FP": {
+                "fraction": "329/6",
+                "decimal": 54.833333333333336
+              },
+              "FN": {
+                "fraction": "3983/30",
+                "decimal": 132.76666666666668
+              },
+              "TN": {
+                "fraction": "46999/6",
+                "decimal": 7833.166666666667
+              }
+            },
+            "OR": {
+              "TP": {
+                "fraction": "374/3",
+                "decimal": 124.66666666666667
+              },
+              "FP": {
+                "fraction": "1643/2",
+                "decimal": 821.5
+              },
+              "FN": {
+                "fraction": "175/3",
+                "decimal": 58.333333333333336
+              },
+              "TN": {
+                "fraction": "14133/2",
+                "decimal": 7066.5
+              }
+            },
+            "perfect_reference_correction_on_disagreement": {
+              "TP": {
+                "fraction": "374/3",
+                "decimal": 124.66666666666667
+              },
+              "FP": {
+                "fraction": "329/6",
+                "decimal": 54.833333333333336
+              },
+              "FN": {
+                "fraction": "175/3",
+                "decimal": 58.333333333333336
+              },
+              "TN": {
+                "fraction": "46999/6",
+                "decimal": 7833.166666666667
+              }
+            }
+          },
+          "metrics": {
+            "single": {
+              "precision": {
+                "fraction": "477/2867",
+                "decimal": 0.1663760027903732
+              },
+              "recall": {
+                "fraction": "583/1220",
+                "decimal": 0.4778688524590164
+              },
+              "specificity": {
+                "fraction": "44699/47328",
+                "decimal": 0.9444514874915484
+              },
+              "accuracy": {
+                "fraction": "452237/484260",
+                "decimal": 0.93387230000413
+              },
+              "selected_mass": {
+                "fraction": "31537/60",
+                "decimal": 525.6166666666667
+              },
+              "selected_fraction": {
+                "fraction": "31537/484260",
+                "decimal": 0.06512410688473134
+              },
+              "F1": {
+                "fraction": "10494/42517",
+                "decimal": 0.2468189194910271
+              }
+            },
+            "AND": {
+              "precision": {
+                "fraction": "1507/3152",
+                "decimal": 0.4781091370558376
+              },
+              "recall": {
+                "fraction": "1507/5490",
+                "decimal": 0.2744990892531876
+              },
+              "specificity": {
+                "fraction": "46999/47328",
+                "decimal": 0.9930485125084516
+              },
+              "accuracy": {
+                "fraction": "5631/5765",
+                "decimal": 0.9767562879444927
+              },
+              "selected_mass": {
+                "fraction": "1576/15",
+                "decimal": 105.06666666666666
+              },
+              "selected_fraction": {
+                "fraction": "1576/121065",
+                "decimal": 0.013017800355181101
+              },
+              "F1": {
+                "fraction": "1507/4321",
+                "decimal": 0.34876186068039805
+              }
+            },
+            "OR": {
+              "precision": {
+                "fraction": "748/5677",
+                "decimal": 0.1317597322529505
+              },
+              "recall": {
+                "fraction": "374/549",
+                "decimal": 0.6812386156648452
+              },
+              "specificity": {
+                "fraction": "14133/15776",
+                "decimal": 0.8958544624746451
+              },
+              "accuracy": {
+                "fraction": "43147/48426",
+                "decimal": 0.8909883120637674
+              },
+              "selected_mass": {
+                "fraction": "5677/6",
+                "decimal": 946.1666666666666
+              },
+              "selected_fraction": {
+                "fraction": "811/6918",
+                "decimal": 0.11723041341428159
+              },
+              "F1": {
+                "fraction": "1496/6775",
+                "decimal": 0.22081180811808118
+              }
+            },
+            "perfect_reference_correction_on_disagreement": {
+              "precision": {
+                "fraction": "748/1077",
+                "decimal": 0.6945218198700093
+              },
+              "recall": {
+                "fraction": "374/549",
+                "decimal": 0.6812386156648452
+              },
+              "specificity": {
+                "fraction": "46999/47328",
+                "decimal": 0.9930485125084516
+              },
+              "accuracy": {
+                "fraction": "6821/6918",
+                "decimal": 0.9859786065336803
+              },
+              "selected_mass": {
+                "fraction": "359/2",
+                "decimal": 179.5
+              },
+              "selected_fraction": {
+                "fraction": "359/16142",
+                "decimal": 0.02224011894436873
+              },
+              "F1": {
+                "fraction": "1496/2175",
+                "decimal": 0.6878160919540229
+              }
+            }
+          },
+          "disagreement_mass": {
+            "all": {
+              "fraction": "8411/10",
+              "decimal": 841.1
+            },
+            "gold_positive": {
+              "fraction": "2233/30",
+              "decimal": 74.43333333333334
+            },
+            "gold_negative": {
+              "fraction": "2300/3",
+              "decimal": 766.6666666666666
+            }
+          },
+          "disagreement_fraction": {
+            "fraction": "8411/80710",
+            "decimal": 0.10421261305910048
+          },
+          "unanimous_with_no_unknown": {
+            "FN_count": 24,
+            "FP_count": 3
+          }
+        },
+        {
+          "review": "Omega3",
+          "unknown_policy": "omit",
+          "blacklist_enabled": true,
+          "raw_rows": 28875,
+          "non_honeypot_rows": 28704,
+          "source_blacklist_size": 29,
+          "excluded_blacklisted_rows": 703,
+          "retained_source_rows": 28001,
+          "unresolved_source_rows": 4,
+          "eligible_votes": 27997,
+          "distinct_workers_in_valid_votes": 53,
+          "eligible_records": 5774,
+          "gold_positive": 310,
+          "gold_negative": 5464,
+          "raw_unordered_pair_count": 54296,
+          "rejected_records": [],
+          "valid_votes_per_record": {
+            "5": 4946,
+            "4": 786,
+            "3": 39,
+            "2": 3
+          },
+          "matrices": {
+            "single": {
+              "TP": {
+                "fraction": "5801/30",
+                "decimal": 193.36666666666667
+              },
+              "FP": {
+                "fraction": "1255/2",
+                "decimal": 627.5
+              },
+              "FN": {
+                "fraction": "3499/30",
+                "decimal": 116.63333333333334
+              },
+              "TN": {
+                "fraction": "9673/2",
+                "decimal": 4836.5
+              }
+            },
+            "AND": {
+              "TP": {
+                "fraction": "626/5",
+                "decimal": 125.2
+              },
+              "FP": {
+                "fraction": "1028/5",
+                "decimal": 205.6
+              },
+              "FN": {
+                "fraction": "924/5",
+                "decimal": 184.8
+              },
+              "TN": {
+                "fraction": "26292/5",
+                "decimal": 5258.4
+              }
+            },
+            "OR": {
+              "TP": {
+                "fraction": "3923/15",
+                "decimal": 261.53333333333336
+              },
+              "FP": {
+                "fraction": "5247/5",
+                "decimal": 1049.4
+              },
+              "FN": {
+                "fraction": "727/15",
+                "decimal": 48.46666666666667
+              },
+              "TN": {
+                "fraction": "22073/5",
+                "decimal": 4414.6
+              }
+            },
+            "perfect_reference_correction_on_disagreement": {
+              "TP": {
+                "fraction": "3923/15",
+                "decimal": 261.53333333333336
+              },
+              "FP": {
+                "fraction": "1028/5",
+                "decimal": 205.6
+              },
+              "FN": {
+                "fraction": "727/15",
+                "decimal": 48.46666666666667
+              },
+              "TN": {
+                "fraction": "26292/5",
+                "decimal": 5258.4
+              }
+            }
+          },
+          "metrics": {
+            "single": {
+              "precision": {
+                "fraction": "5801/24626",
+                "decimal": 0.23556403800860878
+              },
+              "recall": {
+                "fraction": "5801/9300",
+                "decimal": 0.6237634408602151
+              },
+              "specificity": {
+                "fraction": "9673/10928",
+                "decimal": 0.8851573938506588
+              },
+              "accuracy": {
+                "fraction": "37724/43305",
+                "decimal": 0.8711234268560213
+              },
+              "selected_mass": {
+                "fraction": "12313/15",
+                "decimal": 820.8666666666667
+              },
+              "selected_fraction": {
+                "fraction": "12313/86610",
+                "decimal": 0.14216603163606975
+              },
+              "F1": {
+                "fraction": "5801/16963",
+                "decimal": 0.341979602664623
+              }
+            },
+            "AND": {
+              "precision": {
+                "fraction": "313/827",
+                "decimal": 0.3784764207980653
+              },
+              "recall": {
+                "fraction": "313/775",
+                "decimal": 0.4038709677419355
+              },
+              "specificity": {
+                "fraction": "6573/6830",
+                "decimal": 0.9623718887262079
+              },
+              "accuracy": {
+                "fraction": "13459/14435",
+                "decimal": 0.9323865604433668
+              },
+              "selected_mass": {
+                "fraction": "1654/5",
+                "decimal": 330.8
+              },
+              "selected_fraction": {
+                "fraction": "827/14435",
+                "decimal": 0.0572913058538275
+              },
+              "F1": {
+                "fraction": "313/801",
+                "decimal": 0.39076154806491886
+              }
+            },
+            "OR": {
+              "precision": {
+                "fraction": "3923/19664",
+                "decimal": 0.19950162733930024
+              },
+              "recall": {
+                "fraction": "3923/4650",
+                "decimal": 0.8436559139784946
+              },
+              "specificity": {
+                "fraction": "22073/27320",
+                "decimal": 0.8079428989751098
+              },
+              "accuracy": {
+                "fraction": "35071/43305",
+                "decimal": 0.8098602932686757
+              },
+              "selected_mass": {
+                "fraction": "19664/15",
+                "decimal": 1310.9333333333334
+              },
+              "selected_fraction": {
+                "fraction": "9832/43305",
+                "decimal": 0.22704075741831198
+              },
+              "F1": {
+                "fraction": "3923/12157",
+                "decimal": 0.32269474376902196
+              }
+            },
+            "perfect_reference_correction_on_disagreement": {
+              "precision": {
+                "fraction": "3923/7007",
+                "decimal": 0.5598687027258455
+              },
+              "recall": {
+                "fraction": "3923/4650",
+                "decimal": 0.8436559139784946
+              },
+              "specificity": {
+                "fraction": "6573/6830",
+                "decimal": 0.9623718887262079
+              },
+              "accuracy": {
+                "fraction": "82799/86610",
+                "decimal": 0.9559981526382635
+              },
+              "selected_mass": {
+                "fraction": "7007/15",
+                "decimal": 467.1333333333333
+              },
+              "selected_fraction": {
+                "fraction": "7007/86610",
+                "decimal": 0.08090289804872416
+              },
+              "F1": {
+                "fraction": "7846/11657",
+                "decimal": 0.6730719739212491
+              }
+            }
+          },
+          "disagreement_mass": {
+            "all": {
+              "fraction": "14702/15",
+              "decimal": 980.1333333333333
+            },
+            "gold_positive": {
+              "fraction": "409/3",
+              "decimal": 136.33333333333334
+            },
+            "gold_negative": {
+              "fraction": "4219/5",
+              "decimal": 843.8
+            }
+          },
+          "disagreement_fraction": {
+            "fraction": "7351/43305",
+            "decimal": 0.16974945156448448
+          },
+          "unanimous_with_no_unknown": {
+            "FN_count": 12,
+            "FP_count": 28
+          }
+        }
+      ],
+      "pooled": {
+        "eligible_records": 15509,
+        "eligible_votes": 75308,
+        "unresolved_source_rows": 18,
+        "raw_unordered_pair_count": 146231,
+        "gold_positive": 735,
+        "gold_negative": 14774,
+        "matrices": {
+          "single": {
+            "TP": {
+              "fraction": "2455/6",
+              "decimal": 409.1666666666667
+            },
+            "FP": {
+              "fraction": "33761/30",
+              "decimal": 1125.3666666666666
+            },
+            "FN": {
+              "fraction": "1955/6",
+              "decimal": 325.8333333333333
+            },
+            "TN": {
+              "fraction": "409459/30",
+              "decimal": 13648.633333333333
+            }
+          },
+          "AND": {
+            "TP": {
+              "fraction": "8057/30",
+              "decimal": 268.56666666666666
+            },
+            "FP": {
+              "fraction": "8281/30",
+              "decimal": 276.03333333333336
+            },
+            "FN": {
+              "fraction": "13993/30",
+              "decimal": 466.43333333333334
+            },
+            "TN": {
+              "fraction": "434939/30",
+              "decimal": 14497.966666666667
+            }
+          },
+          "OR": {
+            "TP": {
+              "fraction": "16493/30",
+              "decimal": 549.7666666666667
+            },
+            "FP": {
+              "fraction": "19747/10",
+              "decimal": 1974.7
+            },
+            "FN": {
+              "fraction": "5557/30",
+              "decimal": 185.23333333333332
+            },
+            "TN": {
+              "fraction": "127993/10",
+              "decimal": 12799.3
+            }
+          },
+          "perfect_reference_correction_on_disagreement": {
+            "TP": {
+              "fraction": "16493/30",
+              "decimal": 549.7666666666667
+            },
+            "FP": {
+              "fraction": "8281/30",
+              "decimal": 276.03333333333336
+            },
+            "FN": {
+              "fraction": "5557/30",
+              "decimal": 185.23333333333332
+            },
+            "TN": {
+              "fraction": "434939/30",
+              "decimal": 14497.966666666667
+            }
+          }
+        },
+        "metrics": {
+          "single": {
+            "precision": {
+              "fraction": "12275/46036",
+              "decimal": 0.266639151968025
+            },
+            "recall": {
+              "fraction": "491/882",
+              "decimal": 0.5566893424036281
+            },
+            "specificity": {
+              "fraction": "409459/443220",
+              "decimal": 0.9238278958530752
+            },
+            "accuracy": {
+              "fraction": "70289/77545",
+              "decimal": 0.9064285253723644
+            },
+            "selected_mass": {
+              "fraction": "23018/15",
+              "decimal": 1534.5333333333333
+            },
+            "selected_fraction": {
+              "fraction": "23018/232635",
+              "decimal": 0.09894469877705418
+            },
+            "F1": {
+              "fraction": "12275/34043",
+              "decimal": 0.36057339247422376
+            }
+          },
+          "AND": {
+            "precision": {
+              "fraction": "1151/2334",
+              "decimal": 0.49314481576692376
+            },
+            "recall": {
+              "fraction": "1151/3150",
+              "decimal": 0.3653968253968254
+            },
+            "specificity": {
+              "fraction": "434939/443220",
+              "decimal": 0.9813162763413203
+            },
+            "accuracy": {
+              "fraction": "221498/232635",
+              "decimal": 0.9521267221183399
+            },
+            "selected_mass": {
+              "fraction": "2723/5",
+              "decimal": 544.6
+            },
+            "selected_fraction": {
+              "fraction": "2723/77545",
+              "decimal": 0.03511509446128055
+            },
+            "F1": {
+              "fraction": "1151/2742",
+              "decimal": 0.4197665937272064
+            }
+          },
+          "OR": {
+            "precision": {
+              "fraction": "16493/75734",
+              "decimal": 0.21777537169567168
+            },
+            "recall": {
+              "fraction": "16493/22050",
+              "decimal": 0.7479818594104308
+            },
+            "specificity": {
+              "fraction": "127993/147740",
+              "decimal": 0.8663395153648301
+            },
+            "accuracy": {
+              "fraction": "200236/232635",
+              "decimal": 0.860730328626389
+            },
+            "selected_mass": {
+              "fraction": "37867/15",
+              "decimal": 2524.4666666666667
+            },
+            "selected_fraction": {
+              "fraction": "37867/232635",
+              "decimal": 0.1627743030928278
+            },
+            "F1": {
+              "fraction": "16493/48892",
+              "decimal": 0.33733535138672993
+            }
+          },
+          "perfect_reference_correction_on_disagreement": {
+            "precision": {
+              "fraction": "16493/24774",
+              "decimal": 0.6657382739969323
+            },
+            "recall": {
+              "fraction": "16493/22050",
+              "decimal": 0.7479818594104308
+            },
+            "specificity": {
+              "fraction": "434939/443220",
+              "decimal": 0.9813162763413203
+            },
+            "accuracy": {
+              "fraction": "225716/232635",
+              "decimal": 0.9702581296881381
+            },
+            "selected_mass": {
+              "fraction": "4129/5",
+              "decimal": 825.8
+            },
+            "selected_fraction": {
+              "fraction": "4129/77545",
+              "decimal": 0.05324650203107873
+            },
+            "F1": {
+              "fraction": "16493/23412",
+              "decimal": 0.7044677942935247
+            }
+          }
+        },
+        "disagreement_mass": {
+          "all": {
+            "fraction": "29698/15",
+            "decimal": 1979.8666666666666
+          },
+          "gold_positive": {
+            "fraction": "1406/5",
+            "decimal": 281.2
+          },
+          "gold_negative": {
+            "fraction": "5096/3",
+            "decimal": 1698.6666666666667
+          }
+        },
+        "disagreement_fraction": {
+          "fraction": "29698/232635",
+          "decimal": 0.12765920863154728
+        },
+        "unanimous_with_no_unknown": {
+          "FN_count": 77,
+          "FP_count": 31
+        }
+      }
+    },
+    "unknown_as_0": {
+      "reviews": [
+        {
+          "review": "Appendicitis",
+          "unknown_policy": "0",
+          "blacklist_enabled": true,
+          "raw_rows": 8325,
+          "non_honeypot_rows": 8213,
+          "source_blacklist_size": 30,
+          "excluded_blacklisted_rows": 0,
+          "retained_source_rows": 8213,
+          "unresolved_source_rows": 1,
+          "eligible_votes": 8213,
+          "distinct_workers_in_valid_votes": 21,
+          "eligible_records": 1664,
+          "gold_positive": 242,
+          "gold_negative": 1422,
+          "raw_unordered_pair_count": 16213,
+          "rejected_records": [],
+          "valid_votes_per_record": {
+            "5": 1558,
+            "4": 105,
+            "3": 1
+          },
+          "matrices": {
+            "single": {
+              "TP": {
+                "fraction": "2567/20",
+                "decimal": 128.35
+              },
+              "FP": {
+                "fraction": "597/10",
+                "decimal": 59.7
+              },
+              "FN": {
+                "fraction": "2273/20",
+                "decimal": 113.65
+              },
+              "TN": {
+                "fraction": "13623/10",
+                "decimal": 1362.3
+              }
+            },
+            "AND": {
+              "TP": {
+                "fraction": "1397/15",
+                "decimal": 93.13333333333334
+              },
+              "FP": {
+                "fraction": "78/5",
+                "decimal": 15.6
+              },
+              "FN": {
+                "fraction": "2233/15",
+                "decimal": 148.86666666666667
+              },
+              "TN": {
+                "fraction": "7032/5",
+                "decimal": 1406.4
+              }
+            },
+            "OR": {
+              "TP": {
+                "fraction": "4907/30",
+                "decimal": 163.56666666666666
+              },
+              "FP": {
+                "fraction": "519/5",
+                "decimal": 103.8
+              },
+              "FN": {
+                "fraction": "2353/30",
+                "decimal": 78.43333333333334
+              },
+              "TN": {
+                "fraction": "6591/5",
+                "decimal": 1318.2
+              }
+            },
+            "perfect_reference_correction_on_disagreement": {
+              "TP": {
+                "fraction": "4907/30",
+                "decimal": 163.56666666666666
+              },
+              "FP": {
+                "fraction": "78/5",
+                "decimal": 15.6
+              },
+              "FN": {
+                "fraction": "2353/30",
+                "decimal": 78.43333333333334
+              },
+              "TN": {
+                "fraction": "7032/5",
+                "decimal": 1406.4
+              }
+            }
+          },
+          "metrics": {
+            "single": {
+              "precision": {
+                "fraction": "2567/3761",
+                "decimal": 0.6825312416910396
+              },
+              "recall": {
+                "fraction": "2567/4840",
+                "decimal": 0.5303719008264463
+              },
+              "specificity": {
+                "fraction": "4541/4740",
+                "decimal": 0.9580168776371308
+              },
+              "accuracy": {
+                "fraction": "29813/33280",
+                "decimal": 0.8958233173076923
+              },
+              "selected_mass": {
+                "fraction": "3761/20",
+                "decimal": 188.05
+              },
+              "selected_fraction": {
+                "fraction": "3761/33280",
+                "decimal": 0.1130108173076923
+              },
+              "F1": {
+                "fraction": "5134/8601",
+                "decimal": 0.5969073363562376
+              }
+            },
+            "AND": {
+              "precision": {
+                "fraction": "1397/1631",
+                "decimal": 0.8565297363580625
+              },
+              "recall": {
+                "fraction": "127/330",
+                "decimal": 0.38484848484848483
+              },
+              "specificity": {
+                "fraction": "1172/1185",
+                "decimal": 0.9890295358649789
+              },
+              "accuracy": {
+                "fraction": "22493/24960",
+                "decimal": 0.901161858974359
+              },
+              "selected_mass": {
+                "fraction": "1631/15",
+                "decimal": 108.73333333333333
+              },
+              "selected_fraction": {
+                "fraction": "1631/24960",
+                "decimal": 0.06534455128205129
+              },
+              "F1": {
+                "fraction": "2794/5261",
+                "decimal": 0.5310777418741685
+              }
+            },
+            "OR": {
+              "precision": {
+                "fraction": "4907/8021",
+                "decimal": 0.6117691060964967
+              },
+              "recall": {
+                "fraction": "4907/7260",
+                "decimal": 0.6758953168044077
+              },
+              "specificity": {
+                "fraction": "2197/2370",
+                "decimal": 0.9270042194092827
+              },
+              "accuracy": {
+                "fraction": "44453/49920",
+                "decimal": 0.8904847756410257
+              },
+              "selected_mass": {
+                "fraction": "8021/30",
+                "decimal": 267.3666666666667
+              },
+              "selected_fraction": {
+                "fraction": "617/3840",
+                "decimal": 0.16067708333333333
+              },
+              "F1": {
+                "fraction": "1402/2183",
+                "decimal": 0.6422354557947778
+              }
+            },
+            "perfect_reference_correction_on_disagreement": {
+              "precision": {
+                "fraction": "4907/5375",
+                "decimal": 0.9129302325581395
+              },
+              "recall": {
+                "fraction": "4907/7260",
+                "decimal": 0.6758953168044077
+              },
+              "specificity": {
+                "fraction": "1172/1185",
+                "decimal": 0.9890295358649789
+              },
+              "accuracy": {
+                "fraction": "3623/3840",
+                "decimal": 0.9434895833333333
+              },
+              "selected_mass": {
+                "fraction": "1075/6",
+                "decimal": 179.16666666666666
+              },
+              "selected_fraction": {
+                "fraction": "1075/9984",
+                "decimal": 0.10767227564102565
+              },
+              "F1": {
+                "fraction": "1402/1805",
+                "decimal": 0.7767313019390581
+              }
+            }
+          },
+          "disagreement_mass": {
+            "all": {
+              "fraction": "4759/30",
+              "decimal": 158.63333333333333
+            },
+            "gold_positive": {
+              "fraction": "2113/30",
+              "decimal": 70.43333333333334
+            },
+            "gold_negative": {
+              "fraction": "441/5",
+              "decimal": 88.2
+            }
+          },
+          "disagreement_fraction": {
+            "fraction": "4759/49920",
+            "decimal": 0.09533253205128205
+          },
+          "unanimous_with_no_unknown": {
+            "FN_count": 41,
+            "FP_count": 0
+          }
+        },
+        {
+          "review": "DST",
+          "unknown_policy": "0",
+          "blacklist_enabled": true,
+          "raw_rows": 40368,
+          "non_honeypot_rows": 40111,
+          "source_blacklist_size": 29,
+          "excluded_blacklisted_rows": 999,
+          "retained_source_rows": 39112,
+          "unresolved_source_rows": 13,
+          "eligible_votes": 39112,
+          "distinct_workers_in_valid_votes": 92,
+          "eligible_records": 8071,
+          "gold_positive": 183,
+          "gold_negative": 7888,
+          "raw_unordered_pair_count": 75773,
+          "rejected_records": [],
+          "valid_votes_per_record": {
+            "5": 6857,
+            "4": 1179,
+            "3": 33,
+            "6": 2
+          },
+          "matrices": {
+            "single": {
+              "TP": {
+                "fraction": "1749/20",
+                "decimal": 87.45
+              },
+              "FP": {
+                "fraction": "5257/12",
+                "decimal": 438.0833333333333
+              },
+              "FN": {
+                "fraction": "1911/20",
+                "decimal": 95.55
+              },
+              "TN": {
+                "fraction": "89399/12",
+                "decimal": 7449.916666666667
+              }
+            },
+            "AND": {
+              "TP": {
+                "fraction": "1507/30",
+                "decimal": 50.233333333333334
+              },
+              "FP": {
+                "fraction": "329/6",
+                "decimal": 54.833333333333336
+              },
+              "FN": {
+                "fraction": "3983/30",
+                "decimal": 132.76666666666668
+              },
+              "TN": {
+                "fraction": "46999/6",
+                "decimal": 7833.166666666667
+              }
+            },
+            "OR": {
+              "TP": {
+                "fraction": "374/3",
+                "decimal": 124.66666666666667
+              },
+              "FP": {
+                "fraction": "2464/3",
+                "decimal": 821.3333333333334
+              },
+              "FN": {
+                "fraction": "175/3",
+                "decimal": 58.333333333333336
+              },
+              "TN": {
+                "fraction": "21200/3",
+                "decimal": 7066.666666666667
+              }
+            },
+            "perfect_reference_correction_on_disagreement": {
+              "TP": {
+                "fraction": "374/3",
+                "decimal": 124.66666666666667
+              },
+              "FP": {
+                "fraction": "329/6",
+                "decimal": 54.833333333333336
+              },
+              "FN": {
+                "fraction": "175/3",
+                "decimal": 58.333333333333336
+              },
+              "TN": {
+                "fraction": "46999/6",
+                "decimal": 7833.166666666667
+              }
+            }
+          },
+          "metrics": {
+            "single": {
+              "precision": {
+                "fraction": "5247/31532",
+                "decimal": 0.16640238487885323
+              },
+              "recall": {
+                "fraction": "583/1220",
+                "decimal": 0.4778688524590164
+              },
+              "specificity": {
+                "fraction": "89399/94656",
+                "decimal": 0.9444620520622042
+              },
+              "accuracy": {
+                "fraction": "32303/34590",
+                "decimal": 0.9338826250361376
+              },
+              "selected_mass": {
+                "fraction": "7883/15",
+                "decimal": 525.5333333333333
+              },
+              "selected_fraction": {
+                "fraction": "7883/121065",
+                "decimal": 0.06511378185272375
+              },
+              "F1": {
+                "fraction": "5247/21256",
+                "decimal": 0.24684794881445238
+              }
+            },
+            "AND": {
+              "precision": {
+                "fraction": "1507/3152",
+                "decimal": 0.4781091370558376
+              },
+              "recall": {
+                "fraction": "1507/5490",
+                "decimal": 0.2744990892531876
+              },
+              "specificity": {
+                "fraction": "46999/47328",
+                "decimal": 0.9930485125084516
+              },
+              "accuracy": {
+                "fraction": "5631/5765",
+                "decimal": 0.9767562879444927
+              },
+              "selected_mass": {
+                "fraction": "1576/15",
+                "decimal": 105.06666666666666
+              },
+              "selected_fraction": {
+                "fraction": "1576/121065",
+                "decimal": 0.013017800355181101
+              },
+              "F1": {
+                "fraction": "1507/4321",
+                "decimal": 0.34876186068039805
+              }
+            },
+            "OR": {
+              "precision": {
+                "fraction": "17/129",
+                "decimal": 0.13178294573643412
+              },
+              "recall": {
+                "fraction": "374/549",
+                "decimal": 0.6812386156648452
+              },
+              "specificity": {
+                "fraction": "1325/1479",
+                "decimal": 0.8958755916159568
+              },
+              "accuracy": {
+                "fraction": "3082/3459",
+                "decimal": 0.8910089621277826
+              },
+              "selected_mass": {
+                "fraction": "946",
+                "decimal": 946.0
+              },
+              "selected_fraction": {
+                "fraction": "946/8071",
+                "decimal": 0.11720976335026638
+              },
+              "F1": {
+                "fraction": "748/3387",
+                "decimal": 0.22084440507824032
+              }
+            },
+            "perfect_reference_correction_on_disagreement": {
+              "precision": {
+                "fraction": "748/1077",
+                "decimal": 0.6945218198700093
+              },
+              "recall": {
+                "fraction": "374/549",
+                "decimal": 0.6812386156648452
+              },
+              "specificity": {
+                "fraction": "46999/47328",
+                "decimal": 0.9930485125084516
+              },
+              "accuracy": {
+                "fraction": "6821/6918",
+                "decimal": 0.9859786065336803
+              },
+              "selected_mass": {
+                "fraction": "359/2",
+                "decimal": 179.5
+              },
+              "selected_fraction": {
+                "fraction": "359/16142",
+                "decimal": 0.02224011894436873
+              },
+              "F1": {
+                "fraction": "1496/2175",
+                "decimal": 0.6878160919540229
+              }
+            }
+          },
+          "disagreement_mass": {
+            "all": {
+              "fraction": "12614/15",
+              "decimal": 840.9333333333333
+            },
+            "gold_positive": {
+              "fraction": "2233/30",
+              "decimal": 74.43333333333334
+            },
+            "gold_negative": {
+              "fraction": "1533/2",
+              "decimal": 766.5
+            }
+          },
+          "disagreement_fraction": {
+            "fraction": "1802/17295",
+            "decimal": 0.10419196299508529
+          },
+          "unanimous_with_no_unknown": {
+            "FN_count": 24,
+            "FP_count": 3
+          }
+        },
+        {
+          "review": "Omega3",
+          "unknown_policy": "0",
+          "blacklist_enabled": true,
+          "raw_rows": 28875,
+          "non_honeypot_rows": 28704,
+          "source_blacklist_size": 29,
+          "excluded_blacklisted_rows": 703,
+          "retained_source_rows": 28001,
+          "unresolved_source_rows": 4,
+          "eligible_votes": 28001,
+          "distinct_workers_in_valid_votes": 53,
+          "eligible_records": 5774,
+          "gold_positive": 310,
+          "gold_negative": 5464,
+          "raw_unordered_pair_count": 54310,
+          "rejected_records": [],
+          "valid_votes_per_record": {
+            "5": 4948,
+            "4": 786,
+            "3": 37,
+            "2": 3
+          },
+          "matrices": {
+            "single": {
+              "TP": {
+                "fraction": "5801/30",
+                "decimal": 193.36666666666667
+              },
+              "FP": {
+                "fraction": "12549/20",
+                "decimal": 627.45
+              },
+              "FN": {
+                "fraction": "3499/30",
+                "decimal": 116.63333333333334
+              },
+              "TN": {
+                "fraction": "96731/20",
+                "decimal": 4836.55
+              }
+            },
+            "AND": {
+              "TP": {
+                "fraction": "626/5",
+                "decimal": 125.2
+              },
+              "FP": {
+                "fraction": "1028/5",
+                "decimal": 205.6
+              },
+              "FN": {
+                "fraction": "924/5",
+                "decimal": 184.8
+              },
+              "TN": {
+                "fraction": "26292/5",
+                "decimal": 5258.4
+              }
+            },
+            "OR": {
+              "TP": {
+                "fraction": "3923/15",
+                "decimal": 261.53333333333336
+              },
+              "FP": {
+                "fraction": "10493/10",
+                "decimal": 1049.3
+              },
+              "FN": {
+                "fraction": "727/15",
+                "decimal": 48.46666666666667
+              },
+              "TN": {
+                "fraction": "44147/10",
+                "decimal": 4414.7
+              }
+            },
+            "perfect_reference_correction_on_disagreement": {
+              "TP": {
+                "fraction": "3923/15",
+                "decimal": 261.53333333333336
+              },
+              "FP": {
+                "fraction": "1028/5",
+                "decimal": 205.6
+              },
+              "FN": {
+                "fraction": "727/15",
+                "decimal": 48.46666666666667
+              },
+              "TN": {
+                "fraction": "26292/5",
+                "decimal": 5258.4
+              }
+            }
+          },
+          "metrics": {
+            "single": {
+              "precision": {
+                "fraction": "11602/49249",
+                "decimal": 0.23557838737842393
+              },
+              "recall": {
+                "fraction": "5801/9300",
+                "decimal": 0.6237634408602151
+              },
+              "specificity": {
+                "fraction": "96731/109280",
+                "decimal": 0.8851665446559297
+              },
+              "accuracy": {
+                "fraction": "60359/69288",
+                "decimal": 0.8711320863641612
+              },
+              "selected_mass": {
+                "fraction": "49249/60",
+                "decimal": 820.8166666666667
+              },
+              "selected_fraction": {
+                "fraction": "49249/346440",
+                "decimal": 0.1421573721279298
+              },
+              "F1": {
+                "fraction": "23204/67849",
+                "decimal": 0.3419947235773556
+              }
+            },
+            "AND": {
+              "precision": {
+                "fraction": "313/827",
+                "decimal": 0.3784764207980653
+              },
+              "recall": {
+                "fraction": "313/775",
+                "decimal": 0.4038709677419355
+              },
+              "specificity": {
+                "fraction": "6573/6830",
+                "decimal": 0.9623718887262079
+              },
+              "accuracy": {
+                "fraction": "13459/14435",
+                "decimal": 0.9323865604433668
+              },
+              "selected_mass": {
+                "fraction": "1654/5",
+                "decimal": 330.8
+              },
+              "selected_fraction": {
+                "fraction": "827/14435",
+                "decimal": 0.0572913058538275
+              },
+              "F1": {
+                "fraction": "313/801",
+                "decimal": 0.39076154806491886
+              }
+            },
+            "OR": {
+              "precision": {
+                "fraction": "7846/39325",
+                "decimal": 0.19951684678957407
+              },
+              "recall": {
+                "fraction": "3923/4650",
+                "decimal": 0.8436559139784946
+              },
+              "specificity": {
+                "fraction": "44147/54640",
+                "decimal": 0.8079612005856516
+              },
+              "accuracy": {
+                "fraction": "140287/173220",
+                "decimal": 0.8098776122849556
+              },
+              "selected_mass": {
+                "fraction": "7865/6",
+                "decimal": 1310.8333333333333
+              },
+              "selected_fraction": {
+                "fraction": "7865/34644",
+                "decimal": 0.2270234384020321
+              },
+              "F1": {
+                "fraction": "15692/48625",
+                "decimal": 0.3227146529562982
+              }
+            },
+            "perfect_reference_correction_on_disagreement": {
+              "precision": {
+                "fraction": "3923/7007",
+                "decimal": 0.5598687027258455
+              },
+              "recall": {
+                "fraction": "3923/4650",
+                "decimal": 0.8436559139784946
+              },
+              "specificity": {
+                "fraction": "6573/6830",
+                "decimal": 0.9623718887262079
+              },
+              "accuracy": {
+                "fraction": "82799/86610",
+                "decimal": 0.9559981526382635
+              },
+              "selected_mass": {
+                "fraction": "7007/15",
+                "decimal": 467.1333333333333
+              },
+              "selected_fraction": {
+                "fraction": "7007/86610",
+                "decimal": 0.08090289804872416
+              },
+              "F1": {
+                "fraction": "7846/11657",
+                "decimal": 0.6730719739212491
+              }
+            }
+          },
+          "disagreement_mass": {
+            "all": {
+              "fraction": "29401/30",
+              "decimal": 980.0333333333333
+            },
+            "gold_positive": {
+              "fraction": "409/3",
+              "decimal": 136.33333333333334
+            },
+            "gold_negative": {
+              "fraction": "8437/10",
+              "decimal": 843.7
+            }
+          },
+          "disagreement_fraction": {
+            "fraction": "29401/173220",
+            "decimal": 0.1697321325482046
+          },
+          "unanimous_with_no_unknown": {
+            "FN_count": 12,
+            "FP_count": 28
+          }
+        }
+      ],
+      "pooled": {
+        "eligible_records": 15509,
+        "eligible_votes": 75326,
+        "unresolved_source_rows": 18,
+        "raw_unordered_pair_count": 146296,
+        "gold_positive": 735,
+        "gold_negative": 14774,
+        "matrices": {
+          "single": {
+            "TP": {
+              "fraction": "2455/6",
+              "decimal": 409.1666666666667
+            },
+            "FP": {
+              "fraction": "33757/30",
+              "decimal": 1125.2333333333333
+            },
+            "FN": {
+              "fraction": "1955/6",
+              "decimal": 325.8333333333333
+            },
+            "TN": {
+              "fraction": "409463/30",
+              "decimal": 13648.766666666666
+            }
+          },
+          "AND": {
+            "TP": {
+              "fraction": "8057/30",
+              "decimal": 268.56666666666666
+            },
+            "FP": {
+              "fraction": "8281/30",
+              "decimal": 276.03333333333336
+            },
+            "FN": {
+              "fraction": "13993/30",
+              "decimal": 466.43333333333334
+            },
+            "TN": {
+              "fraction": "434939/30",
+              "decimal": 14497.966666666667
+            }
+          },
+          "OR": {
+            "TP": {
+              "fraction": "16493/30",
+              "decimal": 549.7666666666667
+            },
+            "FP": {
+              "fraction": "59233/30",
+              "decimal": 1974.4333333333334
+            },
+            "FN": {
+              "fraction": "5557/30",
+              "decimal": 185.23333333333332
+            },
+            "TN": {
+              "fraction": "383987/30",
+              "decimal": 12799.566666666668
+            }
+          },
+          "perfect_reference_correction_on_disagreement": {
+            "TP": {
+              "fraction": "16493/30",
+              "decimal": 549.7666666666667
+            },
+            "FP": {
+              "fraction": "8281/30",
+              "decimal": 276.03333333333336
+            },
+            "FN": {
+              "fraction": "5557/30",
+              "decimal": 185.23333333333332
+            },
+            "TN": {
+              "fraction": "434939/30",
+              "decimal": 14497.966666666667
+            }
+          }
+        },
+        "metrics": {
+          "single": {
+            "precision": {
+              "fraction": "12275/46032",
+              "decimal": 0.2666623218630518
+            },
+            "recall": {
+              "fraction": "491/882",
+              "decimal": 0.5566893424036281
+            },
+            "specificity": {
+              "fraction": "409463/443220",
+              "decimal": 0.9238369207165742
+            },
+            "accuracy": {
+              "fraction": "210869/232635",
+              "decimal": 0.9064371225310035
+            },
+            "selected_mass": {
+              "fraction": "7672/5",
+              "decimal": 1534.4
+            },
+            "selected_fraction": {
+              "fraction": "7672/77545",
+              "decimal": 0.09893610161841511
+            },
+            "F1": {
+              "fraction": "12275/34041",
+              "decimal": 0.3605945771275815
+            }
+          },
+          "AND": {
+            "precision": {
+              "fraction": "1151/2334",
+              "decimal": 0.49314481576692376
+            },
+            "recall": {
+              "fraction": "1151/3150",
+              "decimal": 0.3653968253968254
+            },
+            "specificity": {
+              "fraction": "434939/443220",
+              "decimal": 0.9813162763413203
+            },
+            "accuracy": {
+              "fraction": "221498/232635",
+              "decimal": 0.9521267221183399
+            },
+            "selected_mass": {
+              "fraction": "2723/5",
+              "decimal": 544.6
+            },
+            "selected_fraction": {
+              "fraction": "2723/77545",
+              "decimal": 0.03511509446128055
+            },
+            "F1": {
+              "fraction": "1151/2742",
+              "decimal": 0.4197665937272064
+            }
+          },
+          "OR": {
+            "precision": {
+              "fraction": "16493/75726",
+              "decimal": 0.21779837836410215
+            },
+            "recall": {
+              "fraction": "16493/22050",
+              "decimal": 0.7479818594104308
+            },
+            "specificity": {
+              "fraction": "383987/443220",
+              "decimal": 0.866357565091828
+            },
+            "accuracy": {
+              "fraction": "40048/46527",
+              "decimal": 0.8607475229436671
+            },
+            "selected_mass": {
+              "fraction": "12621/5",
+              "decimal": 2524.2
+            },
+            "selected_fraction": {
+              "fraction": "12621/77545",
+              "decimal": 0.1627571087755497
+            },
+            "F1": {
+              "fraction": "16493/48888",
+              "decimal": 0.3373629520536737
+            }
+          },
+          "perfect_reference_correction_on_disagreement": {
+            "precision": {
+              "fraction": "16493/24774",
+              "decimal": 0.6657382739969323
+            },
+            "recall": {
+              "fraction": "16493/22050",
+              "decimal": 0.7479818594104308
+            },
+            "specificity": {
+              "fraction": "434939/443220",
+              "decimal": 0.9813162763413203
+            },
+            "accuracy": {
+              "fraction": "225716/232635",
+              "decimal": 0.9702581296881381
+            },
+            "selected_mass": {
+              "fraction": "4129/5",
+              "decimal": 825.8
+            },
+            "selected_fraction": {
+              "fraction": "4129/77545",
+              "decimal": 0.05324650203107873
+            },
+            "F1": {
+              "fraction": "16493/23412",
+              "decimal": 0.7044677942935247
+            }
+          }
+        },
+        "disagreement_mass": {
+          "all": {
+            "fraction": "9898/5",
+            "decimal": 1979.6
+          },
+          "gold_positive": {
+            "fraction": "1406/5",
+            "decimal": 281.2
+          },
+          "gold_negative": {
+            "fraction": "8492/5",
+            "decimal": 1698.4
+          }
+        },
+        "disagreement_fraction": {
+          "fraction": "9898/77545",
+          "decimal": 0.12764201431426914
+        },
+        "unanimous_with_no_unknown": {
+          "FN_count": 77,
+          "FP_count": 31
+        }
+      }
+    },
+    "unknown_as_1": {
+      "reviews": [
+        {
+          "review": "Appendicitis",
+          "unknown_policy": "1",
+          "blacklist_enabled": true,
+          "raw_rows": 8325,
+          "non_honeypot_rows": 8213,
+          "source_blacklist_size": 30,
+          "excluded_blacklisted_rows": 0,
+          "retained_source_rows": 8213,
+          "unresolved_source_rows": 1,
+          "eligible_votes": 8213,
+          "distinct_workers_in_valid_votes": 21,
+          "eligible_records": 1664,
+          "gold_positive": 242,
+          "gold_negative": 1422,
+          "raw_unordered_pair_count": 16213,
+          "rejected_records": [],
+          "valid_votes_per_record": {
+            "5": 1558,
+            "4": 105,
+            "3": 1
+          },
+          "matrices": {
+            "single": {
+              "TP": {
+                "fraction": "2567/20",
+                "decimal": 128.35
+              },
+              "FP": {
+                "fraction": "599/10",
+                "decimal": 59.9
+              },
+              "FN": {
+                "fraction": "2273/20",
+                "decimal": 113.65
+              },
+              "TN": {
+                "fraction": "13621/10",
+                "decimal": 1362.1
+              }
+            },
+            "AND": {
+              "TP": {
+                "fraction": "1397/15",
+                "decimal": 93.13333333333334
+              },
+              "FP": {
+                "fraction": "78/5",
+                "decimal": 15.6
+              },
+              "FN": {
+                "fraction": "2233/15",
+                "decimal": 148.86666666666667
+              },
+              "TN": {
+                "fraction": "7032/5",
+                "decimal": 1406.4
+              }
+            },
+            "OR": {
+              "TP": {
+                "fraction": "4907/30",
+                "decimal": 163.56666666666666
+              },
+              "FP": {
+                "fraction": "521/5",
+                "decimal": 104.2
+              },
+              "FN": {
+                "fraction": "2353/30",
+                "decimal": 78.43333333333334
+              },
+              "TN": {
+                "fraction": "6589/5",
+                "decimal": 1317.8
+              }
+            },
+            "perfect_reference_correction_on_disagreement": {
+              "TP": {
+                "fraction": "4907/30",
+                "decimal": 163.56666666666666
+              },
+              "FP": {
+                "fraction": "78/5",
+                "decimal": 15.6
+              },
+              "FN": {
+                "fraction": "2353/30",
+                "decimal": 78.43333333333334
+              },
+              "TN": {
+                "fraction": "7032/5",
+                "decimal": 1406.4
+              }
+            }
+          },
+          "metrics": {
+            "single": {
+              "precision": {
+                "fraction": "2567/3765",
+                "decimal": 0.6818061088977424
+              },
+              "recall": {
+                "fraction": "2567/4840",
+                "decimal": 0.5303719008264463
+              },
+              "specificity": {
+                "fraction": "13621/14220",
+                "decimal": 0.9578762306610408
+              },
+              "accuracy": {
+                "fraction": "2293/2560",
+                "decimal": 0.895703125
+              },
+              "selected_mass": {
+                "fraction": "753/4",
+                "decimal": 188.25
+              },
+              "selected_fraction": {
+                "fraction": "753/6656",
+                "decimal": 0.11313100961538461
+              },
+              "F1": {
+                "fraction": "5134/8605",
+                "decimal": 0.5966298663567693
+              }
+            },
+            "AND": {
+              "precision": {
+                "fraction": "1397/1631",
+                "decimal": 0.8565297363580625
+              },
+              "recall": {
+                "fraction": "127/330",
+                "decimal": 0.38484848484848483
+              },
+              "specificity": {
+                "fraction": "1172/1185",
+                "decimal": 0.9890295358649789
+              },
+              "accuracy": {
+                "fraction": "22493/24960",
+                "decimal": 0.901161858974359
+              },
+              "selected_mass": {
+                "fraction": "1631/15",
+                "decimal": 108.73333333333333
+              },
+              "selected_fraction": {
+                "fraction": "1631/24960",
+                "decimal": 0.06534455128205129
+              },
+              "F1": {
+                "fraction": "2794/5261",
+                "decimal": 0.5310777418741685
+              }
+            },
+            "OR": {
+              "precision": {
+                "fraction": "4907/8033",
+                "decimal": 0.6108552222083904
+              },
+              "recall": {
+                "fraction": "4907/7260",
+                "decimal": 0.6758953168044077
+              },
+              "specificity": {
+                "fraction": "6589/7110",
+                "decimal": 0.9267229254571027
+              },
+              "accuracy": {
+                "fraction": "44441/49920",
+                "decimal": 0.890244391025641
+              },
+              "selected_mass": {
+                "fraction": "8033/30",
+                "decimal": 267.76666666666665
+              },
+              "selected_fraction": {
+                "fraction": "8033/49920",
+                "decimal": 0.16091746794871795
+              },
+              "F1": {
+                "fraction": "9814/15293",
+                "decimal": 0.6417315111488916
+              }
+            },
+            "perfect_reference_correction_on_disagreement": {
+              "precision": {
+                "fraction": "4907/5375",
+                "decimal": 0.9129302325581395
+              },
+              "recall": {
+                "fraction": "4907/7260",
+                "decimal": 0.6758953168044077
+              },
+              "specificity": {
+                "fraction": "1172/1185",
+                "decimal": 0.9890295358649789
+              },
+              "accuracy": {
+                "fraction": "3623/3840",
+                "decimal": 0.9434895833333333
+              },
+              "selected_mass": {
+                "fraction": "1075/6",
+                "decimal": 179.16666666666666
+              },
+              "selected_fraction": {
+                "fraction": "1075/9984",
+                "decimal": 0.10767227564102565
+              },
+              "F1": {
+                "fraction": "1402/1805",
+                "decimal": 0.7767313019390581
+              }
+            }
+          },
+          "disagreement_mass": {
+            "all": {
+              "fraction": "4771/30",
+              "decimal": 159.03333333333333
+            },
+            "gold_positive": {
+              "fraction": "2113/30",
+              "decimal": 70.43333333333334
+            },
+            "gold_negative": {
+              "fraction": "443/5",
+              "decimal": 88.6
+            }
+          },
+          "disagreement_fraction": {
+            "fraction": "367/3840",
+            "decimal": 0.09557291666666666
+          },
+          "unanimous_with_no_unknown": {
+            "FN_count": 41,
+            "FP_count": 0
+          }
+        },
+        {
+          "review": "DST",
+          "unknown_policy": "1",
+          "blacklist_enabled": true,
+          "raw_rows": 40368,
+          "non_honeypot_rows": 40111,
+          "source_blacklist_size": 29,
+          "excluded_blacklisted_rows": 999,
+          "retained_source_rows": 39112,
+          "unresolved_source_rows": 13,
+          "eligible_votes": 39112,
+          "distinct_workers_in_valid_votes": 92,
+          "eligible_records": 8071,
+          "gold_positive": 183,
+          "gold_negative": 7888,
+          "raw_unordered_pair_count": 75773,
+          "rejected_records": [],
+          "valid_votes_per_record": {
+            "5": 6857,
+            "4": 1179,
+            "3": 33,
+            "6": 2
+          },
+          "matrices": {
+            "single": {
+              "TP": {
+                "fraction": "1749/20",
+                "decimal": 87.45
+              },
+              "FP": {
+                "fraction": "6614/15",
+                "decimal": 440.93333333333334
+              },
+              "FN": {
+                "fraction": "1911/20",
+                "decimal": 95.55
+              },
+              "TN": {
+                "fraction": "111706/15",
+                "decimal": 7447.066666666667
+              }
+            },
+            "AND": {
+              "TP": {
+                "fraction": "1507/30",
+                "decimal": 50.233333333333334
+              },
+              "FP": {
+                "fraction": "55",
+                "decimal": 55.0
+              },
+              "FN": {
+                "fraction": "3983/30",
+                "decimal": 132.76666666666668
+              },
+              "TN": {
+                "fraction": "7833",
+                "decimal": 7833.0
+              }
+            },
+            "OR": {
+              "TP": {
+                "fraction": "374/3",
+                "decimal": 124.66666666666667
+              },
+              "FP": {
+                "fraction": "12403/15",
+                "decimal": 826.8666666666667
+              },
+              "FN": {
+                "fraction": "175/3",
+                "decimal": 58.333333333333336
+              },
+              "TN": {
+                "fraction": "105917/15",
+                "decimal": 7061.133333333333
+              }
+            },
+            "perfect_reference_correction_on_disagreement": {
+              "TP": {
+                "fraction": "374/3",
+                "decimal": 124.66666666666667
+              },
+              "FP": {
+                "fraction": "55",
+                "decimal": 55.0
+              },
+              "FN": {
+                "fraction": "175/3",
+                "decimal": 58.333333333333336
+              },
+              "TN": {
+                "fraction": "7833",
+                "decimal": 7833.0
+              }
+            }
+          },
+          "metrics": {
+            "single": {
+              "precision": {
+                "fraction": "5247/31703",
+                "decimal": 0.16550484181307762
+              },
+              "recall": {
+                "fraction": "583/1220",
+                "decimal": 0.4778688524590164
+              },
+              "specificity": {
+                "fraction": "55853/59160",
+                "decimal": 0.9441007437457741
+              },
+              "accuracy": {
+                "fraction": "452071/484260",
+                "decimal": 0.9335295089414777
+              },
+              "selected_mass": {
+                "fraction": "31703/60",
+                "decimal": 528.3833333333333
+              },
+              "selected_fraction": {
+                "fraction": "4529/69180",
+                "decimal": 0.06546689794738364
+              },
+              "F1": {
+                "fraction": "10494/42683",
+                "decimal": 0.24585900709884498
+              }
+            },
+            "AND": {
+              "precision": {
+                "fraction": "137/287",
+                "decimal": 0.47735191637630664
+              },
+              "recall": {
+                "fraction": "1507/5490",
+                "decimal": 0.2744990892531876
+              },
+              "specificity": {
+                "fraction": "7833/7888",
+                "decimal": 0.9930273833671399
+              },
+              "accuracy": {
+                "fraction": "236497/242130",
+                "decimal": 0.9767356378804775
+              },
+              "selected_mass": {
+                "fraction": "3157/30",
+                "decimal": 105.23333333333333
+              },
+              "selected_fraction": {
+                "fraction": "451/34590",
+                "decimal": 0.0130384504191963
+              },
+              "F1": {
+                "fraction": "3014/8647",
+                "decimal": 0.34856019428703594
+              }
+            },
+            "OR": {
+              "precision": {
+                "fraction": "1870/14273",
+                "decimal": 0.13101660477825264
+              },
+              "recall": {
+                "fraction": "374/549",
+                "decimal": 0.6812386156648452
+              },
+              "specificity": {
+                "fraction": "105917/118320",
+                "decimal": 0.8951741041244083
+              },
+              "accuracy": {
+                "fraction": "35929/40355",
+                "decimal": 0.890323380002478
+              },
+              "selected_mass": {
+                "fraction": "14273/15",
+                "decimal": 951.5333333333333
+              },
+              "selected_fraction": {
+                "fraction": "2039/17295",
+                "decimal": 0.11789534547557097
+              },
+              "F1": {
+                "fraction": "1870/8509",
+                "decimal": 0.2197673052062522
+              }
+            },
+            "perfect_reference_correction_on_disagreement": {
+              "precision": {
+                "fraction": "34/49",
+                "decimal": 0.6938775510204082
+              },
+              "recall": {
+                "fraction": "374/549",
+                "decimal": 0.6812386156648452
+              },
+              "specificity": {
+                "fraction": "7833/7888",
+                "decimal": 0.9930273833671399
+              },
+              "accuracy": {
+                "fraction": "23873/24213",
+                "decimal": 0.9859579564696651
+              },
+              "selected_mass": {
+                "fraction": "539/3",
+                "decimal": 179.66666666666666
+              },
+              "selected_fraction": {
+                "fraction": "77/3459",
+                "decimal": 0.022260769008383925
+              },
+              "F1": {
+                "fraction": "11/16",
+                "decimal": 0.6875
+              }
+            }
+          },
+          "disagreement_mass": {
+            "all": {
+              "fraction": "8463/10",
+              "decimal": 846.3
+            },
+            "gold_positive": {
+              "fraction": "2233/30",
+              "decimal": 74.43333333333334
+            },
+            "gold_negative": {
+              "fraction": "11578/15",
+              "decimal": 771.8666666666667
+            }
+          },
+          "disagreement_fraction": {
+            "fraction": "1209/11530",
+            "decimal": 0.10485689505637467
+          },
+          "unanimous_with_no_unknown": {
+            "FN_count": 24,
+            "FP_count": 3
+          }
+        },
+        {
+          "review": "Omega3",
+          "unknown_policy": "1",
+          "blacklist_enabled": true,
+          "raw_rows": 28875,
+          "non_honeypot_rows": 28704,
+          "source_blacklist_size": 29,
+          "excluded_blacklisted_rows": 703,
+          "retained_source_rows": 28001,
+          "unresolved_source_rows": 4,
+          "eligible_votes": 28001,
+          "distinct_workers_in_valid_votes": 53,
+          "eligible_records": 5774,
+          "gold_positive": 310,
+          "gold_negative": 5464,
+          "raw_unordered_pair_count": 54310,
+          "rejected_records": [],
+          "valid_votes_per_record": {
+            "5": 4948,
+            "4": 786,
+            "3": 37,
+            "2": 3
+          },
+          "matrices": {
+            "single": {
+              "TP": {
+                "fraction": "5801/30",
+                "decimal": 193.36666666666667
+              },
+              "FP": {
+                "fraction": "12567/20",
+                "decimal": 628.35
+              },
+              "FN": {
+                "fraction": "3499/30",
+                "decimal": 116.63333333333334
+              },
+              "TN": {
+                "fraction": "96713/20",
+                "decimal": 4835.65
+              }
+            },
+            "AND": {
+              "TP": {
+                "fraction": "626/5",
+                "decimal": 125.2
+              },
+              "FP": {
+                "fraction": "2057/10",
+                "decimal": 205.7
+              },
+              "FN": {
+                "fraction": "924/5",
+                "decimal": 184.8
+              },
+              "TN": {
+                "fraction": "52583/10",
+                "decimal": 5258.3
+              }
+            },
+            "OR": {
+              "TP": {
+                "fraction": "3923/15",
+                "decimal": 261.53333333333336
+              },
+              "FP": {
+                "fraction": "1051",
+                "decimal": 1051.0
+              },
+              "FN": {
+                "fraction": "727/15",
+                "decimal": 48.46666666666667
+              },
+              "TN": {
+                "fraction": "4413",
+                "decimal": 4413.0
+              }
+            },
+            "perfect_reference_correction_on_disagreement": {
+              "TP": {
+                "fraction": "3923/15",
+                "decimal": 261.53333333333336
+              },
+              "FP": {
+                "fraction": "2057/10",
+                "decimal": 205.7
+              },
+              "FN": {
+                "fraction": "727/15",
+                "decimal": 48.46666666666667
+              },
+              "TN": {
+                "fraction": "52583/10",
+                "decimal": 5258.3
+              }
+            }
+          },
+          "metrics": {
+            "single": {
+              "precision": {
+                "fraction": "11602/49303",
+                "decimal": 0.23532036590065514
+              },
+              "recall": {
+                "fraction": "5801/9300",
+                "decimal": 0.6237634408602151
+              },
+              "specificity": {
+                "fraction": "96713/109280",
+                "decimal": 0.8850018301610542
+              },
+              "accuracy": {
+                "fraction": "301741/346440",
+                "decimal": 0.8709762152176423
+              },
+              "selected_mass": {
+                "fraction": "49303/60",
+                "decimal": 821.7166666666667
+              },
+              "selected_fraction": {
+                "fraction": "49303/346440",
+                "decimal": 0.14231324327444866
+              },
+              "F1": {
+                "fraction": "23204/67903",
+                "decimal": 0.3417227515720955
+              }
+            },
+            "AND": {
+              "precision": {
+                "fraction": "1252/3309",
+                "decimal": 0.37836204291326686
+              },
+              "recall": {
+                "fraction": "313/775",
+                "decimal": 0.4038709677419355
+              },
+              "specificity": {
+                "fraction": "52583/54640",
+                "decimal": 0.9623535871156662
+              },
+              "accuracy": {
+                "fraction": "10767/11548",
+                "decimal": 0.932369241427087
+              },
+              "selected_mass": {
+                "fraction": "3309/10",
+                "decimal": 330.9
+              },
+              "selected_fraction": {
+                "fraction": "3309/57740",
+                "decimal": 0.05730862487010738
+              },
+              "F1": {
+                "fraction": "2504/6409",
+                "decimal": 0.3907005773131534
+              }
+            },
+            "OR": {
+              "precision": {
+                "fraction": "3923/19688",
+                "decimal": 0.1992584315318976
+              },
+              "recall": {
+                "fraction": "3923/4650",
+                "decimal": 0.8436559139784946
+              },
+              "specificity": {
+                "fraction": "4413/5464",
+                "decimal": 0.8076500732064422
+              },
+              "accuracy": {
+                "fraction": "35059/43305",
+                "decimal": 0.8095831890081977
+              },
+              "selected_mass": {
+                "fraction": "19688/15",
+                "decimal": 1312.5333333333333
+              },
+              "selected_fraction": {
+                "fraction": "9844/43305",
+                "decimal": 0.22731786167878998
+              },
+              "F1": {
+                "fraction": "3923/12169",
+                "decimal": 0.3223765305283918
+              }
+            },
+            "perfect_reference_correction_on_disagreement": {
+              "precision": {
+                "fraction": "7846/14017",
+                "decimal": 0.5597488763644146
+              },
+              "recall": {
+                "fraction": "3923/4650",
+                "decimal": 0.8436559139784946
+              },
+              "specificity": {
+                "fraction": "52583/54640",
+                "decimal": 0.9623535871156662
+              },
+              "accuracy": {
+                "fraction": "33119/34644",
+                "decimal": 0.9559808336219836
+              },
+              "selected_mass": {
+                "fraction": "14017/30",
+                "decimal": 467.23333333333335
+              },
+              "selected_fraction": {
+                "fraction": "14017/173220",
+                "decimal": 0.08092021706500405
+              },
+              "F1": {
+                "fraction": "15692/23317",
+                "decimal": 0.6729853754771197
+              }
+            }
+          },
+          "disagreement_mass": {
+            "all": {
+              "fraction": "29449/30",
+              "decimal": 981.6333333333333
+            },
+            "gold_positive": {
+              "fraction": "409/3",
+              "decimal": 136.33333333333334
+            },
+            "gold_negative": {
+              "fraction": "8453/10",
+              "decimal": 845.3
+            }
+          },
+          "disagreement_fraction": {
+            "fraction": "29449/173220",
+            "decimal": 0.1700092368086826
+          },
+          "unanimous_with_no_unknown": {
+            "FN_count": 12,
+            "FP_count": 28
+          }
+        }
+      ],
+      "pooled": {
+        "eligible_records": 15509,
+        "eligible_votes": 75326,
+        "unresolved_source_rows": 18,
+        "raw_unordered_pair_count": 146296,
+        "gold_positive": 735,
+        "gold_negative": 14774,
+        "matrices": {
+          "single": {
+            "TP": {
+              "fraction": "2455/6",
+              "decimal": 409.1666666666667
+            },
+            "FP": {
+              "fraction": "67751/60",
+              "decimal": 1129.1833333333334
+            },
+            "FN": {
+              "fraction": "1955/6",
+              "decimal": 325.8333333333333
+            },
+            "TN": {
+              "fraction": "818689/60",
+              "decimal": 13644.816666666668
+            }
+          },
+          "AND": {
+            "TP": {
+              "fraction": "8057/30",
+              "decimal": 268.56666666666666
+            },
+            "FP": {
+              "fraction": "2763/10",
+              "decimal": 276.3
+            },
+            "FN": {
+              "fraction": "13993/30",
+              "decimal": 466.43333333333334
+            },
+            "TN": {
+              "fraction": "144977/10",
+              "decimal": 14497.7
+            }
+          },
+          "OR": {
+            "TP": {
+              "fraction": "16493/30",
+              "decimal": 549.7666666666667
+            },
+            "FP": {
+              "fraction": "29731/15",
+              "decimal": 1982.0666666666666
+            },
+            "FN": {
+              "fraction": "5557/30",
+              "decimal": 185.23333333333332
+            },
+            "TN": {
+              "fraction": "191879/15",
+              "decimal": 12791.933333333332
+            }
+          },
+          "perfect_reference_correction_on_disagreement": {
+            "TP": {
+              "fraction": "16493/30",
+              "decimal": 549.7666666666667
+            },
+            "FP": {
+              "fraction": "2763/10",
+              "decimal": 276.3
+            },
+            "FN": {
+              "fraction": "5557/30",
+              "decimal": 185.23333333333332
+            },
+            "TN": {
+              "fraction": "144977/10",
+              "decimal": 14497.7
+            }
+          }
+        },
+        "metrics": {
+          "single": {
+            "precision": {
+              "fraction": "24550/92301",
+              "decimal": 0.2659776167105449
+            },
+            "recall": {
+              "fraction": "491/882",
+              "decimal": 0.5566893424036281
+            },
+            "specificity": {
+              "fraction": "818689/886440",
+              "decimal": 0.923569559135418
+            },
+            "accuracy": {
+              "fraction": "843239/930540",
+              "decimal": 0.9061824317063211
+            },
+            "selected_mass": {
+              "fraction": "30767/20",
+              "decimal": 1538.35
+            },
+            "selected_fraction": {
+              "fraction": "30767/310180",
+              "decimal": 0.09919079244309756
+            },
+            "F1": {
+              "fraction": "49100/136401",
+              "decimal": 0.35996803542496025
+            }
+          },
+          "AND": {
+            "precision": {
+              "fraction": "8057/16346",
+              "decimal": 0.4929034626208247
+            },
+            "recall": {
+              "fraction": "1151/3150",
+              "decimal": 0.3653968253968254
+            },
+            "specificity": {
+              "fraction": "144977/147740",
+              "decimal": 0.9812982266143224
+            },
+            "accuracy": {
+              "fraction": "17038/17895",
+              "decimal": 0.9521095278010617
+            },
+            "selected_mass": {
+              "fraction": "8173/15",
+              "decimal": 544.8666666666667
+            },
+            "selected_fraction": {
+              "fraction": "8173/232635",
+              "decimal": 0.03513228877855869
+            },
+            "F1": {
+              "fraction": "8057/19198",
+              "decimal": 0.4196791332430462
+            }
+          },
+          "OR": {
+            "precision": {
+              "fraction": "16493/75955",
+              "decimal": 0.21714172865512474
+            },
+            "recall": {
+              "fraction": "16493/22050",
+              "decimal": 0.7479818594104308
+            },
+            "specificity": {
+              "fraction": "191879/221610",
+              "decimal": 0.8658408916565137
+            },
+            "accuracy": {
+              "fraction": "133417/155090",
+              "decimal": 0.8602553356115804
+            },
+            "selected_mass": {
+              "fraction": "15191/6",
+              "decimal": 2531.8333333333335
+            },
+            "selected_fraction": {
+              "fraction": "15191/93054",
+              "decimal": 0.16324929610763642
+            },
+            "F1": {
+              "fraction": "32986/98005",
+              "decimal": 0.3365746645579307
+            }
+          },
+          "perfect_reference_correction_on_disagreement": {
+            "precision": {
+              "fraction": "16493/24782",
+              "decimal": 0.6655233637317408
+            },
+            "recall": {
+              "fraction": "16493/22050",
+              "decimal": 0.7479818594104308
+            },
+            "specificity": {
+              "fraction": "144977/147740",
+              "decimal": 0.9812982266143224
+            },
+            "accuracy": {
+              "fraction": "225712/232635",
+              "decimal": 0.97024093537086
+            },
+            "selected_mass": {
+              "fraction": "12391/15",
+              "decimal": 826.0666666666667
+            },
+            "selected_fraction": {
+              "fraction": "12391/232635",
+              "decimal": 0.05326369634835687
+            },
+            "F1": {
+              "fraction": "16493/23416",
+              "decimal": 0.7043474547318073
+            }
+          }
+        },
+        "disagreement_mass": {
+          "all": {
+            "fraction": "59609/30",
+            "decimal": 1986.9666666666667
+          },
+          "gold_positive": {
+            "fraction": "1406/5",
+            "decimal": 281.2
+          },
+          "gold_negative": {
+            "fraction": "51173/30",
+            "decimal": 1705.7666666666667
+          }
+        },
+        "disagreement_fraction": {
+          "fraction": "59609/465270",
+          "decimal": 0.12811700732907774
+        },
+        "unanimous_with_no_unknown": {
+          "FN_count": 77,
+          "FP_count": 31
+        }
+      }
+    },
+    "no_blacklist": {
+      "reviews": [
+        {
+          "review": "Appendicitis",
+          "unknown_policy": "omit",
+          "blacklist_enabled": false,
+          "raw_rows": 8325,
+          "non_honeypot_rows": 8213,
+          "source_blacklist_size": 30,
+          "excluded_blacklisted_rows": 0,
+          "retained_source_rows": 8213,
+          "unresolved_source_rows": 1,
+          "eligible_votes": 8212,
+          "distinct_workers_in_valid_votes": 21,
+          "eligible_records": 1664,
+          "gold_positive": 242,
+          "gold_negative": 1422,
+          "raw_unordered_pair_count": 16209,
+          "rejected_records": [],
+          "valid_votes_per_record": {
+            "5": 1557,
+            "4": 106,
+            "3": 1
+          },
+          "matrices": {
+            "single": {
+              "TP": {
+                "fraction": "2567/20",
+                "decimal": 128.35
+              },
+              "FP": {
+                "fraction": "597/10",
+                "decimal": 59.7
+              },
+              "FN": {
+                "fraction": "2273/20",
+                "decimal": 113.65
+              },
+              "TN": {
+                "fraction": "13623/10",
+                "decimal": 1362.3
+              }
+            },
+            "AND": {
+              "TP": {
+                "fraction": "1397/15",
+                "decimal": 93.13333333333334
+              },
+              "FP": {
+                "fraction": "78/5",
+                "decimal": 15.6
+              },
+              "FN": {
+                "fraction": "2233/15",
+                "decimal": 148.86666666666667
+              },
+              "TN": {
+                "fraction": "7032/5",
+                "decimal": 1406.4
+              }
+            },
+            "OR": {
+              "TP": {
+                "fraction": "4907/30",
+                "decimal": 163.56666666666666
+              },
+              "FP": {
+                "fraction": "519/5",
+                "decimal": 103.8
+              },
+              "FN": {
+                "fraction": "2353/30",
+                "decimal": 78.43333333333334
+              },
+              "TN": {
+                "fraction": "6591/5",
+                "decimal": 1318.2
+              }
+            },
+            "perfect_reference_correction_on_disagreement": {
+              "TP": {
+                "fraction": "4907/30",
+                "decimal": 163.56666666666666
+              },
+              "FP": {
+                "fraction": "78/5",
+                "decimal": 15.6
+              },
+              "FN": {
+                "fraction": "2353/30",
+                "decimal": 78.43333333333334
+              },
+              "TN": {
+                "fraction": "7032/5",
+                "decimal": 1406.4
+              }
+            }
+          },
+          "metrics": {
+            "single": {
+              "precision": {
+                "fraction": "2567/3761",
+                "decimal": 0.6825312416910396
+              },
+              "recall": {
+                "fraction": "2567/4840",
+                "decimal": 0.5303719008264463
+              },
+              "specificity": {
+                "fraction": "4541/4740",
+                "decimal": 0.9580168776371308
+              },
+              "accuracy": {
+                "fraction": "29813/33280",
+                "decimal": 0.8958233173076923
+              },
+              "selected_mass": {
+                "fraction": "3761/20",
+                "decimal": 188.05
+              },
+              "selected_fraction": {
+                "fraction": "3761/33280",
+                "decimal": 0.1130108173076923
+              },
+              "F1": {
+                "fraction": "5134/8601",
+                "decimal": 0.5969073363562376
+              }
+            },
+            "AND": {
+              "precision": {
+                "fraction": "1397/1631",
+                "decimal": 0.8565297363580625
+              },
+              "recall": {
+                "fraction": "127/330",
+                "decimal": 0.38484848484848483
+              },
+              "specificity": {
+                "fraction": "1172/1185",
+                "decimal": 0.9890295358649789
+              },
+              "accuracy": {
+                "fraction": "22493/24960",
+                "decimal": 0.901161858974359
+              },
+              "selected_mass": {
+                "fraction": "1631/15",
+                "decimal": 108.73333333333333
+              },
+              "selected_fraction": {
+                "fraction": "1631/24960",
+                "decimal": 0.06534455128205129
+              },
+              "F1": {
+                "fraction": "2794/5261",
+                "decimal": 0.5310777418741685
+              }
+            },
+            "OR": {
+              "precision": {
+                "fraction": "4907/8021",
+                "decimal": 0.6117691060964967
+              },
+              "recall": {
+                "fraction": "4907/7260",
+                "decimal": 0.6758953168044077
+              },
+              "specificity": {
+                "fraction": "2197/2370",
+                "decimal": 0.9270042194092827
+              },
+              "accuracy": {
+                "fraction": "44453/49920",
+                "decimal": 0.8904847756410257
+              },
+              "selected_mass": {
+                "fraction": "8021/30",
+                "decimal": 267.3666666666667
+              },
+              "selected_fraction": {
+                "fraction": "617/3840",
+                "decimal": 0.16067708333333333
+              },
+              "F1": {
+                "fraction": "1402/2183",
+                "decimal": 0.6422354557947778
+              }
+            },
+            "perfect_reference_correction_on_disagreement": {
+              "precision": {
+                "fraction": "4907/5375",
+                "decimal": 0.9129302325581395
+              },
+              "recall": {
+                "fraction": "4907/7260",
+                "decimal": 0.6758953168044077
+              },
+              "specificity": {
+                "fraction": "1172/1185",
+                "decimal": 0.9890295358649789
+              },
+              "accuracy": {
+                "fraction": "3623/3840",
+                "decimal": 0.9434895833333333
+              },
+              "selected_mass": {
+                "fraction": "1075/6",
+                "decimal": 179.16666666666666
+              },
+              "selected_fraction": {
+                "fraction": "1075/9984",
+                "decimal": 0.10767227564102565
+              },
+              "F1": {
+                "fraction": "1402/1805",
+                "decimal": 0.7767313019390581
+              }
+            }
+          },
+          "disagreement_mass": {
+            "all": {
+              "fraction": "4759/30",
+              "decimal": 158.63333333333333
+            },
+            "gold_positive": {
+              "fraction": "2113/30",
+              "decimal": 70.43333333333334
+            },
+            "gold_negative": {
+              "fraction": "441/5",
+              "decimal": 88.2
+            }
+          },
+          "disagreement_fraction": {
+            "fraction": "4759/49920",
+            "decimal": 0.09533253205128205
+          },
+          "unanimous_with_no_unknown": {
+            "FN_count": 41,
+            "FP_count": 0
+          }
+        },
+        {
+          "review": "DST",
+          "unknown_policy": "omit",
+          "blacklist_enabled": false,
+          "raw_rows": 40368,
+          "non_honeypot_rows": 40111,
+          "source_blacklist_size": 29,
+          "excluded_blacklisted_rows": 0,
+          "retained_source_rows": 40111,
+          "unresolved_source_rows": 13,
+          "eligible_votes": 40098,
+          "distinct_workers_in_valid_votes": 96,
+          "eligible_records": 8071,
+          "gold_positive": 183,
+          "gold_negative": 7888,
+          "raw_unordered_pair_count": 79691,
+          "rejected_records": [],
+          "valid_votes_per_record": {
+            "5": 7814,
+            "4": 248,
+            "3": 6,
+            "6": 3
+          },
+          "matrices": {
+            "single": {
+              "TP": {
+                "fraction": "428/5",
+                "decimal": 85.6
+              },
+              "FP": {
+                "fraction": "6463/15",
+                "decimal": 430.8666666666667
+              },
+              "FN": {
+                "fraction": "487/5",
+                "decimal": 97.4
+              },
+              "TN": {
+                "fraction": "111857/15",
+                "decimal": 7457.133333333333
+              }
+            },
+            "AND": {
+              "TP": {
+                "fraction": "1441/30",
+                "decimal": 48.03333333333333
+              },
+              "FP": {
+                "fraction": "1603/30",
+                "decimal": 53.43333333333333
+              },
+              "FN": {
+                "fraction": "4049/30",
+                "decimal": 134.96666666666667
+              },
+              "TN": {
+                "fraction": "235037/30",
+                "decimal": 7834.566666666667
+              }
+            },
+            "OR": {
+              "TP": {
+                "fraction": "739/6",
+                "decimal": 123.16666666666667
+              },
+              "FP": {
+                "fraction": "8083/10",
+                "decimal": 808.3
+              },
+              "FN": {
+                "fraction": "359/6",
+                "decimal": 59.833333333333336
+              },
+              "TN": {
+                "fraction": "70797/10",
+                "decimal": 7079.7
+              }
+            },
+            "perfect_reference_correction_on_disagreement": {
+              "TP": {
+                "fraction": "739/6",
+                "decimal": 123.16666666666667
+              },
+              "FP": {
+                "fraction": "1603/30",
+                "decimal": 53.43333333333333
+              },
+              "FN": {
+                "fraction": "359/6",
+                "decimal": 59.833333333333336
+              },
+              "TN": {
+                "fraction": "235037/30",
+                "decimal": 7834.566666666667
+              }
+            }
+          },
+          "metrics": {
+            "single": {
+              "precision": {
+                "fraction": "1284/7747",
+                "decimal": 0.16574157738479411
+              },
+              "recall": {
+                "fraction": "428/915",
+                "decimal": 0.46775956284153003
+              },
+              "specificity": {
+                "fraction": "111857/118320",
+                "decimal": 0.9453769438810007
+              },
+              "accuracy": {
+                "fraction": "16163/17295",
+                "decimal": 0.934547557097427
+              },
+              "selected_mass": {
+                "fraction": "7747/15",
+                "decimal": 516.4666666666667
+              },
+              "selected_fraction": {
+                "fraction": "7747/121065",
+                "decimal": 0.06399041837029695
+              },
+              "F1": {
+                "fraction": "642/2623",
+                "decimal": 0.2447579107891727
+              }
+            },
+            "AND": {
+              "precision": {
+                "fraction": "1441/3044",
+                "decimal": 0.47339027595269384
+              },
+              "recall": {
+                "fraction": "1441/5490",
+                "decimal": 0.26247723132969036
+              },
+              "specificity": {
+                "fraction": "235037/236640",
+                "decimal": 0.9932259972954699
+              },
+              "accuracy": {
+                "fraction": "39413/40355",
+                "decimal": 0.9766571676372197
+              },
+              "selected_mass": {
+                "fraction": "1522/15",
+                "decimal": 101.46666666666667
+              },
+              "selected_fraction": {
+                "fraction": "1522/121065",
+                "decimal": 0.012571758972452815
+              },
+              "F1": {
+                "fraction": "1441/4267",
+                "decimal": 0.3377079915631591
+              }
+            },
+            "OR": {
+              "precision": {
+                "fraction": "3695/27944",
+                "decimal": 0.1322287432006871
+              },
+              "recall": {
+                "fraction": "739/1098",
+                "decimal": 0.6730418943533698
+              },
+              "specificity": {
+                "fraction": "70797/78880",
+                "decimal": 0.8975278904665315
+              },
+              "accuracy": {
+                "fraction": "108043/121065",
+                "decimal": 0.8924379465576343
+              },
+              "selected_mass": {
+                "fraction": "13972/15",
+                "decimal": 931.4666666666667
+              },
+              "selected_fraction": {
+                "fraction": "1996/17295",
+                "decimal": 0.11540907776814108
+              },
+              "F1": {
+                "fraction": "3695/16717",
+                "decimal": 0.22103248190464797
+              }
+            },
+            "perfect_reference_correction_on_disagreement": {
+              "precision": {
+                "fraction": "3695/5298",
+                "decimal": 0.697432993582484
+              },
+              "recall": {
+                "fraction": "739/1098",
+                "decimal": 0.6730418943533698
+              },
+              "specificity": {
+                "fraction": "235037/236640",
+                "decimal": 0.9932259972954699
+              },
+              "accuracy": {
+                "fraction": "119366/121065",
+                "decimal": 0.9859662164952712
+              },
+              "selected_mass": {
+                "fraction": "883/5",
+                "decimal": 176.6
+              },
+              "selected_fraction": {
+                "fraction": "883/40355",
+                "decimal": 0.021880807830504275
+              },
+              "F1": {
+                "fraction": "3695/5394",
+                "decimal": 0.6850203930292919
+              }
+            }
+          },
+          "disagreement_mass": {
+            "all": {
+              "fraction": "830",
+              "decimal": 830.0
+            },
+            "gold_positive": {
+              "fraction": "1127/15",
+              "decimal": 75.13333333333334
+            },
+            "gold_negative": {
+              "fraction": "11323/15",
+              "decimal": 754.8666666666667
+            }
+          },
+          "disagreement_fraction": {
+            "fraction": "830/8071",
+            "decimal": 0.10283731879568826
+          },
+          "unanimous_with_no_unknown": {
+            "FN_count": 24,
+            "FP_count": 3
+          }
+        },
+        {
+          "review": "Omega3",
+          "unknown_policy": "omit",
+          "blacklist_enabled": false,
+          "raw_rows": 28875,
+          "non_honeypot_rows": 28704,
+          "source_blacklist_size": 29,
+          "excluded_blacklisted_rows": 0,
+          "retained_source_rows": 28704,
+          "unresolved_source_rows": 4,
+          "eligible_votes": 28700,
+          "distinct_workers_in_valid_votes": 58,
+          "eligible_records": 5774,
+          "gold_positive": 310,
+          "gold_negative": 5464,
+          "raw_unordered_pair_count": 57065,
+          "rejected_records": [],
+          "valid_votes_per_record": {
+            "5": 5608,
+            "4": 163,
+            "3": 2,
+            "2": 1
+          },
+          "matrices": {
+            "single": {
+              "TP": {
+                "fraction": "1943/10",
+                "decimal": 194.3
+              },
+              "FP": {
+                "fraction": "19723/30",
+                "decimal": 657.4333333333333
+              },
+              "FN": {
+                "fraction": "1157/10",
+                "decimal": 115.7
+              },
+              "TN": {
+                "fraction": "144197/30",
+                "decimal": 4806.566666666667
+              }
+            },
+            "AND": {
+              "TP": {
+                "fraction": "1273/10",
+                "decimal": 127.3
+              },
+              "FP": {
+                "fraction": "1076/5",
+                "decimal": 215.2
+              },
+              "FN": {
+                "fraction": "1827/10",
+                "decimal": 182.7
+              },
+              "TN": {
+                "fraction": "26244/5",
+                "decimal": 5248.8
+              }
+            },
+            "OR": {
+              "TP": {
+                "fraction": "2613/10",
+                "decimal": 261.3
+              },
+              "FP": {
+                "fraction": "3299/3",
+                "decimal": 1099.6666666666667
+              },
+              "FN": {
+                "fraction": "487/10",
+                "decimal": 48.7
+              },
+              "TN": {
+                "fraction": "13093/3",
+                "decimal": 4364.333333333333
+              }
+            },
+            "perfect_reference_correction_on_disagreement": {
+              "TP": {
+                "fraction": "2613/10",
+                "decimal": 261.3
+              },
+              "FP": {
+                "fraction": "1076/5",
+                "decimal": 215.2
+              },
+              "FN": {
+                "fraction": "487/10",
+                "decimal": 48.7
+              },
+              "TN": {
+                "fraction": "26244/5",
+                "decimal": 5248.8
+              }
+            }
+          },
+          "metrics": {
+            "single": {
+              "precision": {
+                "fraction": "5829/25552",
+                "decimal": 0.22812304320601126
+              },
+              "recall": {
+                "fraction": "1943/3100",
+                "decimal": 0.6267741935483871
+              },
+              "specificity": {
+                "fraction": "144197/163920",
+                "decimal": 0.879679111761835
+              },
+              "accuracy": {
+                "fraction": "75013/86610",
+                "decimal": 0.8661009121348574
+              },
+              "selected_mass": {
+                "fraction": "12776/15",
+                "decimal": 851.7333333333333
+              },
+              "selected_fraction": {
+                "fraction": "6388/43305",
+                "decimal": 0.14751183466112458
+              },
+              "F1": {
+                "fraction": "5829/17426",
+                "decimal": 0.3345001721565477
+              }
+            },
+            "AND": {
+              "precision": {
+                "fraction": "1273/3425",
+                "decimal": 0.3716788321167883
+              },
+              "recall": {
+                "fraction": "1273/3100",
+                "decimal": 0.4106451612903226
+              },
+              "specificity": {
+                "fraction": "6561/6830",
+                "decimal": 0.9606149341142021
+              },
+              "accuracy": {
+                "fraction": "53761/57740",
+                "decimal": 0.9310876342223762
+              },
+              "selected_mass": {
+                "fraction": "685/2",
+                "decimal": 342.5
+              },
+              "selected_fraction": {
+                "fraction": "685/11548",
+                "decimal": 0.059317630758572916
+              },
+              "F1": {
+                "fraction": "2546/6525",
+                "decimal": 0.3901915708812261
+              }
+            },
+            "OR": {
+              "precision": {
+                "fraction": "7839/40829",
+                "decimal": 0.1919958852776213
+              },
+              "recall": {
+                "fraction": "2613/3100",
+                "decimal": 0.8429032258064516
+              },
+              "specificity": {
+                "fraction": "13093/16392",
+                "decimal": 0.798743289409468
+              },
+              "accuracy": {
+                "fraction": "138769/173220",
+                "decimal": 0.8011141900473386
+              },
+              "selected_mass": {
+                "fraction": "40829/30",
+                "decimal": 1360.9666666666667
+              },
+              "selected_fraction": {
+                "fraction": "40829/173220",
+                "decimal": 0.23570603856367625
+              },
+              "F1": {
+                "fraction": "15678/50129",
+                "decimal": 0.31275309700971493
+              }
+            },
+            "perfect_reference_correction_on_disagreement": {
+              "precision": {
+                "fraction": "2613/4765",
+                "decimal": 0.5483735571878279
+              },
+              "recall": {
+                "fraction": "2613/3100",
+                "decimal": 0.8429032258064516
+              },
+              "specificity": {
+                "fraction": "6561/6830",
+                "decimal": 0.9606149341142021
+              },
+              "accuracy": {
+                "fraction": "55101/57740",
+                "decimal": 0.9542951160374091
+              },
+              "selected_mass": {
+                "fraction": "953/2",
+                "decimal": 476.5
+              },
+              "selected_fraction": {
+                "fraction": "953/11548",
+                "decimal": 0.08252511257360581
+              },
+              "F1": {
+                "fraction": "402/605",
+                "decimal": 0.6644628099173554
+              }
+            }
+          },
+          "disagreement_mass": {
+            "all": {
+              "fraction": "15277/15",
+              "decimal": 1018.4666666666667
+            },
+            "gold_positive": {
+              "fraction": "134",
+              "decimal": 134.0
+            },
+            "gold_negative": {
+              "fraction": "13267/15",
+              "decimal": 884.4666666666667
+            }
+          },
+          "disagreement_fraction": {
+            "fraction": "15277/86610",
+            "decimal": 0.17638840780510334
+          },
+          "unanimous_with_no_unknown": {
+            "FN_count": 12,
+            "FP_count": 25
+          }
+        }
+      ],
+      "pooled": {
+        "eligible_records": 15509,
+        "eligible_votes": 77010,
+        "unresolved_source_rows": 18,
+        "raw_unordered_pair_count": 152965,
+        "gold_positive": 735,
+        "gold_negative": 14774,
+        "matrices": {
+          "single": {
+            "TP": {
+              "fraction": "1633/4",
+              "decimal": 408.25
+            },
+            "FP": {
+              "fraction": "1148",
+              "decimal": 1148.0
+            },
+            "FN": {
+              "fraction": "1307/4",
+              "decimal": 326.75
+            },
+            "TN": {
+              "fraction": "13626",
+              "decimal": 13626.0
+            }
+          },
+          "AND": {
+            "TP": {
+              "fraction": "4027/15",
+              "decimal": 268.46666666666664
+            },
+            "FP": {
+              "fraction": "8527/30",
+              "decimal": 284.23333333333335
+            },
+            "FN": {
+              "fraction": "6998/15",
+              "decimal": 466.53333333333336
+            },
+            "TN": {
+              "fraction": "434693/30",
+              "decimal": 14489.766666666666
+            }
+          },
+          "OR": {
+            "TP": {
+              "fraction": "16441/30",
+              "decimal": 548.0333333333333
+            },
+            "FP": {
+              "fraction": "60353/30",
+              "decimal": 2011.7666666666667
+            },
+            "FN": {
+              "fraction": "5609/30",
+              "decimal": 186.96666666666667
+            },
+            "TN": {
+              "fraction": "382867/30",
+              "decimal": 12762.233333333334
+            }
+          },
+          "perfect_reference_correction_on_disagreement": {
+            "TP": {
+              "fraction": "16441/30",
+              "decimal": 548.0333333333333
+            },
+            "FP": {
+              "fraction": "8527/30",
+              "decimal": 284.23333333333335
+            },
+            "FN": {
+              "fraction": "5609/30",
+              "decimal": 186.96666666666667
+            },
+            "TN": {
+              "fraction": "434693/30",
+              "decimal": 14489.766666666666
+            }
+          }
+        },
+        "metrics": {
+          "single": {
+            "precision": {
+              "fraction": "1633/6225",
+              "decimal": 0.2623293172690763
+            },
+            "recall": {
+              "fraction": "1633/2940",
+              "decimal": 0.5554421768707483
+            },
+            "specificity": {
+              "fraction": "6813/7387",
+              "decimal": 0.9222959252741302
+            },
+            "accuracy": {
+              "fraction": "56137/62036",
+              "decimal": 0.9049100522277387
+            },
+            "selected_mass": {
+              "fraction": "6225/4",
+              "decimal": 1556.25
+            },
+            "selected_fraction": {
+              "fraction": "6225/62036",
+              "decimal": 0.10034496099039268
+            },
+            "F1": {
+              "fraction": "3266/9165",
+              "decimal": 0.3563557010365521
+            }
+          },
+          "AND": {
+            "precision": {
+              "fraction": "8054/16581",
+              "decimal": 0.48573668656896446
+            },
+            "recall": {
+              "fraction": "4027/11025",
+              "decimal": 0.3652607709750567
+            },
+            "specificity": {
+              "fraction": "434693/443220",
+              "decimal": 0.9807612472361356
+            },
+            "accuracy": {
+              "fraction": "442747/465270",
+              "decimal": 0.9515915489930578
+            },
+            "selected_mass": {
+              "fraction": "5527/10",
+              "decimal": 552.7
+            },
+            "selected_fraction": {
+              "fraction": "5527/155090",
+              "decimal": 0.035637371848604035
+            },
+            "F1": {
+              "fraction": "16108/38631",
+              "decimal": 0.4169708265382724
+            }
+          },
+          "OR": {
+            "precision": {
+              "fraction": "16441/76794",
+              "decimal": 0.21409224679011382
+            },
+            "recall": {
+              "fraction": "16441/22050",
+              "decimal": 0.7456235827664399
+            },
+            "specificity": {
+              "fraction": "382867/443220",
+              "decimal": 0.8638306033121249
+            },
+            "accuracy": {
+              "fraction": "15358/17895",
+              "decimal": 0.8582285554624197
+            },
+            "selected_mass": {
+              "fraction": "12799/5",
+              "decimal": 2559.8
+            },
+            "selected_fraction": {
+              "fraction": "12799/77545",
+              "decimal": 0.1650525501321813
+            },
+            "F1": {
+              "fraction": "16441/49422",
+              "decimal": 0.33266561450366233
+            }
+          },
+          "perfect_reference_correction_on_disagreement": {
+            "precision": {
+              "fraction": "16441/24968",
+              "decimal": 0.6584828580583146
+            },
+            "recall": {
+              "fraction": "16441/22050",
+              "decimal": 0.7456235827664399
+            },
+            "specificity": {
+              "fraction": "434693/443220",
+              "decimal": 0.9807612472361356
+            },
+            "accuracy": {
+              "fraction": "75189/77545",
+              "decimal": 0.9696176413695273
+            },
+            "selected_mass": {
+              "fraction": "12484/15",
+              "decimal": 832.2666666666667
+            },
+            "selected_fraction": {
+              "fraction": "12484/232635",
+              "decimal": 0.053663464225073614
+            },
+            "F1": {
+              "fraction": "16441/23509",
+              "decimal": 0.6993491854183504
+            }
+          }
+        },
+        "disagreement_mass": {
+          "all": {
+            "fraction": "20071/10",
+            "decimal": 2007.1
+          },
+          "gold_positive": {
+            "fraction": "8387/30",
+            "decimal": 279.56666666666666
+          },
+          "gold_negative": {
+            "fraction": "25913/15",
+            "decimal": 1727.5333333333333
+          }
+        },
+        "disagreement_fraction": {
+          "fraction": "20071/155090",
+          "decimal": 0.12941517828357726
+        },
+        "unanimous_with_no_unknown": {
+          "FN_count": 77,
+          "FP_count": 28
+        }
+      }
+    }
+  }
+}

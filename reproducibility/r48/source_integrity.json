@@ -1,0 +1,310 @@
+{
+  "verified_inputs": [
+    {
+      "path": "Results/Appendicitis.csv",
+      "size": 1672762,
+      "sha256": "5a9c885fe85085299a03c4d3cc90efbde1c297eb076a3451121aedff610f14ee",
+      "git_blob_sha1": "0f031e94210f499b8f8e54665cadf5d7502d7c5d",
+      "verified": true
+    },
+    {
+      "path": "Results/Appendicitis_processing.r",
+      "size": 11886,
+      "sha256": "38e294e052dd29dce3cf63d873cdaf67e6b120831822b51e6ecfcb8ba5fce32e",
+      "git_blob_sha1": "e651f53e1326395b83260a97a37684f2d5bbb763",
+      "verified": true
+    },
+    {
+      "path": "Results/DST.csv",
+      "size": 8147041,
+      "sha256": "8d0a6f46f31c0da2046e5394c0b1d5ae96d81ebd4a13f2b89de00d7fa64671c6",
+      "git_blob_sha1": "4083615b3d3a82f18dd2538ec0d4ee0400e32b8a",
+      "verified": true
+    },
+    {
+      "path": "Results/DST_processing.r",
+      "size": 10925,
+      "sha256": "2137ebc3ec1c97562f70489deb14683a410cd6d90f87a1cae94fb8bf0e109720",
+      "git_blob_sha1": "f9dcf167851af2f92dc849b52091258aa6ce49cd",
+      "verified": true
+    },
+    {
+      "path": "Results/Omega3.csv",
+      "size": 5714826,
+      "sha256": "6d89d1eb96f4d7ee21c5004674035bfa95cf74bbd89635022cdf093c20989831",
+      "git_blob_sha1": "dd2f22c39dc5e70464276a052856400e5bfbd6f6",
+      "verified": true
+    },
+    {
+      "path": "Results/Omega3_processing.r",
+      "size": 9017,
+      "sha256": "7580fa98d0c19fb59abdf7cc14715d738ebde2f1b3b0ff32c7c6b2252ac2d913",
+      "git_blob_sha1": "844e41d0c72ace7835215c302a8fd4a6fadc9c47",
+      "verified": true
+    },
+    {
+      "path": "Results/ProtonBeam.csv",
+      "size": 4727463,
+      "sha256": "397d16c0e2bb65699563a07ea835eee2b5d64030675d1f6360d0998a44c88dc4",
+      "git_blob_sha1": "a8a09e44c3b3e2eb60690c6a49c70558103089b2",
+      "verified": true
+    },
+    {
+      "path": "Results/ProtonBeam_processing.r",
+      "size": 11941,
+      "sha256": "aa12e435f4c2486febc25ab7c7a9bcf1d643a0c5d011deaa124baa2332574409",
+      "git_blob_sha1": "b11b06e74fc4d368c6ce39a88626f4a94edb2ad4",
+      "verified": true
+    }
+  ],
+  "reviews": {
+    "Appendicitis": {
+      "raw_rows": 8325,
+      "honeypot_rows_removed": 112,
+      "ordinary_records": 1664,
+      "ordinary_reference_positives": 242,
+      "duplicate_worker_item_rows": 0,
+      "reference_conflicts": 0,
+      "pmid_conflicts": 0,
+      "source_blacklist_size": 30,
+      "filters": {
+        "author_filter": {
+          "rows": 8213,
+          "workers": 21,
+          "records": 1664,
+          "records_removed": 0,
+          "reference_positives": 242,
+          "source_blacklist_rows_removed": 0,
+          "interpretable_votes": 8212,
+          "unresolved_votes": 1,
+          "unresolved_votes_by_reference": {
+            "0": 1,
+            "1": 0
+          },
+          "votes_per_record": {
+            "3": 1,
+            "4": 105,
+            "5": 1558
+          },
+          "valid_votes_per_record": {
+            "3": 1,
+            "4": 106,
+            "5": 1557
+          }
+        },
+        "all_workers": {
+          "rows": 8213,
+          "workers": 21,
+          "records": 1664,
+          "records_removed": 0,
+          "reference_positives": 242,
+          "source_blacklist_rows_removed": 0,
+          "interpretable_votes": 8212,
+          "unresolved_votes": 1,
+          "unresolved_votes_by_reference": {
+            "0": 1,
+            "1": 0
+          },
+          "votes_per_record": {
+            "3": 1,
+            "4": 105,
+            "5": 1558
+          },
+          "valid_votes_per_record": {
+            "3": 1,
+            "4": 106,
+            "5": 1557
+          }
+        }
+      }
+    },
+    "DST": {
+      "raw_rows": 40368,
+      "honeypot_rows_removed": 257,
+      "ordinary_records": 8071,
+      "ordinary_reference_positives": 183,
+      "duplicate_worker_item_rows": 0,
+      "reference_conflicts": 0,
+      "pmid_conflicts": 0,
+      "source_blacklist_size": 29,
+      "filters": {
+        "author_filter": {
+          "rows": 39112,
+          "workers": 92,
+          "records": 8071,
+          "records_removed": 0,
+          "reference_positives": 183,
+          "source_blacklist_rows_removed": 999,
+          "interpretable_votes": 39099,
+          "unresolved_votes": 13,
+          "unresolved_votes_by_reference": {
+            "1": 0,
+            "0": 13
+          },
+          "votes_per_record": {
+            "3": 33,
+            "4": 1179,
+            "5": 6857,
+            "6": 2
+          },
+          "valid_votes_per_record": {
+            "3": 38,
+            "4": 1182,
+            "5": 6849,
+            "6": 2
+          }
+        },
+        "all_workers": {
+          "rows": 40111,
+          "workers": 96,
+          "records": 8071,
+          "records_removed": 0,
+          "reference_positives": 183,
+          "source_blacklist_rows_removed": 0,
+          "interpretable_votes": 40098,
+          "unresolved_votes": 13,
+          "unresolved_votes_by_reference": {
+            "1": 0,
+            "0": 13
+          },
+          "votes_per_record": {
+            "3": 5,
+            "4": 237,
+            "5": 7826,
+            "6": 3
+          },
+          "valid_votes_per_record": {
+            "3": 6,
+            "4": 248,
+            "5": 7814,
+            "6": 3
+          }
+        }
+      }
+    },
+    "Omega3": {
+      "raw_rows": 28875,
+      "honeypot_rows_removed": 171,
+      "ordinary_records": 5774,
+      "ordinary_reference_positives": 310,
+      "duplicate_worker_item_rows": 0,
+      "reference_conflicts": 0,
+      "pmid_conflicts": 0,
+      "source_blacklist_size": 29,
+      "filters": {
+        "author_filter": {
+          "rows": 28001,
+          "workers": 53,
+          "records": 5774,
+          "records_removed": 0,
+          "reference_positives": 310,
+          "source_blacklist_rows_removed": 703,
+          "interpretable_votes": 27997,
+          "unresolved_votes": 4,
+          "unresolved_votes_by_reference": {
+            "0": 4,
+            "1": 0
+          },
+          "votes_per_record": {
+            "2": 3,
+            "3": 37,
+            "4": 786,
+            "5": 4948
+          },
+          "valid_votes_per_record": {
+            "2": 3,
+            "3": 39,
+            "4": 786,
+            "5": 4946
+          }
+        },
+        "all_workers": {
+          "rows": 28704,
+          "workers": 58,
+          "records": 5774,
+          "records_removed": 0,
+          "reference_positives": 310,
+          "source_blacklist_rows_removed": 0,
+          "interpretable_votes": 28700,
+          "unresolved_votes": 4,
+          "unresolved_votes_by_reference": {
+            "0": 4,
+            "1": 0
+          },
+          "votes_per_record": {
+            "2": 1,
+            "3": 2,
+            "4": 159,
+            "5": 5612
+          },
+          "valid_votes_per_record": {
+            "2": 1,
+            "3": 2,
+            "4": 163,
+            "5": 5608
+          }
+        }
+      }
+    },
+    "ProtonBeam": {
+      "raw_rows": 23745,
+      "honeypot_rows_removed": 0,
+      "ordinary_records": 4749,
+      "ordinary_reference_positives": 243,
+      "duplicate_worker_item_rows": 0,
+      "reference_conflicts": 0,
+      "pmid_conflicts": 0,
+      "source_blacklist_size": 31,
+      "filters": {
+        "author_filter": {
+          "rows": 8982,
+          "workers": 24,
+          "records": 4635,
+          "records_removed": 114,
+          "reference_positives": 237,
+          "source_blacklist_rows_removed": 14763,
+          "interpretable_votes": 8981,
+          "unresolved_votes": 1,
+          "unresolved_votes_by_reference": {
+            "0": 0,
+            "1": 1
+          },
+          "votes_per_record": {
+            "1": 1329,
+            "2": 2322,
+            "3": 927,
+            "4": 57
+          },
+          "valid_votes_per_record": {
+            "1": 1329,
+            "2": 2323,
+            "3": 926,
+            "4": 57
+          }
+        },
+        "all_workers": {
+          "rows": 23745,
+          "workers": 29,
+          "records": 4749,
+          "records_removed": 0,
+          "reference_positives": 243,
+          "source_blacklist_rows_removed": 0,
+          "interpretable_votes": 23706,
+          "unresolved_votes": 39,
+          "unresolved_votes_by_reference": {
+            "0": 34,
+            "1": 5
+          },
+          "votes_per_record": {
+            "5": 4749
+          },
+          "valid_votes_per_record": {
+            "3": 2,
+            "4": 35,
+            "5": 4712
+          }
+        }
+      }
+    }
+  }
+}

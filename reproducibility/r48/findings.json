@@ -1,0 +1,67 @@
+{
+  "admission": "Pass for a separate-reference retrospective crowd-decision replay at title/abstract stage",
+  "manuscript": "R47 unchanged",
+  "source_studies": 1,
+  "review_datasets": 3,
+  "records": 15509,
+  "TA_reference_positives": 735,
+  "valid_derived_worker_decisions": 75308,
+  "unresolved_votes_omitted": 18,
+  "pair_combinations_not_independent_observations": 146231,
+  "unanimous_false_exclusion_items": 77,
+  "unanimous_false_retention_items": 31,
+  "expected_disagreement_fraction_pct": 12.765920863154728,
+  "pooled_descriptive_only": {
+    "single": {
+      "expected_counts": {
+        "TP": "2455/6",
+        "FP": "33761/30",
+        "FN": "1955/6",
+        "TN": "409459/30"
+      },
+      "recall_pct": 55.66893424036281,
+      "precision_pct": 26.663915196802503
+    },
+    "AND": {
+      "expected_counts": {
+        "TP": "8057/30",
+        "FP": "8281/30",
+        "FN": "13993/30",
+        "TN": "434939/30"
+      },
+      "recall_pct": 36.53968253968254,
+      "precision_pct": 49.31448157669237
+    },
+    "OR": {
+      "expected_counts": {
+        "TP": "16493/30",
+        "FP": "19747/10",
+        "FN": "5557/30",
+        "TN": "127993/10"
+      },
+      "recall_pct": 74.79818594104309,
+      "precision_pct": 21.777537169567168
+    },
+    "ideal_disagreement_review": {
+      "expected_counts": {
+        "TP": "16493/30",
+        "FP": "8281/30",
+        "FN": "5557/30",
+        "TN": "434939/30"
+      },
+      "recall_pct": 74.79818594104309,
+      "precision_pct": 66.57382739969323
+    }
+  },
+  "interpretation": "Shared errors remain after perfect correction restricted to disagreements. Neither AND precision nor OR recall is mechanically100% under this separate expert reference.",
+  "limits": [
+    "No new human experiment",
+    "No new blinded expert adjudication",
+    "No measured human correction",
+    "No LLM rerun",
+    "No causal time-saving estimate",
+    "TA retention is not final study inclusion",
+    "All-pair expectations are not observed fixed two-reviewer workflows",
+    "AND/OR nesting is algebra; only empirical magnitude and shared errors are measured here"
+  ]
+}

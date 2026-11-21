@@ -1,0 +1,203 @@
+{
+  "scope": "The delivered analysis uses only main title/abstract Relevant labels. Full-text labels are not analyzed.",
+  "full_text_source_checks": {
+    "Appendicitis": {
+      "list_count": 63,
+      "ordinary_list_overlap": 61,
+      "list_missing_from_csv": [],
+      "list_minus_labeled_positive_ordinary": [],
+      "labeled_positive_minus_list": [],
+      "row_disagreements_with_id_list": 0
+    },
+    "DST": {
+      "list_count": 46,
+      "ordinary_list_overlap": 46,
+      "list_missing_from_csv": [],
+      "list_minus_labeled_positive_ordinary": [],
+      "labeled_positive_minus_list": [],
+      "row_disagreements_with_id_list": 75
+    },
+    "ProtonBeam": {
+      "list_count": 22,
+      "ordinary_list_overlap": 22,
+      "list_missing_from_csv": [],
+      "list_minus_labeled_positive_ordinary": [],
+      "labeled_positive_minus_list": [
+        "4676"
+      ],
+      "row_disagreements_with_id_list": 2
+    }
+  },
+  "source_metadata": {
+    "Appendicitis": {
+      "rows_raw": 8325,
+      "rows_honeypot_removed": 112,
+      "rows_non_honeypot": 8213,
+      "unique_ordinary_records": 1664,
+      "workers_non_honeypot": 21,
+      "blocked_worker_ids_count": 30,
+      "rows_blacklist_removed": 0,
+      "rows_author_filter": 8213,
+      "records_after_author_filter": 1664,
+      "votes_per_record_after_author_filter": {
+        "3": 1,
+        "4": 105,
+        "5": 1558
+      },
+      "ta_ref_inconsistent_items": 0,
+      "ta_positive_items": 242,
+      "full_text_ref_inconsistent_items": 0,
+      "full_text_positive_items": 61,
+      "full_text_positive_outside_ta_positive": 0,
+      "duplicate_worker_item_rows": 0,
+      "columns": [
+        "AssignmentId",
+        "WorkerId",
+        "HITId",
+        "AcceptTime",
+        "SubmitTime",
+        "ApprovalTime",
+        "TimeToComplete",
+        "PMID",
+        "AbstractId",
+        "Question1",
+        "Question2",
+        "Question3",
+        "Question4",
+        "Relevant",
+        "Honeypot"
+      ],
+      "blocked_workers_observed_count": 0
+    },
+    "DST": {
+      "rows_raw": 40368,
+      "rows_honeypot_removed": 257,
+      "rows_non_honeypot": 40111,
+      "unique_ordinary_records": 8071,
+      "workers_non_honeypot": 96,
+      "blocked_worker_ids_count": 29,
+      "rows_blacklist_removed": 999,
+      "rows_author_filter": 39112,
+      "records_after_author_filter": 8071,
+      "votes_per_record_after_author_filter": {
+        "3": 33,
+        "4": 1179,
+        "5": 6857,
+        "6": 2
+      },
+      "ta_ref_inconsistent_items": 0,
+      "ta_positive_items": 183,
+      "full_text_ref_inconsistent_items": 0,
+      "full_text_positive_items": 46,
+      "full_text_positive_outside_ta_positive": 1,
+      "duplicate_worker_item_rows": 0,
+      "columns": [
+        "AssignmentId",
+        "WorkerId",
+        "HITId",
+        "AcceptTime",
+        "SubmitTime",
+        "ApprovalTime",
+        "TimeToComplete",
+        "PMID",
+        "AbstractId",
+        "Question1",
+        "Question2",
+        "Question3",
+        "Question4",
+        "Relevant",
+        "Honeypot"
+      ],
+      "blocked_workers_observed_count": 4
+    },
+    "Omega3": {
+      "rows_raw": 28875,
+      "rows_honeypot_removed": 171,
+      "rows_non_honeypot": 28704,
+      "unique_ordinary_records": 5774,
+      "workers_non_honeypot": 58,
+      "blocked_worker_ids_count": 29,
+      "rows_blacklist_removed": 703,
+      "rows_author_filter": 28001,
+      "records_after_author_filter": 5774,
+      "votes_per_record_after_author_filter": {
+        "2": 3,
+        "3": 37,
+        "4": 786,
+        "5": 4948
+      },
+      "ta_ref_inconsistent_items": 0,
+      "ta_positive_items": 310,
+      "full_text_ref_inconsistent_items": 0,
+      "full_text_positive_items": 108,
+      "full_text_positive_outside_ta_positive": 31,
+      "duplicate_worker_item_rows": 0,
+      "columns": [
+        "AssignmentId",
+        "WorkerId",
+        "HITId",
+        "AcceptTime",
+        "SubmitTime",
+        "ApprovalTime",
+        "TimeToComplete",
+        "PMID",
+        "AbstractId",
+        "Question1",
+        "Question2",
+        "Question3",
+        "Relevant",
+        "Honeypot"
+      ],
+      "blocked_workers_observed_count": 5
+    },
+    "ProtonBeam": {
+      "rows_raw": 23745,
+      "rows_honeypot_removed": 0,
+      "rows_non_honeypot": 23745,
+      "unique_ordinary_records": 4749,
+      "workers_non_honeypot": 29,
+      "blocked_worker_ids_count": 31,
+      "rows_blacklist_removed": 14763,
+      "rows_author_filter": 8982,
+      "records_after_author_filter": 4635,
+      "votes_per_record_after_author_filter": {
+        "1": 1329,
+        "2": 2322,
+        "3": 927,
+        "4": 57
+      },
+      "ta_ref_inconsistent_items": 0,
+      "ta_positive_items": 243,
+      "full_text_ref_inconsistent_items": 2,
+      "full_text_positive_items": 22,
+      "full_text_positive_outside_ta_positive": 2,
+      "duplicate_worker_item_rows": 0,
+      "columns": [
+        "AssignmentId",
+        "WorkerId",
+        "HITId",
+        "AcceptTime",
+        "SubmitTime",
+        "ApprovalTime",
+        "TimeToComplete",
+        "PMID",
+        "AbstractId",
+        "Question1",
+        "Question2",
+        "Question3",
+        "Question4",
+        "Relevant"
+      ],
+      "blocked_workers_observed_count": 5
+    }
+  },
+  "clarifications": [
+    "A full-text positive outside the title/abstract-positive set is flagged as a stage discrepancy, not automatically proof of an erroneous reference.",
+    "Omega3 full-text repository108 versus published144 positives remains unresolved; ProtonBeam has internally inconsistent full-text rows.",
+    "Crowd instructions are simplified and broader than expert eligibility criteria. TA-positive is not the same as finally included.",
+    "The source authors aggregated each criterion across workers. This replay first derives each worker decision, then applies pair policies.",
+    "Three DST records (1602,3043,7491), all TA-negative, separate all-worker OR of conjunctions from criterion-wise original p1.",
+    "No third-party raw responses or original scripts are redistributed in this package. Pinned URLs/hashes allow source acquisition.",
+    "ProtonBeam is descriptive only: source filtering removes114 records and leaves1329 additional records with only one worker."
+  ]
+}

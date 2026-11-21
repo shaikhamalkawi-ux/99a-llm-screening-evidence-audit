@@ -1,0 +1,44 @@
+{
+  "project": "99a",
+  "manuscript_baseline": "R47",
+  "analysis": "Final public-data test of shared human-screening errors against a separate expert reference",
+  "date": "2026-11-20",
+  "status_when_written": "After source/schema checks and before root performance computation; not preregistered or outcome-blinded to the published article",
+  "source_article_doi": "10.1002/jrsm.1252",
+  "source_repository": "https://github.com/bwallace/crowd-sourced-ebm",
+  "source_commit": "297806d9f7db602b1f0c1f046d61a46293a42b53",
+  "primary_reviews": ["Appendicitis", "DST", "Omega3"],
+  "pilot_descriptive_only": "ProtonBeam",
+  "reference": "The main Results CSV Relevant field, corresponding to the original experts' title/abstract screening decisions. This reference precedes and is separate from the evaluated crowdworkers. It is not a newly blinded adjudication.",
+  "reference_controls": {
+    "Appendicitis": {"records": 1664, "positives": 242},
+    "DST": {"records": 8071, "positives": 183},
+    "Omega3": {"records": 5774, "positives": 310},
+    "ProtonBeam": {"records": 4749, "positives": 243}
+  },
+  "full_text_endpoint": "Not analyzed: inconsistent source exports including Omega3 108 versus paper 144 positives and internally conflicting ProtonBeam labels. Stage-specific controls are preserved in source_integrity.json.",
+  "source_filter": "Remove Honeypot==1 and precisely the blocked WorkerIds listed in each frozen original processing R script. Preserve a sensitivity including all non-honeypot workers.",
+  "criterion_mapping": {
+    "categorical": {"Yes": 1, "CantTell": 1, "No": 0},
+    "numeric": "Appendicitis Question2 and ProtonBeam Question4: a finite unambiguous decimal >=10 or exact NoInfo retains; numeric below10 fails. Do not semantically repair malformed strings.",
+    "worker_decision": "Derive a conjunction of required eligibility answers: any explicit failure excludes; every criterion passes to retain; otherwise unresolved. Missing questions after a known failure do not invalidate an exclusion.",
+    "unresolved_primary": "Exclude the unresolved worker decision only, retaining the item when >=2 distinct valid workers remain.",
+    "unresolved_sensitivity": "Separately assign all unresolved worker decisions to Exclude and all to Retain, with no reference-dependent imputation."
+  },
+  "estimand": "For each item choose uniformly from all unordered pairs of distinct eligible observed workers. Each item has total weight1 regardless of number of available pairs. This is a retrospective finite-record policy expectation, not an observed pair assignment or an executed human workflow.",
+  "policies": [
+    "single: uniformly selected observed valid worker",
+    "AND: retain only if both derived decisions retain",
+    "OR: retain if either derived decision retains",
+    "ideal_disagreement_review: replace only pair-discordant decisions with the fixed expert reference; leave agreements untouched"
+  ],
+  "outcomes": [
+    "Exact rational expected TP,FP,FN,TN and their descriptive recall,precision,specificity and retained fraction",
+    "Expected record fraction with pair disagreement and reference composition",
+    "Shared false exclusion and shared false retention under separate reference",
+    "Number of reference-positive/negative items unanimously misclassified by every retained crowdworker, restricted to items without unresolved votes"
+  ],
+  "inference": "No p-values, no independent-pair binomial confidence intervals, no treating pair combinations as additional studies or participants. Review-specific descriptive findings are primary; any aggregate is merely the sum of these convenience samples.",
+  "claim_boundary": "Human crowd decisions and a separate original expert reference only. No LLM was rerun, no human correction executed, no person-time benefit established, no claim that the expert reference is error-free. The crowd questions were deliberately broader than the expert criteria. Original paper p1 aggregates per-question votes and is not identical to this per-worker conjunction replay.",
+  "manuscript_action": "Keep R47 unchanged during this final test. Admission to a later manuscript requires a separate editorial decision based on the verified result."
+}

@@ -1,0 +1,9 @@
+# 99a R51 — targeted 2021–2026 literature context (21 November 2026)
+
+This is a deliberately non-exhaustive bibliographic update to contextualize an already completed, non-PRISMA, source-linked paper. Search concepts: ASReview / active learning screening; record prioritization / workload / work saved over sampling; human versus machine title–abstract screening; final inclusion versus title–abstract reference; human-time versus machine-run-time; screening reporting and AI use. Original web/publisher/official NLM/PubMed pages were checked for publication year, DOI, main numerical abstract claims and source/stage boundaries. See CSV for the 15 admitted items.
+
+No search-result export, two-coder bibliographic eligibility process, registered protocol, GRADE rating, new raw model execution, or full-text critical appraisal of all 15 items is claimed. Sources are contextual prior art: NONE are retroactively added to the frozen 60/54/21/11 source counters; Mortensen and PICOS outcomes and original methodological tests are not recalculated. Some original publisher summaries were inaccessible in their entirety; in these cases only accessible publisher/PubMed abstract-level claims were admitted.
+
+Admitted for quantitative cross-study exposition: Chai 2021, Carey 2022, Feng 2022, Ferdinands 2023, Waffenschmidt 2023, Toth 2024, Issaiy 2024, Scotti 2025, Harasgama 2026, Sung 2026, Babaei 2026, Adam TJ 2026 (only as publication-reported metrics, corrigendum flagged). Admitted for conceptual/context citations: van de Schoot 2021, Chappell 2023, Nordmann/Fischer 2026.
+
+Journal target Publications (MDPI), proposed Article. Author names/approval, funding/ethics/disclosure signoffs, final citation checking, code release licence and repository DOI remain author-controlled. A citation in this manuscript is not a claim that the study is within the original full-text inspected 54-report set.

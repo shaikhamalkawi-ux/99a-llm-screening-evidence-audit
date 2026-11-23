@@ -18,7 +18,7 @@ EXPECTED = {
     'data/predictions.csv.gz': '3ac88823815ed659bac2fb803a2b89334561b2ffd1fb80620e4f32f59fa5444c',
     'data/records.csv': '4287fa288b91e1e4d8b7d990f8df9bc4b3d954de86cfcf03623dc4d89b281dcb',
     'data/runs.json': '1d8c2fc79610a0e8532dfb7df36044c6d7f7c2be769172fb2d1b8049720c8cc3',
-    'configuration/included_reports.json': 'ed54c5f146c739872609334b96ca93d017da38b988b2087700229ce5d8e1feb2e4'
+    'configuration/included_reports.json': 'ed54c5f146c739872609334b96ca93d6b935186ed744ebc29b08efcde84f8db4'
 }
 BASE = f'https://raw.githubusercontent.com/matsuikentaro1/jev-title-abstract-screening/{PIN}/'
 

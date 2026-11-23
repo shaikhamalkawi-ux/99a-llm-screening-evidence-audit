@@ -1,0 +1,22 @@
+name: 99a research gate - source-pinned external decision agreement
+on:
+  push:
+    branches: [research/99a-independent-consensus]
+  workflow_dispatch:
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Reconstruct source-pinned published decision agreements
+        run: python experiments/matsui_saved_output_consensus.py
+      - name: Preserve derived aggregate research certificate
+        uses: actions/upload-artifact@v4
+        with:
+          name: 99a-matsui-consensus-derived-only
+          path: external_consensus_results.json

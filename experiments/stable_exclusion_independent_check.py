@@ -11,6 +11,8 @@ SHA={
 'data/records.csv':'4287fa288b91e1e4d8b7d990f8df9bc4b3d954de86cfcf03623dc4d89b281dcb',
 'data/predictions.csv.gz':'3ac88823815ed659bac2fb803a2b89334561b2ffd1fb80620e4f32f59fa5444c',
 'data/runs.json':'1d8c2fc79610a0e8532dfb7df36044c6d7f7c2be769172fb2d1b8049720c8cc3',
+'configuration/reference_label_provenance.json':'fd84e981fd70849f3914055ee0d60679b8b5e32206b7a1c08ca0763fd0bca6da',
+'configuration/included_reports.json':'ed54c5f146c739872609334b96ca93d6b935186ed744ebc29b08efcde84f8db4',
 }
 
 def get(name):
@@ -36,6 +38,8 @@ def run():
     predictions=parse('data/predictions.csv.gz')
     runs=json.loads(get('data/runs.json'))
     assert len(records)==4527 and len(predictions)==267093 and len(runs)==59
+    source_provenance=json.loads(get('configuration/reference_label_provenance.json'))
+    included=json.loads(get('configuration/included_reports.json'))
     saved=json.loads(Path('source_conditional_persistence_results.json').read_text())
     positive_by_topic={}
     for row in records:
@@ -79,6 +83,7 @@ def run():
     extra_families=tuple(sorted(set(run_ids)-set(base_families)))
     marginal=[]
     all59_core={}
+    all59_core_ids={}
     for cohort,p in positive_by_topic.items():
         baseline_core=set(p)
         for family in base_families:
@@ -87,6 +92,7 @@ def run():
         for family in run_ids:
             for rid in run_ids[family]: full_core.intersection_update(excludes[rid])
         all59_core[cohort]=len(full_core)
+        all59_core_ids[cohort]=sorted(full_core)
         assert len(full_core)<=len(baseline_core)
         for family in extra_families:
             with_added=set(baseline_core)
@@ -96,7 +102,21 @@ def run():
                'remaining_misses_after_adding_all_runs_of_configuration':len(with_added),
                'reference_positive_records_recovered_by_added_configuration':len(baseline_core)-len(with_added),
                'additional_run_count':len(run_ids[family])})
-    out={'pass':True,'validation_count':len(checks),'result_rows':checks,'four_configuration_persistent_core_count':four_core,
+    source_by_id={r['record_id']:r for r in records}
+    corrections={r['record_id']:r.get('origin','') for r in source_provenance.get('corrections_and_confirmations',[])}
+    final_ids=set().union(*(set(r['record_ids']) for r in included))
+    source_witness=[]
+    for cohort,ids in all59_core_ids.items():
+        for i in ids:
+            rr=source_by_id[i]
+            witness={'record_id':i,'cohort':cohort,'source_row':rr.get('source_row'),
+                     'abstract_missing':rr.get('abstract_missing'),
+                     'reference_retained':rr.get('reference_retained'),
+                     'in_original_final_included_report_id_set':i in final_ids,
+                     'reference_label_correction_provenance':corrections.get(i,'not listed in correction register')}
+            source_witness.append(witness)
+            print('GLOBAL_SOURCE_WITNESS '+json.dumps(witness,sort_keys=True))
+    out={'all_59_run_source_witness':source_witness,'pass':True,'validation_count':len(checks),'result_rows':checks,'four_configuration_persistent_core_count':four_core,
          'all_59_run_persistent_core_count':all59_core,'conditional_configuration_rescue':marginal,
          'sampling_bound_interpretation':'Conditional demonstration: assumes known number of reference disagreements and perfect identification in uniform random sampling; not a real prospective study.'}
     Path('stable_exclusion_independent_verification.json').write_text(json.dumps(out,indent=2,sort_keys=True)+'\n')

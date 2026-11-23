@@ -102,6 +102,14 @@ def run():
                'remaining_misses_after_adding_all_runs_of_configuration':len(with_added),
                'reference_positive_records_recovered_by_added_configuration':len(baseline_core)-len(with_added),
                'additional_run_count':len(run_ids[family])})
+    expected_full=saved['all_59_run_union_source_conditional_certificate']
+    assert expected_full['archived_decision_vectors']==len(runs)==59
+    assert expected_full['all_run_union_reference_retention']==len(positive_by_topic['maruki'])+len(positive_by_topic['takeshima'])-sum(all59_core.values())
+    assert expected_full['human_retained_positive_records_excluded_in_every_archived_run']==sum(all59_core.values())
+    assert {d:sorted(ids) for d,ids in all59_core_ids.items()}==expected_full['by_cohort_persistent_source_record_ids']
+    witness_ids=[i for ids in all59_core_ids.values() for i in ids]
+    expected_hash=hashlib.sha256(('\n'.join(sorted(witness_ids))+'\n').encode()).hexdigest()
+    assert expected_hash==expected_full['persistent_source_record_ids_sha256']
     source_by_id={r['record_id']:r for r in records}
     corrections={r['record_id']:r.get('origin','') for r in source_provenance.get('corrections_and_confirmations',[])}
     final_ids=set().union(*(set(r['record_ids']) for r in included))

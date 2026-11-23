@@ -135,7 +135,34 @@ def analysis():
             }
             results.append(row)
             print('PERSISTENCE_ROW '+json.dumps({k:row[k] for k in ('family','cohort','number_of_reused_run_combinations','human_reference_blindspot_min','human_reference_blindspot_max','same_ids_blind_in_every_combination_count','distinct_human_retained_ids_blind_in_at_least_one_combination','hypothetical_disagreement_referral_min','hypothetical_disagreement_referral_max','sample_first_combination')},sort_keys=True))
-    outcome={'upstream_commit':PIN,'upstream_doi':'10.3390/info17111160',
+    # The full-archive union is an exploratory (not pre-registered) source-conditional
+    # completeness check. No three-run independence, human timing or new inference.
+    archived_runs=[r['run_id'] for r in runs]
+    any_in_59=set.union(*(include[k] for k in archived_runs))
+    blind_in_59=H-any_in_59
+    core_59_by_cohort={d:sorted(blind_in_59&U) for d,U in cohort.items()}
+    all_59_meta={
+        'independent_source_record_count':len(records),
+        'archived_decision_vectors':len(archived_runs),
+        'distinct_configurations':len(by_group),
+        'all_run_union_reference_retention':len(H&any_in_59),
+        'all_run_union_reference_retention_denominator':len(H),
+        'human_retained_positive_records_excluded_in_every_archived_run':len(blind_in_59),
+        'by_cohort_persistent_source_record_ids':core_59_by_cohort,
+        'source_record_metadata':[{
+            'record_id':r['record_id'],
+            'dataset':r['dataset'],
+            'abstract_missing':r['abstract_missing'],
+            'source_row':r['source_row'],
+            'is_in_eventual_final_report_id_set':r['record_id'] in F,
+        } for r in records if r['record_id'] in blind_in_59],
+        'persistent_source_record_ids_sha256':sha_set(blind_in_59),
+        'total_automatically_unselected_even_under_59_run_union':len(all_records-any_in_59),
+    }
+    assert len(blind_in_59)==sum(map(len,core_59_by_cohort.values()))
+    print('ALL_59_GLOBAL_RECORD_WITNESS '+json.dumps(all_59_meta,sort_keys=True))
+    outcome={'all_59_run_union_source_conditional_certificate':all_59_meta,
+        'upstream_commit':PIN,'upstream_doi':'10.3390/info17111160',
        'source_sha256':EXPECTED,'sampled_records':len(records),'saved_predictions':len(predictions),
        'source_human_retained':len(H),'source_final_included_record_ids':len(F),
        'model_runs':len(runs),'observations_are_not_independent_across_combinations':True,

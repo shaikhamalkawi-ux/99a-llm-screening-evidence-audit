@@ -15,8 +15,12 @@ jobs:
           python-version: '3.11'
       - name: Reconstruct source-pinned published decision agreements
         run: python experiments/matsui_saved_output_consensus.py
+      - name: Independently verify source-pinned agreement and mixed-model outcomes
+        run: python experiments/matsui_independent_verifier.py
       - name: Preserve derived aggregate research certificate
         uses: actions/upload-artifact@v4
         with:
           name: 99a-matsui-consensus-derived-only
-          path: external_consensus_results.json
+          path: |
+            external_consensus_results.json
+            external_independent_verification.json

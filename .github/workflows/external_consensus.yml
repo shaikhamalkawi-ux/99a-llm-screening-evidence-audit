@@ -19,6 +19,8 @@ jobs:
         run: python experiments/matsui_independent_verifier.py
       - name: Test source-conditional unanimous-miss persistence and finite audit burden
         run: python experiments/stable_exclusion_audit.py
+      - name: Independently check common excluded record IDs and sample-audit bound
+        run: python experiments/stable_exclusion_independent_check.py
       - name: Preserve derived aggregate research certificate
         uses: actions/upload-artifact@v4
         with:
@@ -27,3 +29,4 @@ jobs:
             external_consensus_results.json
             external_independent_verification.json
             source_conditional_persistence_results.json
+            stable_exclusion_independent_verification.json

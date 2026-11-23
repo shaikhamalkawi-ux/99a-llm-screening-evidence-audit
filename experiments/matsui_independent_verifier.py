@@ -76,8 +76,19 @@ def run():
         'final_included_blindspot_max':max(x[3] for x in profiles)}
    new.append(row)
    print('MIXED_ROW '+json.dumps(row,sort_keys=True))
+ final_coverage=[]
+ for condition in ('choice-v4','gpt-6-astra-default','gpt-5-mini-default','gpt-5-mini-minimal'):
+  for repetition,run_id in sorted(group[condition]):
+   missing_ids=sorted(i for i in final_ids if not votes[i][run_id])
+   missing_reports=sum(all(not votes[i][run_id] for i in entry['record_ids']) for entry in included)
+   c={'condition':condition,'repetition':repetition,'n_final_report_record_ids':len(final_ids),
+      'n_missing_final_report_record_ids':len(missing_ids),
+      'n_missing_reports':missing_reports,
+      'missing_record_ids':missing_ids}
+   final_coverage.append(c)
+   print('COVERAGE_WITNESS '+json.dumps(c,sort_keys=True))
  result={'independent_boolean_verifications':checks,'distinct_screening_conditions':len(group),
-         'source_checksum_verified':True,'cross_condition_rows':new,
+         'source_checksum_verified':True,'cross_condition_rows':new, 'per_run_final_coverage':final_coverage,
          'source_stage':'Human-retained for full-text assessment, not full true-eligibility reference',
          'uncertainty_note':'Run combinations reuse the same model outputs and original records; range endpoints are not independent samples.'}
  Path('external_independent_verification.json').write_text(json.dumps(result,indent=2,sort_keys=True)+'\n')

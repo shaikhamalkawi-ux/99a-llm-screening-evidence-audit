@@ -15,8 +15,12 @@ jobs:
           python-version: '3.11'
       - name: Analyze archived 59 outputs against H and F and no-label strategies
         run: python experiments/r61_reference_blindness.py
+      - name: Independent alternate set-based H/F endpoint certificate
+        run: python experiments/r61_independent_endpoint_verifier.py
       - name: Upload aggregate-only exploratory diagnostics
         uses: actions/upload-artifact@v4
         with:
           name: 99a-r61-reference-blindness-aggregate
-          path: r61_reference_blindness.json
+          path: |
+            r61_reference_blindness.json
+            r61_independent_endpoint_certificate.json

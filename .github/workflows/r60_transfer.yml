@@ -1,0 +1,22 @@
+name: 99a R60 cross-review policy transfer diagnostic
+on:
+  push:
+    branches: [research/99a-independent-consensus]
+  workflow_dispatch:
+jobs:
+  transfer:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Retrospective two-way holdout of run-set selection
+        run: python experiments/r60_crosscohort_transfer.py
+      - name: Preserve aggregate decision-transfer certificate
+        uses: actions/upload-artifact@v4
+        with:
+          name: 99a-r60-cross-review-transfer-summary
+          path: r60_transfer_diagnostic.json

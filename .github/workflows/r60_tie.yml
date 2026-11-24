@@ -1,0 +1,22 @@
+name: 99a R60 training-tie identifiability test
+on:
+  push:
+    branches: [research/99a-independent-consensus]
+  workflow_dispatch:
+jobs:
+  tie-audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Enumerate all equally optimal training-review portfolios and held-out outcomes
+        run: python experiments/r60_training_tie_ambiguity.py
+      - name: Upload aggregate tie-set certificate
+        uses: actions/upload-artifact@v4
+        with:
+          name: 99a-r60-training-tie-ambiguity-summary
+          path: r60_training_tie_ambiguity.json

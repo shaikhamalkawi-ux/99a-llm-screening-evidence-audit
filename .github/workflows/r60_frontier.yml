@@ -1,0 +1,22 @@
+name: 99a R60 research-only exact coverage frontier
+on:
+  push:
+    branches: [research/99a-independent-consensus]
+  workflow_dispatch:
+jobs:
+  exact-frontier:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Source-pinned exact finite portfolio enumeration
+        run: python experiments/r60_minimal_coverage.py
+      - name: Upload aggregate certificate without upstream predictions
+        uses: actions/upload-artifact@v4
+        with:
+          name: 99a-r60-exact-cover-frontier-only
+          path: r60_oracle_frontier.json

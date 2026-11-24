@@ -1,0 +1,32 @@
+name: 99a R60 independent source-conditional science gate
+on:
+  push:
+    branches: [research/99a-independent-consensus]
+  workflow_dispatch:
+jobs:
+  independent:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Exact retrospective portfolio frontier
+        run: python experiments/r60_minimal_coverage.py
+      - name: Cross-review transfer with training-only labels
+        run: python experiments/r60_crosscohort_transfer.py
+      - name: Training-score tie-set full enumeration
+        run: python experiments/r60_training_tie_ambiguity.py
+      - name: Independently recompute complete sets-based witness certificate
+        run: python experiments/r60_independent_verifier.py
+      - name: Upload public-safe aggregate science certificate
+        uses: actions/upload-artifact@v4
+        with:
+          name: 99a-r60-integrated-science-certificate
+          path: |
+            r60_oracle_frontier.json
+            r60_transfer_diagnostic.json
+            r60_training_tie_ambiguity.json
+            r60_independent_certificate.json

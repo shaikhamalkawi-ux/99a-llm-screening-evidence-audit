@@ -24,3 +24,6 @@ jobs:
           path: |
             r61_reference_blindness.json
             r61_independent_endpoint_certificate.json
+            experiments/r61_reference_blindness.py
+            experiments/r61_independent_endpoint_verifier.py
+            docs/R61_EndpointSaturation_ResearchNote.md

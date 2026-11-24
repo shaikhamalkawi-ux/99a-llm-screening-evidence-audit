@@ -1,0 +1,25 @@
+name: 99a R62 exact nested-reference stress (research only)
+on:
+  push:
+    branches: [research/99a-r62-reference-robustness]
+  workflow_dispatch:
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Exact paired reference stress and source-verified matched queues
+        run: python experiments/r62_reference_stress.py
+      - name: Upload only aggregate results and code
+        uses: actions/upload-artifact@v4
+        with:
+          name: r62-reference-stress-certificate
+          path: |
+            r62_source_reference_stress.json
+            experiments/r62_reference_stress.py
+            experiments/r60_minimal_coverage.py

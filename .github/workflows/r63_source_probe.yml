@@ -1,0 +1,22 @@
+name: 99a R63 public source admission
+on:
+  push:
+    branches: [research/99a-r63-comparative-audit]
+  workflow_dispatch:
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Inventory publicly licensed OSF source
+        run: python experiments/r63_sciurti_probe.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: r63-public-source-inventory
+          path: r63_sciurti_public_source_inventory.json

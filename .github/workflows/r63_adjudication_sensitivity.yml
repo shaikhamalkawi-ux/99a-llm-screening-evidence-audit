@@ -1,0 +1,25 @@
+name: 99a R63 documented label restoration audit
+on:
+  push:
+    branches: [research/99a-r63-adjudication-sensitivity]
+  workflow_dispatch:
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Reconstruct source-locked reference variants and enumerate exact portfolio comparisons
+        run: python experiments/r63_adjudication_sensitivity.py
+      - name: Preserve aggregate-only certificate and scripts
+        uses: actions/upload-artifact@v4
+        with:
+          name: r63-adjudication-certificate
+          path: |
+            r63_adjudication_certificate.json
+            experiments/r63_adjudication_sensitivity.py
+            experiments/r60_minimal_coverage.py

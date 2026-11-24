@@ -15,11 +15,15 @@ jobs:
           python-version: '3.11'
       - name: Reconstruct source-locked reference variants and enumerate exact portfolio comparisons
         run: python experiments/r63_adjudication_sensitivity.py
+      - name: Independently replay all matched pairs and finite certificates
+        run: python experiments/r63_independent_verifier.py
       - name: Preserve aggregate-only certificate and scripts
         uses: actions/upload-artifact@v4
         with:
           name: r63-adjudication-certificate
           path: |
             r63_adjudication_certificate.json
+            r63_independent_verifier.json
+            experiments/r63_independent_verifier.py
             experiments/r63_adjudication_sensitivity.py
             experiments/r60_minimal_coverage.py

@@ -1,0 +1,68 @@
+name: 99a R64 finite decision budget experiment
+on:
+  push:
+    branches: [research/99a-r64-decision-budget]
+  workflow_dispatch:
+jobs:
+  budget:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install numpy
+      - run: python experiments/r64_decision_budget.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: r64-budget-certificate
+          path: |
+            r64_budget_certificate.json
+            experiments/r64_decision_budget.py
+            experiments/r60_minimal_coverage.py
+  external-admission:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install openpyxl
+      - name: Source-file recovery and safe schema audit
+        shell: python
+        run: |
+          import urllib.request,hashlib,json,csv,io
+          from openpyxl import load_workbook
+          checks={'Evaluation_5_tier_approach.xlsx':'6de733ddd210950a859d620170cf6751','ivm_extended.csv':'d626389b3e6a80973aabacdcc31fa618'}
+          result={}
+          for file,expected in checks.items():
+              result[file]={'expected_md5':expected}
+              for record in ('14379735','13998429'):
+                  url=f'https://zenodo.org/records/{record}/files/{file}?download=1'
+                  try:
+                      with urllib.request.urlopen(url,timeout=18) as r: data=r.read()
+                      assert hashlib.md5(data).hexdigest()==expected,'MD5 mismatch'
+                      row={'status':'HASH_VERIFIED','record':record,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()}
+                      if file.endswith('.xlsx'):
+                          book=load_workbook(io.BytesIO(data),read_only=True,data_only=True)
+                          row['sheets']=[{'name':s.title,'rows':s.max_row,'columns':s.max_column,'first_row_headers':[str(v)[:80] if v is not None else None for v in next(s.values,())][:40]} for s in book]
+                      else:
+                          reader=csv.DictReader(io.StringIO(data.decode('utf-8-sig')))
+                          row['headers']=reader.fieldnames
+                          row['rows']=sum(1 for _ in reader)
+                      result[file].update(row)
+                      break
+                  except Exception as exc:
+                      result[file].setdefault('errors',[]).append({'record':record,'error':str(exc)[:300]})
+              if 'status' not in result[file]:result[file]['status']='HOLD'
+          with open('r64_external_admission.json','w') as f:json.dump(result,f,indent=2)
+          print(json.dumps(result,indent=2))
+      - uses: actions/upload-artifact@v4
+        with:
+          name: r64-external-admission
+          path: r64_external_admission.json

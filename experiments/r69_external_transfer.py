@@ -97,6 +97,6 @@ def main():
          "source_commit":PIN,"primary":"R68 text ranking and 50-record budget locked before external label analysis; binary Llama Include as centroid seed; source row order tie-break",
          "scope":"Post hoc independent model-output archive transfer, not independent of all older SYNERGY data in project; no prospective certification, no human timing, no retraining",
          "results":ans}
-    Path("r69_external_transfer.json").write_text(json.dumps(out,indent=2,sort_keys=True)+"\n")
-    print(json.dumps(out,indent=2))
+    Path("r69_external_transfer.json").write_text(json.dumps(out,indent=2,sort_keys=True,default=lambda x:x.item())+"\n")
+    print(json.dumps(out,indent=2,default=lambda x:x.item()))
 if __name__=="__main__":main()

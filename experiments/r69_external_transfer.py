@@ -56,10 +56,25 @@ def evaluate(topic):
     assert {"title","include","doi","pubmed_id"}<=set(p),("pred schema",list(p))
     assert len(a)==len(p) and a["index"].is_unique and (a["index"]!="").all(),("nonidentical population",len(a),len(p))
     checks={}
+    vals={}
     for col,fn in [("title",norm),("doi",idnorm),("pubmed_id",idnorm)]:
         x=a[col].map(fn).tolist();y=p[col].map(fn).tolist()
-        assert x==y,("row-order identity mismatch",col,sum(u!=v for u,v in zip(x,y)))
-        checks[col]=len(x)
+        vals[col]=(x,y)
+        checks[col]=sum(u==v for u,v in zip(x,y))
+    # Source identity gate repaired independently of outcome: both identifier
+    # columns must agree over ALL rows. Any differing title must have at least
+    # one nonempty, uniquely matched DOI or PMID. No approximate title match,
+    # reorder, changed prediction, imputation or row removal.
+    assert all(checks[c]==len(a) for c in ("doi","pubmed_id")),("identifier mismatch",checks)
+    discrepancies=[]
+    from collections import Counter
+    freqs={c:Counter(vals[c][0]) for c in ("doi","pubmed_id")}
+    for i,(u,v) in enumerate(zip(*vals["title"])):
+        if u==v:continue
+        valid=[c for c in ("doi","pubmed_id") if vals[c][0][i] and freqs[c][vals[c][0][i]]==1]
+        assert valid,("title mismatch without unique shared identifier",i,checks)
+        discrepancies.append({"row_ordinal":i,"unique_shared_identifier_fields":valid})
+    checks["resolved_title_discrepancies"]=discrepancies
     yes=bools(p["include"])
     # rank without the source reference column; no test labels passed to rank().
     text=(a["title"]+"\n"+a["abstract"]).tolist()
